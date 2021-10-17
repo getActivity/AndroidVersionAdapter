@@ -20,21 +20,23 @@
 
 ## 适配目录
 
-* [Android 11.0](#android-11.0)
+* [Android 12.0](#android-120)
 
-* [Android 10.0](#android-10.0)
+* [Android 11.0](#android-110)
 
-* [Android 9.0](#android-9.0)
+* [Android 10.0](#android-100)
 
-* [Android 8.0 / 8.1](#android-8.0-/-8.1)
+* [Android 9.0](#android-90)
 
-* [Android 7.0 / 7.1.1](#android-7.0-/-7.1.1)
+* [Android 8.0 / 8.1](#android-80-/-81)
 
-* [Android 6.0](#android-6.0)
+* [Android 7.0 / 7.1.1](#android-70-/-711)
 
-* [Android 5.0 / 5.1](#android-5.0-/-5.1)
+* [Android 6.0](#android-60)
 
-* [Android 4.4](#android-4.4)
+* [Android 5.0 / 5.1](#android-50-/-51)
+
+* [Android 4.4](#android-44)
 
 ## Android 12.0
 
@@ -178,7 +180,7 @@
 
 #### 概览
 
-| 隐私权变更 | 受影响的应用 | 缓解策 |
+| 隐私权变更 | 受影响的应用 | 缓解策略 |
 | :---: | :---------: | :------: |
 | **强制执行分区存储机制** 以 Android 11 或更高版本为目标平台的应用始终会受分区存储行为的影响 | 以 Android 11 或更高版本为目标平台的应用，以及以 Android 10 为目标平台且未将 `requestLegacyExternalStorage` 设为 `true` 以停用分区存储的应用 | 更新您的应用以使用分区存储 [详细了解分区存储变更](https://developer.android.google.cn/about/versions/11/privacy/storage?hl=zh-cn) |
 | **单次授权** 使用单次授权功能，用户可以授予对位置信息、麦克风和摄像头的临时访问权限 | 在 Android 11 或更高版本上运行且请求位置信息、麦克风或摄像头权限的应用 | 在尝试访问受某项权限保护的数据之前，检查您的应用是否具有该权限 [遵循请求权限方面的最佳做法](https://developer.android.google.cn/training/permissions/requesting?hl=zh-cn) |
