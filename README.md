@@ -595,131 +595,131 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
 * [Android 8.0 新特性](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn)
 
-	* [用户体验](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#ux)
+    * [用户体验](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#ux)
 
-		* [通知](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#notifications)
-	
-		* [自动填充框架](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#af)
-	
-		* [画中画模式](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#opip)
-	
-		* [可下载字体](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#df)
-	
-		* [XML 中的字体](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#fix)
-	
-		* [自动调整 TextView 的大小](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#atv)
-	
-		* [自适应图标](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#ai)
-	
-		* [颜色管理](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#cm)
-	
-		* [WebView API](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#wv)
-	
-		* [固定快捷方式和小部件](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#iapoas)
-	
-		* [最大屏幕纵横比](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#max-aspect-ratio)
-	
-		* [多显示器支持](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#mds)
-	
-		* [统一的布局外边距和内边距](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#ulmp)
-	
-		* [指针捕获](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#pc)
-	
-		* [应用类别](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#category)
-	
-		* [Android TV 启动器](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#tvlauncher)
-	
-		* [AnimatorSet](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#aset)
-	
-		* [输入和导航](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#ian)
-	
-	* [系统](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#sys)
+        * [通知](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#notifications)
+    
+        * [自动填充框架](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#af)
+    
+        * [画中画模式](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#opip)
+    
+        * [可下载字体](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#df)
+    
+        * [XML 中的字体](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#fix)
+    
+        * [自动调整 TextView 的大小](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#atv)
+    
+        * [自适应图标](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#ai)
+    
+        * [颜色管理](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#cm)
+    
+        * [WebView API](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#wv)
+    
+        * [固定快捷方式和小部件](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#iapoas)
+    
+        * [最大屏幕纵横比](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#max-aspect-ratio)
+    
+        * [多显示器支持](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#mds)
+    
+        * [统一的布局外边距和内边距](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#ulmp)
+    
+        * [指针捕获](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#pc)
+    
+        * [应用类别](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#category)
+    
+        * [Android TV 启动器](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#tvlauncher)
+    
+        * [AnimatorSet](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#aset)
+    
+        * [输入和导航](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#ian)
+    
+    * [系统](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#sys)
 
-		* [视图默认焦点](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#vdf)
-	
-		* [新的 StrictMode 检测程序](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#strictmode)
-	
-		* [缓存数据](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#cache)
-	
-		* [内容提供程序分页](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#cpp)
-	
-		* [内容刷新请求](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#df)
-	
-		* [JobScheduler 改进](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#jobscheduler)
-	
-		* [自定义数据存储](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#data-store)
-	
-		* [findViewById 签名变更](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#fvbi-signature)
-	
-	* [媒体增强功能](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#me)
+        * [视图默认焦点](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#vdf)
+    
+        * [新的 StrictMode 检测程序](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#strictmode)
+    
+        * [缓存数据](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#cache)
+    
+        * [内容提供程序分页](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#cpp)
+    
+        * [内容刷新请求](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#df)
+    
+        * [JobScheduler 改进](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#jobscheduler)
+    
+        * [自定义数据存储](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#data-store)
+    
+        * [findViewById 签名变更](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#fvbi-signature)
+    
+    * [媒体增强功能](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#me)
 
-		* [VolumeShaper](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#media-vs)
-	
-		* [音频焦点增强功能](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#media-af)
-	
-		* [媒体指标](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#mm)
-	
-		* [MediaPlayer](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#mp)
-	
-		* [音频录制器](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#mr)
-	
-		* [音频播放控制](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#apc)
-	
-		* [增强的媒体文件访问功能](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#imfa)
+        * [VolumeShaper](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#media-vs)
+    
+        * [音频焦点增强功能](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#media-af)
+    
+        * [媒体指标](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#mm)
+    
+        * [MediaPlayer](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#mp)
+    
+        * [音频录制器](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#mr)
+    
+        * [音频播放控制](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#apc)
+    
+        * [增强的媒体文件访问功能](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#imfa)
 
-	* [连接](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#cs)
+    * [连接](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#cs)
 
-		* [WLAN 感知](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#aware)
-	
-		* [蓝牙](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#bt)
-	
-		* [配套设备配对](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#cdp)
+        * [WLAN 感知](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#aware)
+    
+        * [蓝牙](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#bt)
+    
+        * [配套设备配对](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#cdp)
 
-	* [共享](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#sh)
+    * [共享](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#sh)
 
-		* [智能共享](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#smsh)
-	
-		* [智能文本选择](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#sts)
+        * [智能共享](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#smsh)
+    
+        * [智能文本选择](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#sts)
 
-	* [无障碍功能](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#a11y)
+    * [无障碍功能](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#a11y)
 
-		* [无障碍功能按钮](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#ab)
-	
-		* [独立的音量调整](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#iva)
-	
-		* [指纹手势](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#fg)
-	
-		* [字词级突出显示](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#wlh)
-	
-		* [标准化单端范围值](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#sosrv)
-	
-		* [提示文本](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#ht)
-	
-		* [连续的手势分派](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#cgd)
+        * [无障碍功能按钮](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#ab)
+    
+        * [独立的音量调整](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#iva)
+    
+        * [指纹手势](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#fg)
+    
+        * [字词级突出显示](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#wlh)
+    
+        * [标准化单端范围值](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#sosrv)
+    
+        * [提示文本](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#ht)
+    
+        * [连续的手势分派](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#cgd)
 
-	* [安全性与隐私](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#sp)
+    * [安全性与隐私](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#sp)
 
-		* [权限](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#perms)
-	
-		* [新的帐号访问和 Discovery API](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#naa)
-	
-		* [Google Safe Browsing API](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#sb)
+        * [权限](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#perms)
+    
+        * [新的帐号访问和 Discovery API](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#naa)
+    
+        * [Google Safe Browsing API](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#sb)
 
-	* [测试](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#test)
+    * [测试](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#test)
 
-		* [仪器测试](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#instr)
-	
-		* [用于测试的模拟 Intent](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#mit)
+        * [仪器测试](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#instr)
+    
+        * [用于测试的模拟 Intent](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#mit)
 
-	* [运行时和工具](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#rt)
+    * [运行时和工具](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#rt)
 
-		* [平台优化](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#art)
-	
-		* [更新的 Java 支持](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#java)
-	
-		* [更新的 ICU4J Android Framework API](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#icu4j)
-	
-		* [Android 企业版](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#ae)
+        * [平台优化](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#art)
+    
+        * [更新的 Java 支持](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#java)
+    
+        * [更新的 ICU4J Android Framework API](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#icu4j)
+    
+        * [Android 企业版](https://developer.android.google.cn/about/versions/oreo/android-8.0?hl=zh-cn#ae)
 
 * [Android 8.1 新特性](https://developer.android.google.cn/about/versions/oreo/android-8.1?hl=zh-cn)
 
@@ -831,89 +831,89 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
 * [Android 7.0 新特性](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn)
 
-	* [多窗口支持](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#multi-window_support)
+    * [多窗口支持](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#multi-window_support)
 
-	* [通知增强功能](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#notification_enhancements)
+    * [通知增强功能](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#notification_enhancements)
 
-	* [配置文件指导的 JIT/AOT 编译](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#jit_aot)
+    * [配置文件指导的 JIT/AOT 编译](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#jit_aot)
 
-	* [快速的应用安装路径](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#quick_path_to_app_install)
+    * [快速的应用安装路径](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#quick_path_to_app_install)
 
-	* [随时随地低电耗模式](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#doze_on_the_go)
+    * [随时随地低电耗模式](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#doze_on_the_go)
 
-	* [后台优化](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#background_optimizations)
+    * [后台优化](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#background_optimizations)
 
-	* [SurfaceView](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#surfaceview)
+    * [SurfaceView](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#surfaceview)
 
-	* [流量节省程序](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#data_saver)
+    * [流量节省程序](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#data_saver)
 
-	* [Vulkan API](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#vulkan)
+    * [Vulkan API](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#vulkan)
 
-	* [Quick Settings Tile API](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#tile_api)
+    * [Quick Settings Tile API](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#tile_api)
 
-	* [号码屏蔽](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#number-blocking)
+    * [号码屏蔽](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#number-blocking)
 
-	* [来电过滤](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#call_screening)
+    * [来电过滤](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#call_screening)
 
-	* [多语言区域支持，更多语言](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#multi-locale_languages)
+    * [多语言区域支持，更多语言](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#multi-locale_languages)
 
-	* [新增的表情符号](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#emoji)
+    * [新增的表情符号](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#emoji)
 
-	* [Android 中的 ICU4J API](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#icu4)
+    * [Android 中的 ICU4J API](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#icu4)
 
-	* [WebView](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#webview)
+    * [WebView](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#webview)
 
-		* [Chrome 和 WebView 配合使用](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#chrome-%E5%92%8C-webview-%E9%85%8D%E5%90%88%E4%BD%BF%E7%94%A8)
+        * [Chrome 和 WebView 配合使用](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#chrome-%E5%92%8C-webview-%E9%85%8D%E5%90%88%E4%BD%BF%E7%94%A8)
 
-		* [多进程](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#%E5%A4%9A%E8%BF%9B%E7%A8%8B)
+        * [多进程](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#%E5%A4%9A%E8%BF%9B%E7%A8%8B)
 
-		* [Javascript 在页面加载之前运行](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#javascript-%E5%9C%A8%E9%A1%B5%E9%9D%A2%E5%8A%A0%E8%BD%BD%E4%B9%8B%E5%89%8D%E8%BF%90%E8%A1%8C)
+        * [Javascript 在页面加载之前运行](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#javascript-%E5%9C%A8%E9%A1%B5%E9%9D%A2%E5%8A%A0%E8%BD%BD%E4%B9%8B%E5%89%8D%E8%BF%90%E8%A1%8C)
 
-		* [不安全起点上的地理定位](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#%E4%B8%8D%E5%AE%89%E5%85%A8%E8%B5%B7%E7%82%B9%E4%B8%8A%E7%9A%84%E5%9C%B0%E7%90%86%E5%AE%9A%E4%BD%8D)
+        * [不安全起点上的地理定位](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#%E4%B8%8D%E5%AE%89%E5%85%A8%E8%B5%B7%E7%82%B9%E4%B8%8A%E7%9A%84%E5%9C%B0%E7%90%86%E5%AE%9A%E4%BD%8D)
 
-		* [测试 WebView 测试版](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#%E6%B5%8B%E8%AF%95-webview-%E6%B5%8B%E8%AF%95%E7%89%88)
+        * [测试 WebView 测试版](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#%E6%B5%8B%E8%AF%95-webview-%E6%B5%8B%E8%AF%95%E7%89%88)
 
-	* [OpenGL™ ES 3.2 API](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#gles_32)
+    * [OpenGL™ ES 3.2 API](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#gles_32)
 
-	* [Android TV 录制](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#android_tv_recording)
+    * [Android TV 录制](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#android_tv_recording)
 
-	* [Android for Work](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#android_for_work)
+    * [Android for Work](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#android_for_work)
 
-		* [工作资料安全性挑战](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#work_profile_security_challenge)
-	
-		* [关闭工作](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#turn_off_work)
-	
-		* [Always on VPN](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#always_on_vpn)
-	
-		* [自定义配置](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#custom_provisioning)
+        * [工作资料安全性挑战](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#work_profile_security_challenge)
+    
+        * [关闭工作](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#turn_off_work)
+    
+        * [Always on VPN](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#always_on_vpn)
+    
+        * [自定义配置](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#custom_provisioning)
 
-	* [无障碍增强功能](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#accessibility_enhancements)
+    * [无障碍增强功能](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#accessibility_enhancements)
 
-	* [直接启动](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#direct_boot)
+    * [直接启动](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#direct_boot)
 
-	* [密钥认证](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#key_attestation)
+    * [密钥认证](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#key_attestation)
 
-	* [网络安全性配置](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#network_security_config)
+    * [网络安全性配置](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#network_security_config)
 
-	* [默认受信任的证书颁发机构](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#default_trusted_ca)
+    * [默认受信任的证书颁发机构](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#default_trusted_ca)
 
-	* [APK signature scheme v2](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#apk_signature_v2)
+    * [APK signature scheme v2](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#apk_signature_v2)
 
-	* [作用域目录访问](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#scoped_directory_access)
+    * [作用域目录访问](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#scoped_directory_access)
 
-	* [键盘快捷键辅助工具](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#keyboard_shortcuts_helper)
+    * [键盘快捷键辅助工具](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#keyboard_shortcuts_helper)
 
-	* [Custom Pointer API](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#custom_pointer_api)
+    * [Custom Pointer API](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#custom_pointer_api)
 
-	* [Sustained Performance API](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#sustained_performance_api)
+    * [Sustained Performance API](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#sustained_performance_api)
 
-	* [VR 支持](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#vr)
+    * [VR 支持](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#vr)
 
-	* [打印服务增强](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#print_svc)
+    * [打印服务增强](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#print_svc)
 
-	* [FrameMetricsListener API](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#framemetrics_api)
+    * [FrameMetricsListener API](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#framemetrics_api)
 
-	* [虚拟文件](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#virtual_files)
+    * [虚拟文件](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn#virtual_files)
 
 * [Android 7.1 新特性](https://developer.android.google.cn/about/versions/nougat/android-7.1?hl=zh-cn)
 
@@ -941,9 +941,9 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
 * [电池和内存](https://developer.android.google.cn/about/versions/nougat/android-7.0-changes?hl=zh-cn#perf)
 
-	* [低电耗模式](https://developer.android.google.cn/about/versions/nougat/android-7.0-changes?hl=zh-cn#doze)
+    * [低电耗模式](https://developer.android.google.cn/about/versions/nougat/android-7.0-changes?hl=zh-cn#doze)
 
-	* [后台优化](https://developer.android.google.cn/about/versions/nougat/android-7.0-changes?hl=zh-cn#bg-opt)
+    * [后台优化](https://developer.android.google.cn/about/versions/nougat/android-7.0-changes?hl=zh-cn#bg-opt)
 
 * [系统权限更改](https://developer.android.google.cn/about/versions/nougat/android-7.0-changes?hl=zh-cn#permfilesys)
 
@@ -951,15 +951,15 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
 * [无障碍改进](https://developer.android.google.cn/about/versions/nougat/android-7.0-changes?hl=zh-cn#accessibility)
 
-	* [屏幕缩放](https://developer.android.google.cn/about/versions/nougat/android-7.0-changes?hl=zh-cn#screen-zoom)
+    * [屏幕缩放](https://developer.android.google.cn/about/versions/nougat/android-7.0-changes?hl=zh-cn#screen-zoom)
 
-	* [设置向导中的视觉设置](https://developer.android.google.cn/about/versions/nougat/android-7.0-changes?hl=zh-cn#vision-settings)
+    * [设置向导中的视觉设置](https://developer.android.google.cn/about/versions/nougat/android-7.0-changes?hl=zh-cn#vision-settings)
 
 * [NDK 应用链接至平台库](https://developer.android.google.cn/about/versions/nougat/android-7.0-changes?hl=zh-cn#ndk)
 
-	* [检查您的应用是否使用私有库](https://developer.android.google.cn/about/versions/nougat/android-7.0-changes?hl=zh-cn#ndk-errors)
+    * [检查您的应用是否使用私有库](https://developer.android.google.cn/about/versions/nougat/android-7.0-changes?hl=zh-cn#ndk-errors)
 
-	* [更新您的应用](https://developer.android.google.cn/about/versions/nougat/android-7.0-changes?hl=zh-cn#ndk-update)
+    * [更新您的应用](https://developer.android.google.cn/about/versions/nougat/android-7.0-changes?hl=zh-cn#ndk-update)
 
 * [Android for Work](https://developer.android.google.cn/about/versions/nougat/android-7.0-changes?hl=zh-cn#afw)
 
@@ -1025,9 +1025,9 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
 * [相机功能](https://developer.android.google.cn/about/versions/marshmallow/android-6.0?hl=zh-cn#camera)
 
-	* [Flashlight API](https://developer.android.google.cn/about/versions/marshmallow/android-6.0?hl=zh-cn#flashlight)
+    * [Flashlight API](https://developer.android.google.cn/about/versions/marshmallow/android-6.0?hl=zh-cn#flashlight)
 
-	* [Reprocessing API](https://developer.android.google.cn/about/versions/marshmallow/android-6.0?hl=zh-cn#reprocessing)
+    * [Reprocessing API](https://developer.android.google.cn/about/versions/marshmallow/android-6.0?hl=zh-cn#reprocessing)
 
 * [Android for Work 功能](https://developer.android.google.cn/about/versions/marshmallow/android-6.0?hl=zh-cn#afw)
 
@@ -1083,93 +1083,93 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
 * [Android 5.0 新特性](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn)
 
-	* [用户界面](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#UI)
+    * [用户界面](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#UI)
 
-		* [Material Design 支持](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#MaterialDesign)
+        * [Material Design 支持](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#MaterialDesign)
 
-		* [最近使用的应用屏幕中的并发文档和 Activity](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#Recents)
+        * [最近使用的应用屏幕中的并发文档和 Activity](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#Recents)
 
-		* [WebView 更新](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#WebView)
+        * [WebView 更新](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#WebView)
 
-		* [屏幕采集和共享](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#ScreenCapture)
+        * [屏幕采集和共享](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#ScreenCapture)
 
-	* [通知](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#Notifications	)
+    * [通知](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#Notifications    )
 
-		* [锁定屏幕通知](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#LockscreenNotifications)
+        * [锁定屏幕通知](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#LockscreenNotifications)
 
-		* [通知元数据](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#NotificationsMetadata)
+        * [通知元数据](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#NotificationsMetadata)
 
-	* [图形](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#Graphics)
+    * [图形](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#Graphics)
 
-		* [对 OpenGL ES 3.1 的支持](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#OpenGLES-3-1)
+        * [对 OpenGL ES 3.1 的支持](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#OpenGLES-3-1)
 
-		* [Android 扩展包](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#AndroidExtensionPack)
+        * [Android 扩展包](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#AndroidExtensionPack)
 
-	* [媒体](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#Media)
+    * [媒体](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#Media)
 
-		* [用于高级相机功能的 Camera API](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#Camera-v2)
+        * [用于高级相机功能的 Camera API](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#Camera-v2)
 
-		* [音频回放](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#AudioPlayback)
+        * [音频回放](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#AudioPlayback)
 
-		* [媒体回放控制](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#MediaPlaybackControl)
+        * [媒体回放控制](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#MediaPlaybackControl)
 
-		* [媒体浏览](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#MediaBrowsing)
+        * [媒体浏览](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#MediaBrowsing)
 
-	* [存储](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#Storage)
+    * [存储](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#Storage)
 
-		* [目录选择](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#DirectorySelection)
+        * [目录选择](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#DirectorySelection)
 
-	* [无线和连接](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#Wireless)
+    * [无线和连接](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#Wireless)
 
-		* [多个网络连接](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#Multinetwork)
+        * [多个网络连接](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#Multinetwork)
 
-		* [蓝牙低功耗](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#BluetoothBroadcasting)
+        * [蓝牙低功耗](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#BluetoothBroadcasting)
 
-		* [NFC 增强功能](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#NFCEnhancements)
+        * [NFC 增强功能](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#NFCEnhancements)
 
-	* [Volta 项目](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#Power)
+    * [Volta 项目](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#Power)
 
-		* [计划排定作业](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#JobScheduler)
+        * [计划排定作业](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#JobScheduler)
 
-		* [电池使用开发者工具](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#PowerMeasurementTools)
+        * [电池使用开发者工具](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#PowerMeasurementTools)
 
-	* [工作场所和教育领域中的 Android](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#Enterprise)
+    * [工作场所和教育领域中的 Android](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#Enterprise)
 
-		* [托管配置](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#ManagedProvisioning)
+        * [托管配置](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#ManagedProvisioning)
 
-		* [设备所有者](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#DeviceOwner)
+        * [设备所有者](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#DeviceOwner)
 
-		* [固定屏幕](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#ScreenPinning)
+        * [固定屏幕](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#ScreenPinning)
 
-	* [打印框架](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#Printing)
+    * [打印框架](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#Printing)
 
-		* [将 PDF 渲染成位图](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#PDFRender)
+        * [将 PDF 渲染成位图](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#PDFRender)
 
-	* [系统](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#System)
+    * [系统](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#System)
 
-		* [应用使用情况统计信息](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#AppUsageStatistics)
+        * [应用使用情况统计信息](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#AppUsageStatistics)
 
-	* [测试与辅助工具](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#TestingA11y)
+    * [测试与辅助工具](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#TestingA11y)
 
-	* [测试与辅助工具改进](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#TestingA11yImprovements)
+    * [测试与辅助工具改进](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#TestingA11yImprovements)
 
-	* [IME](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#IME)
+    * [IME](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#IME)
 
-		* [更方便的输入语言切换](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#Switching)
+        * [更方便的输入语言切换](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#Switching)
 
-	* [清单声明](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#Manifest)
+    * [清单声明](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#Manifest)
 
-		* [可声明的必备功能](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#ManifestFeatures)
+        * [可声明的必备功能](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#ManifestFeatures)
 
-		* [用户权限](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#Permissions)
+        * [用户权限](https://developer.android.google.cn/about/versions/android-5.0?hl=zh-cn#Permissions)
 
 * [Android 5.1 新特性](https://developer.android.google.cn/about/versions/android-5.1?hl=zh-cn)
 
-	* [多 SIM 卡支持](https://developer.android.google.cn/about/versions/android-5.1?hl=zh-cn#multisim)
+    * [多 SIM 卡支持](https://developer.android.google.cn/about/versions/android-5.1?hl=zh-cn#multisim)
 
-	* [已弃用的 HTTP 类](https://developer.android.google.cn/about/versions/android-5.1?hl=zh-cn#http)
+    * [已弃用的 HTTP 类](https://developer.android.google.cn/about/versions/android-5.1?hl=zh-cn#http)
 
-	* [运营商服务](https://developer.android.google.cn/about/versions/android-5.1?hl=zh-cn#carrier)
+    * [运营商服务](https://developer.android.google.cn/about/versions/android-5.1?hl=zh-cn#carrier)
 
 #### 行为变更
 
@@ -1177,15 +1177,15 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
 * [通知](https://developer.android.google.cn/about/versions/android-5.0-changes?hl=zh-cn#BehaviorNotifications)
 
-	* [Material Design 样式](https://developer.android.google.cn/about/versions/android-5.0-changes?hl=zh-cn#NotificationsMaterialDesignStyle)
+    * [Material Design 样式](https://developer.android.google.cn/about/versions/android-5.0-changes?hl=zh-cn#NotificationsMaterialDesignStyle)
 
-	* [声音和振动](https://developer.android.google.cn/about/versions/android-5.0-changes?hl=zh-cn#NotificationsSoundVibration)
+    * [声音和振动](https://developer.android.google.cn/about/versions/android-5.0-changes?hl=zh-cn#NotificationsSoundVibration)
 
-	* [锁定屏幕可见性](https://developer.android.google.cn/about/versions/android-5.0-changes?hl=zh-cn#NotificationsLockscreenVisibility)
+    * [锁定屏幕可见性](https://developer.android.google.cn/about/versions/android-5.0-changes?hl=zh-cn#NotificationsLockscreenVisibility)
 
-	* [媒体播放](https://developer.android.google.cn/about/versions/android-5.0-changes?hl=zh-cn#NotificationsMediaPlayback)
+    * [媒体播放](https://developer.android.google.cn/about/versions/android-5.0-changes?hl=zh-cn#NotificationsMediaPlayback)
 
-	* [浮动通知](https://developer.android.google.cn/about/versions/android-5.0-changes?hl=zh-cn#NotificationsHeadsup)
+    * [浮动通知](https://developer.android.google.cn/about/versions/android-5.0-changes?hl=zh-cn#NotificationsHeadsup)
 
 * [媒体控件和 RemoteControlClient](https://developer.android.google.cn/about/versions/android-5.0-changes?hl=zh-cn#BehaviorMediaControl)
 
@@ -1199,35 +1199,31 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
 * [自定义权限唯一性要求](https://developer.android.google.cn/about/versions/android-5.0-changes?hl=zh-cn#custom_permissions)
 
-	* [使用重复的自定义权限的应用](https://developer.android.google.cn/about/versions/android-5.0-changes?hl=zh-cn#%E4%BD%BF%E7%94%A8%E9%87%8D%E5%A4%8D%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E6%9D%83%E9%99%90%E7%9A%84%E5%BA%94%E7%94%A8)
+    * [使用重复的自定义权限的应用](https://developer.android.google.cn/about/versions/android-5.0-changes?hl=zh-cn#%E4%BD%BF%E7%94%A8%E9%87%8D%E5%A4%8D%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E6%9D%83%E9%99%90%E7%9A%84%E5%BA%94%E7%94%A8)
 
-	* [您的应用需要注意的事项](https://developer.android.google.cn/about/versions/android-5.0-changes?hl=zh-cn#%E6%82%A8%E7%9A%84%E5%BA%94%E7%94%A8%E9%9C%80%E8%A6%81%E6%B3%A8%E6%84%8F%E7%9A%84%E4%BA%8B%E9%A1%B9)
+    * [您的应用需要注意的事项](https://developer.android.google.cn/about/versions/android-5.0-changes?hl=zh-cn#%E6%82%A8%E7%9A%84%E5%BA%94%E7%94%A8%E9%9C%80%E8%A6%81%E6%B3%A8%E6%84%8F%E7%9A%84%E4%BA%8B%E9%A1%B9)
 
-	* [新安装和更新](https://developer.android.google.cn/about/versions/android-5.0-changes?hl=zh-cn#%E6%96%B0%E5%AE%89%E8%A3%85%E5%92%8C%E6%9B%B4%E6%96%B0)
+    * [新安装和更新](https://developer.android.google.cn/about/versions/android-5.0-changes?hl=zh-cn#%E6%96%B0%E5%AE%89%E8%A3%85%E5%92%8C%E6%9B%B4%E6%96%B0)
 
-	* [使用 Android 5.0 系统更新的现有安装](https://developer.android.google.cn/about/versions/android-5.0-changes?hl=zh-cn#%E4%BD%BF%E7%94%A8-android-5.0-%E7%B3%BB%E7%BB%9F%E6%9B%B4%E6%96%B0%E7%9A%84%E7%8E%B0%E6%9C%89%E5%AE%89%E8%A3%85)
+    * [使用 Android 5.0 系统更新的现有安装](https://developer.android.google.cn/about/versions/android-5.0-changes?hl=zh-cn#%E4%BD%BF%E7%94%A8-android-5.0-%E7%B3%BB%E7%BB%9F%E6%9B%B4%E6%96%B0%E7%9A%84%E7%8E%B0%E6%9C%89%E5%AE%89%E8%A3%85)
 
-	* [建议](https://developer.android.google.cn/about/versions/android-5.0-changes?hl=zh-cn#%E5%BB%BA%E8%AE%AE)
+    * [建议](https://developer.android.google.cn/about/versions/android-5.0-changes?hl=zh-cn#%E5%BB%BA%E8%AE%AE)
 
 * [TLS/SSL 默认配置变更](https://developer.android.google.cn/about/versions/android-5.0-changes?hl=zh-cn#ssl)
 
-	* [服务器不支持任何已启用的加密套件](https://developer.android.google.cn/about/versions/android-5.0-changes?hl=zh-cn#%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8D%E6%94%AF%E6%8C%81%E4%BB%BB%E4%BD%95%E5%B7%B2%E5%90%AF%E7%94%A8%E7%9A%84%E5%8A%A0%E5%AF%86%E5%A5%97%E4%BB%B6)
+    * [服务器不支持任何已启用的加密套件](https://developer.android.google.cn/about/versions/android-5.0-changes?hl=zh-cn#%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8D%E6%94%AF%E6%8C%81%E4%BB%BB%E4%BD%95%E5%B7%B2%E5%90%AF%E7%94%A8%E7%9A%84%E5%8A%A0%E5%AF%86%E5%A5%97%E4%BB%B6)
 
-	* [应用对用于连接服务器的加密套件做出错误的假设](https://developer.android.google.cn/about/versions/android-5.0-changes?hl=zh-cn#%E5%BA%94%E7%94%A8%E5%AF%B9%E7%94%A8%E4%BA%8E%E8%BF%9E%E6%8E%A5%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E5%8A%A0%E5%AF%86%E5%A5%97%E4%BB%B6%E5%81%9A%E5%87%BA%E9%94%99%E8%AF%AF%E7%9A%84%E5%81%87%E8%AE%BE)
+    * [应用对用于连接服务器的加密套件做出错误的假设](https://developer.android.google.cn/about/versions/android-5.0-changes?hl=zh-cn#%E5%BA%94%E7%94%A8%E5%AF%B9%E7%94%A8%E4%BA%8E%E8%BF%9E%E6%8E%A5%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E5%8A%A0%E5%AF%86%E5%A5%97%E4%BB%B6%E5%81%9A%E5%87%BA%E9%94%99%E8%AF%AF%E7%9A%84%E5%81%87%E8%AE%BE)
 
-	* [服务器不支持 TLSv1.1、TLSv1.2 或新的 TLS 扩展](https://developer.android.google.cn/about/versions/android-5.0-changes?hl=zh-cn#%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8D%E6%94%AF%E6%8C%81-tlsv1.1%E3%80%81tlsv1.2-%E6%88%96%E6%96%B0%E7%9A%84-tls-%E6%89%A9%E5%B1%95)
+    * [服务器不支持 TLSv1.1、TLSv1.2 或新的 TLS 扩展](https://developer.android.google.cn/about/versions/android-5.0-changes?hl=zh-cn#%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8D%E6%94%AF%E6%8C%81-tlsv1.1%E3%80%81tlsv1.2-%E6%88%96%E6%96%B0%E7%9A%84-tls-%E6%89%A9%E5%B1%95)
 
 * [支持托管配置文件](https://developer.android.google.cn/about/versions/android-5.0-changes?hl=zh-cn#managed_profiles)
 
-	* [处理 Intent](https://developer.android.google.cn/about/versions/android-5.0-changes?hl=zh-cn#mg_profile_intents)
+    * [处理 Intent](https://developer.android.google.cn/about/versions/android-5.0-changes?hl=zh-cn#mg_profile_intents)
 
-	* [在各个配置文件中共享文件](https://developer.android.google.cn/about/versions/android-5.0-changes?hl=zh-cn#mp_profile_file_sharing)
+    * [在各个配置文件中共享文件](https://developer.android.google.cn/about/versions/android-5.0-changes?hl=zh-cn#mp_profile_file_sharing)
 
-	* [已移除锁定屏幕小部件支持](https://developer.android.google.cn/about/versions/android-5.0-changes?hl=zh-cn#%E5%B7%B2%E7%A7%BB%E9%99%A4%E9%94%81%E5%AE%9A%E5%B1%8F%E5%B9%95%E5%B0%8F%E9%83%A8%E4%BB%B6%E6%94%AF%E6%8C%81)
-
-#### 相关资源
-
-* 暂无，欢迎推荐
+    * [已移除锁定屏幕小部件支持](https://developer.android.google.cn/about/versions/android-5.0-changes?hl=zh-cn#%E5%B7%B2%E7%A7%BB%E9%99%A4%E9%94%81%E5%AE%9A%E5%B1%8F%E5%B9%95%E5%B0%8F%E9%83%A8%E4%BB%B6%E6%94%AF%E6%8C%81)
 
 ## Android 4.4
 
@@ -1239,75 +1235,75 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
 * [打印框架](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#Printing)
 
-	* [打印通用内容](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#PrintingGeneric)
+    * [打印通用内容](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#PrintingGeneric)
 
-	* [打印图像](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#PrintingImages)
+    * [打印图像](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#PrintingImages)
 
-	* [构建打印服务](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#PrintService)
+    * [构建打印服务](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#PrintService)
 
 * [短信提供程序](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#SMS)
 
 * [无线和连接](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#Wireless)
 
-	* [主机卡模拟](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#HCE)
+    * [主机卡模拟](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#HCE)
 
-	* [NFC 读取器模式](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#ReaderMode)
+    * [NFC 读取器模式](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#ReaderMode)
 
-	* [红外线发射器](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#IR)
+    * [红外线发射器](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#IR)
 
 * [多媒体](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#Multimedia)
 
-	* [自适应播放](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#AdaptivePlayback)
+    * [自适应播放](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#AdaptivePlayback)
 
-	* [音频点播时间戳](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#AudioTimestamp)
+    * [音频点播时间戳](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#AudioTimestamp)
 
-	* [Surface 图像读取器](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#ImageReader)
+    * [Surface 图像读取器](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#ImageReader)
 
-	* [峰值和有效值 (RMS) 测量](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#PeakRms)
+    * [峰值和有效值 (RMS) 测量](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#PeakRms)
 
-	* [音量增强器](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#LoudnessEnhancer)
+    * [音量增强器](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#LoudnessEnhancer)
 
-	* [遥控器](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#RemoteController)
+    * [遥控器](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#RemoteController)
 
-	* [从遥控器进行评分](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#Ratings)
+    * [从遥控器进行评分](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#Ratings)
 
-	* [隐藏式字幕](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#ClosedCaptions)
+    * [隐藏式字幕](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#ClosedCaptions)
 
 * [动画和图形](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#Animations)
 
-	* [场景和转场](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#Transitions)
+    * [场景和转场](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#Transitions)
 
-	* [动画暂停](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#AnimatorPause)
+    * [动画暂停](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#AnimatorPause)
 
-	* [可重复使用的位图](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#ReusableBitmaps)
+    * [可重复使用的位图](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#ReusableBitmaps)
 
 * [用户内容](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#UserContent)
 
-	* [存储访问框架](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#StorageAccess)
+    * [存储访问框架](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#StorageAccess)
 
-	* [外部存储空间访问](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#ExternalStorage)
+    * [外部存储空间访问](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#ExternalStorage)
 
-	* [同步适配器](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#SyncAdapter)
+    * [同步适配器](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#SyncAdapter)
 
 * [用户输入](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#UserInput)
 
-	* [新传感器类型](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#NewSensors)
+    * [新传感器类型](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#NewSensors)
 
-	* [批处理传感器事件](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#BatchSensors)
+    * [批处理传感器事件](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#BatchSensors)
 
-	* [控制器身份](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#Controllers)
+    * [控制器身份](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#Controllers)
 
 * [用户界面](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#UI)
 
-	* [沉浸式全屏模式](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#ImmersiveMode)
+    * [沉浸式全屏模式](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#ImmersiveMode)
 
-	* [透明系统状态栏](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#TranslucentBars)
+    * [透明系统状态栏](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#TranslucentBars)
 
-	* [增强的通知侦听器](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#NotificationListener)
+    * [增强的通知侦听器](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#NotificationListener)
 
-	* [可绘制的 RTL 布局镜像](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#DrawableMirroring)
+    * [可绘制的 RTL 布局镜像](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#DrawableMirroring)
 
-	* [无障碍功能](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#A11y)
+    * [无障碍功能](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#A11y)
 
 * [应用权限](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#Permissions)
 
@@ -1322,10 +1318,6 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 * [AlarmManager](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#BehaviorAlarms)
 
 * [ContentResolver](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#BehaviorSync)
-
-#### 相关资源
-
-* 暂无，欢迎推荐
 
 #### 作者其他开源项目
 
