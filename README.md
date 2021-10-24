@@ -44,7 +44,7 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
 * 到这里，大家可能有一个疑问，targetSdkVersion 和 compileSdkVersion 有啥区别？
 
-    * targetSdkVersion：目标适配版本，告知系统 App 适配的情况，如果应用的 targetSdkVersion 比系统版本要低，那么在一些新特性上新系统会做向下兼容性处理，如果我们想要适配某个 Android 版本，必须要将 targetSdkVersion 调整到这个版本等级之上，否则在某些机型上面可能会出现一些适配异常的情况。如果我们只是简单调高了  targetSdkVersion 等级而没有适配新版本的特性，那么应用在新系统上可能会出现功能异常的情况，一般情况表现为应用崩溃或者获取不到数据。
+    * targetSdkVersion：目标适配版本，告知系统 App 适配的情况，如果应用的 targetSdkVersion 比系统版本要低，那么在一些新特性上新系统会做向下兼容性处理，如果我们想要适配某个 Android 版本，必须要将 targetSdkVersion 调整到这个版本等级之上，否则在某些机型上面可能会出现一些适配异常的情况。如果我们只是简单调高了 targetSdkVersion 等级而没有适配新版本的特性，那么应用在新系统上可能会出现功能异常的情况，一般情况表现为应用崩溃或者获取不到数据。
 
     * compileSdkVersion：编译源码版本，我们可以通过修改这个版本等级来改变我们在代码中所看到的 Android SDK 源码的版本，同时也决定了编译器在进行代码检查时所用的版本。
 
@@ -202,7 +202,13 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
 * [更新您的 widget 以适配 Android 12](https://www.jianshu.com/p/8dade210fcfd)
 
+* [Android 12 上全新的应用启动画面，还不适配一下？](https://juejin.cn/post/6962706834889113614)
+
+* [SplashScreen：为全新的应用启动效果赋能](https://blog.csdn.net/allisonchen/article/details/119656618)
+
 * [Android 12 SplashScreen API快速入门](https://guolin.blog.csdn.net/article/details/120275319)
+
+* [Android 12 上焕然一新的小组件：美观、便捷和实用](https://juejin.cn/post/6968851189190377480)
 
 * [Android 12 蓝牙权限适配方案](https://github.com/getActivity/XXPermissions)
 
@@ -339,21 +345,19 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
 * [Android 11 变更及适配攻略](https://juejin.cn/post/6948211914455384072)
 
-* [Android 11 软件包可见性适配](https://www.jianshu.com/p/d1ccd425c4ce)
-
-* [Android 11特性调整：安装外部来源应用需要重启APP](https://cloud.tencent.com/developer/news/637591)
-
-* [Android 10、11 存储完全适配(上）](https://www.jianshu.com/p/d0c77b9dc527)
-
-* [Android 10、11 存储完全适配(下）](https://www.jianshu.com/p/d5573e312bb8)
+* [OPPO 开放平台 - Android 11 应用兼容性适配指导](https://open.oppomobile.com/wiki/doc#id=10724)
 
 * [Android 11 外部存储权限适配指南及方案](https://www.jianshu.com/p/e94cea26e213)
 
 * [微信开放平台 - Android 11 系统策略更新](https://open.weixin.qq.com/cgi-bin/announce?action=getannouncement&key=11600155960jI9EY&version=&lang=&token=)
 
-* [OPPO 开放平台 - Android 11 应用兼容性适配指导](https://open.oppomobile.com/wiki/doc#id=10724)
+* [Android 11 绕过反射限制](https://www.jianshu.com/p/6546ce67c8e0)
 
-* [Android 11 无法在后台显示自定义样式 Toast 的解决方案](https://github.com/getActivity/ToastUtils)
+* [Android 11 软件包可见性适配](https://www.jianshu.com/p/d1ccd425c4ce)
+
+* [Android 11 特性调整：安装外部来源应用需要重启APP](https://cloud.tencent.com/developer/news/637591)
+
+* [Android 11 无法在后台显示自定义样式 Toast 的适配方案](https://github.com/getActivity/ToastUtils)
 
 ## Android 10.0
 
@@ -463,9 +467,23 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
 * [Android 10 适配攻略](https://juejin.cn/post/6844904073024503822)
 
+* [暂时停用分区存储](https://developer.android.google.cn/training/data-storage/use-cases#opt-out-scoped-storage)
+
+* [Android 存储用例和最佳做法](https://developer.android.google.cn/training/data-storage/use-cases)
+
 * [Android 10(Q)/11(R) 分区存储适配](https://juejin.cn/post/6862633674089693197)
 
-* [Android深色模式适配原理分析](https://www.jianshu.com/p/1aaf0cee7a2f)
+* [Android 10 分区存储适配](https://www.jianshu.com/p/37feb5116191)
+
+* [Android 10 适配要点，作用域存储](https://blog.csdn.net/guolin_blog/article/details/105419420)
+
+* [Android MediaStore Api 使用](https://ppting.me/2020/04/19/2020_04_19_how_to_use_Android_MediaStore_Api/)
+
+* [Android 深色模式适配原理分析](https://www.jianshu.com/p/1aaf0cee7a2f)
+
+* [Android 10 适配要点，深色主题](https://guolin.blog.csdn.net/article/details/106061657)
+
+* [Android 折叠屏适配攻略](https://juejin.cn/post/6844903889267867656)
 
 ## Android 9.0
 
@@ -573,15 +591,17 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
 #### 相关资源
 
-* [反射黑名单（根据包名划分）](https://developer.android.google.cn/reference/packages.html)
-
-* [反射黑名单（根据类名划分）](https://developer.android.google.cn/reference/classes)
-
 * [Android 9.0 适配指南](https://juejin.cn/post/6844903906942648334)
 
 * [Android 刘海屏适配全攻略](https://www.jianshu.com/p/561f7241153b)
 
+* [Android 9.0 系统新特性，对刘海屏设备进行适配](https://guolin.blog.csdn.net/article/details/103112795)
+
 * [Android 9.0/P WebView 多进程使用的问题](https://www.cnblogs.com/renhui/p/13942060.html)
+
+* [反射黑名单（根据包名划分）](https://developer.android.google.cn/reference/packages.html)
+
+* [反射黑名单（根据类名划分）](https://developer.android.google.cn/reference/classes)
 
 * [另一种绕过 Android P以上非公开API限制的办法](https://weishu.me/2019/03/16/another-free-reflection-above-android-p/)
 
@@ -1069,7 +1089,7 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
 * [Android 6.0 运行权限解析](https://www.jianshu.com/p/6a4dff744031)
 
-* [官方文档 - 请求应用权限](https://developer.android.com/training/permissions/requesting.html)
+* [官方文档 - 请求应用权限](https://developer.android.google.cn/training/permissions/requesting.html)
 
 * [所有的 Android 权限清单](https://developer.android.google.cn/reference/android/Manifest.permission?hl=zh_cn)
 
