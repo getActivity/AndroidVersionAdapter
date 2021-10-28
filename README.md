@@ -198,7 +198,7 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
 * [Android 12 适配简介](https://juejin.cn/post/7014491424112508936)
 
-* [OPPO 开放平台 - Android 11 应用兼容性适配指导](https://open.oppomobile.com/wiki/doc#id=10960)
+* [OPPO 开放平台 - Android 12 应用兼容性适配指导](https://open.oppomobile.com/wiki/doc#id=10960)
 
 * [更新您的 widget 以适配 Android 12](https://www.jianshu.com/p/8dade210fcfd)
 
@@ -482,6 +482,8 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 * [Android 深色模式适配原理分析](https://www.jianshu.com/p/1aaf0cee7a2f)
 
 * [Android 10 适配要点，深色主题](https://guolin.blog.csdn.net/article/details/106061657)
+
+* [Android 深色模式的项目应用](https://juejin.cn/post/7022270811524300808)
 
 * [Android 折叠屏适配攻略](https://juejin.cn/post/6844903889267867656)
 
