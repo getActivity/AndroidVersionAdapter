@@ -48,6 +48,23 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
     * compileSdkVersion：编译源码版本，我们可以通过修改这个版本等级来改变我们在代码中所看到的 Android SDK 源码的版本，同时也决定了编译器在进行代码检查时所用的版本。
 
+* 最后附上一张 Android 版本信息对应表
+
+| Android 版本 | API 等级 |    版本代号   |        发布时间       |
+| :--------:  | :-----: | :----------: | :------------------: |
+| Android 12  |    31   |       S      |  2021 年 10 月 4 日   |
+| Android 11  |    30   |       R      |  2020 年 9 月 9 日    |
+| Android 10  |    29   |       Q      |  2019 年 9 月 3 日    |
+| Android 9.0 |    28   |       P      |  2018 年 8 月 7 日    |
+| Android 8.1 |    27   |     O_MR1    |  2017 年 12 月 5 日   |
+| Android 8.0 |    26   |       O      |  2017 年 8 月 22 日   |
+| Android 7.1 |    25   |     N_MR1    |  2016 年 12 月 5 日   |
+| Android 7.0 |    24   |       N      |  2016 年 8 月 22 日   |
+| Android 6.0 |    23   |       M      |  2015 年 9 月 29 日   |
+| Android 5.1 |    22   | LOLLIPOP_MR1 |  2015 年 3 月 10 日   |
+| Android 5.0 |    21   |   LOLLIPOP   |  2014 年 10 月 15 日  |
+| Android 4.4 |    19   |    KITKAT    |  2013 年 10 月 31 日  |
+
 ## 文档目录
 
 * [Android 12.0](#android-120)
@@ -69,10 +86,6 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 * [Android 4.4](#android-44)
 
 ## Android 12.0
-
-* Android 版本代号：31  / S
-
-* 正式版本发布日期：2021 年 10 月 4 日
 
 #### 新特性
 
@@ -194,7 +207,7 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
 #### 相关资源
 
-* [Android 12 正式发布 | 开发者们的全新舞台](https://mp.weixin.qq.com/s/OiFSWEnc-0N2z7JYWTJluw)
+* [Android 12 正式发布 | 开发者们的全新舞台](https://www.jianshu.com/p/92905ae63532)
 
 * [Android 12 适配简介](https://juejin.cn/post/7014491424112508936)
 
@@ -206,7 +219,9 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
 * [SplashScreen：为全新的应用启动效果赋能](https://blog.csdn.net/allisonchen/article/details/119656618)
 
-* [Android 12 SplashScreen API快速入门](https://guolin.blog.csdn.net/article/details/120275319)
+* [Android 12 SplashScreen API 快速入门](https://guolin.blog.csdn.net/article/details/120275319)
+
+* [Jetpack SplashScreen API 在所有 Android 系统上使用总结，内含原理分析](https://juejin.cn/post/7019839767441309733)
 
 * [Android 12 上焕然一新的小组件：美观、便捷和实用](https://juejin.cn/post/6968851189190377480)
 
@@ -215,10 +230,6 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 * [The application could not be installed: `INSTALL_PARSE_FAILED_MANIFEST_MALFORMED`](https://developer.android.google.cn/about/versions/12/behavior-changes-12?hl=zh-cn#exported)
 
 ## Android 11.0
-
-* Android 版本代号：30 / R
-
-* 正式版本发布日期：2020 年 9 月 9 日
 
 #### 概览
 
@@ -361,10 +372,6 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
 ## Android 10.0
 
-* Android 版本代号：29 / Q
-
-* 正式版本发布日期：2019 年 9 月 3 日
-
 #### 概览
 
 |      隐私权变更     |       受影响的应用  |    缓解策略      | 
@@ -489,10 +496,6 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
 ## Android 9.0
 
-* Android 版本代号：28 / Pie（饼干）
-
-* 正式版本发布日期：2018 年 8 月 7 日
-
 #### 新特性
 
 * [利用 Wi-Fi RTT 进行室内定位](https://developer.android.google.cn/about/versions/pie/android-9.0?hl=zh-cn#rtt)
@@ -608,10 +611,6 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 * [另一种绕过 Android P以上非公开API限制的办法](https://weishu.me/2019/03/16/another-free-reflection-above-android-p/)
 
 ## Android 8.0 / 8.1
-
-* Android 版本代号：26、27 / Oreo（奥利奥）
-
-* 正式版本发布日期：2017 年 8 月 22 日、2017 年 12 月 5 日
 
 #### 新特性
 
@@ -845,10 +844,6 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
 ## Android 7.0 / 7.1.1
 
-* Android 版本代号：24、25 / Nougat（牛轧糖）
-
-* 版本正式发布日期：2016 年 5 月 18 日、2016 年 12月
-
 #### 新特性
 
 * [Android 7.0 新特性](https://developer.android.google.cn/about/versions/nougat/android-7.0?hl=zh-cn)
@@ -1007,10 +1002,6 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
 ## Android 6.0
 
-* Android 版本代号：23 / Marshmallow（棉花糖）
-
-* 版本正式发布日期： 2015 年 5 月 28 日
-
 #### 新特性
 
 * [指纹身份验证](https://developer.android.google.cn/about/versions/marshmallow/android-6.0?hl=zh-cn#fingerprint-authentication)
@@ -1096,10 +1087,6 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 * [所有的 Android 权限清单](https://developer.android.google.cn/reference/android/Manifest.permission?hl=zh_cn)
 
 ## Android 5.0 / 5.1
-
-* Android 版本代号：21、22 / Lollipop（棒棒糖）
-
-* 版本正式发布日期：2014 年 6 月 25 日
 
 #### 新特性
 
@@ -1248,10 +1235,6 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
     * [已移除锁定屏幕小部件支持](https://developer.android.google.cn/about/versions/android-5.0-changes?hl=zh-cn#%E5%B7%B2%E7%A7%BB%E9%99%A4%E9%94%81%E5%AE%9A%E5%B1%8F%E5%B9%95%E5%B0%8F%E9%83%A8%E4%BB%B6%E6%94%AF%E6%8C%81)
 
 ## Android 4.4
-
-* Android 版本代号：19、20 / KitKat（巧克力）
-
-* 版本正式发布日期：2013 年 7 月 24 日
 
 #### 新特性
 
