@@ -75,13 +75,13 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
 * [Android 9.0](#android-90)
 
-* [Android 8.0 / 8.1](#android-80-/-81)
+* [Android 8.0 / 8.1](#android-80--81)
 
-* [Android 7.0 / 7.1.1](#android-70-/-711)
+* [Android 7.0 / 7.1.1](#android-70--711)
 
 * [Android 6.0](#android-60)
 
-* [Android 5.0 / 5.1](#android-50-/-51)
+* [Android 5.0 / 5.1](#android-50--51)
 
 * [Android 4.4](#android-44)
 
@@ -222,6 +222,10 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 * [Android 12 SplashScreen API 快速入门](https://guolin.blog.csdn.net/article/details/120275319)
 
 * [Jetpack SplashScreen API 在所有 Android 系统上使用总结，内含原理分析](https://juejin.cn/post/7019839767441309733)
+
+* [深度探讨如何使用 Jetpack SplashScreen 重塑应用启动画面](https://mp.weixin.qq.com/s/qa7dRhVDpCv2U2h0rpNE0Q)
+
+* [Android 12 启动画面-SplashScreen](https://juejin.cn/post/7026188311198695432)
 
 * [Android 12 上焕然一新的小组件：美观、便捷和实用](https://juejin.cn/post/6968851189190377480)
 
@@ -369,6 +373,10 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 * [Android 11 特性调整：安装外部来源应用需要重启APP](https://cloud.tencent.com/developer/news/637591)
 
 * [Android 11 无法在后台显示自定义样式 Toast 的适配方案](https://github.com/getActivity/ToastUtils)
+
+* [知乎回答：如何评价在 Android11 中，/Android/data 文件夹无法读写？](https://www.zhihu.com/question/420023759)
+
+* [Android 11 无 Root 访问 data 目录实现、Android 11 访问 data 目录、Android 11 解除 data 目录限制、Android 11 data 空白解决](https://blog.csdn.net/qq_17827627/article/details/113931692)
 
 ## Android 10.0
 
