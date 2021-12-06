@@ -213,6 +213,8 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
 * [OPPO 开放平台 - Android 12 应用兼容性适配指导](https://open.oppomobile.com/wiki/doc#id=10960)
 
+* [Android 12 快速适配要点](https://juejin.cn/post/7037105000480243748)
+
 * [更新您的 widget 以适配 Android 12](https://www.jianshu.com/p/8dade210fcfd)
 
 * [Android 12 上全新的应用启动画面，还不适配一下？](https://juejin.cn/post/6962706834889113614)
@@ -849,6 +851,10 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 * [适配 Anddroid 8.0 多语言的解决方案](https://github.com/getActivity/MultiLanguages)
 
 * [Android 8.0 踩坑记录 - Only fullscreen opaque activities can request orientation](https://www.jianshu.com/p/d0d907754603)
+
+* [Only fullscreen opaque activities can request orientation问题及解决方案](https://www.jianshu.com/p/fbfec24d7916)
+
+* [Only fullscreen activities can request orientation 终极解决方法](https://blog.csdn.net/starry_eve/article/details/82777160)
 
 ## Android 7.0 / 7.1.1
 
