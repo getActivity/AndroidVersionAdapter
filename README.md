@@ -52,6 +52,7 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
 | Android 版本 | API 等级 |    版本代号   |        发布时间       |
 | :--------:  | :-----: | :----------: | :------------------: |
+| Android 12L |    32   |     S_V2     |  预计  2022 年 3 月   |
 | Android 12  |    31   |       S      |  2021 年 10 月 4 日   |
 | Android 11  |    30   |       R      |  2020 年 9 月 9 日    |
 | Android 10  |    29   |       Q      |  2019 年 9 月 3 日    |
@@ -67,7 +68,7 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
 ## 文档目录
 
-* [Android 12.0](#android-120)
+* [Android 12.0 / 12L](#android-120--12l)
 
 * [Android 11.0](#android-110)
 
@@ -85,27 +86,141 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
 * [Android 4.4](#android-44)
 
-## Android 12.0
+## Android 12.0 / 12L
 
 #### 新特性
 
-* [启动画面](https://developer.android.google.cn/about/versions/12/features/splash-screen?hl=zh-cn)
+* [Android 12.0 新特性](https://developer.android.google.cn/about/versions/12/features?hl=zh-cn)
 
-* [富媒体内容插入](https://developer.android.google.cn/about/versions/12/features/unified-content-api?hl=zh-cn)
+	* [用户体验](https://developer.android.google.cn/about/versions/12/features?hl=zh-cn#experiences)
+	
+		* [Material You](https://developer.android.google.cn/about/versions/12/features?hl=zh-cn#material-you)
+		
+		* [微件改进](https://developer.android.google.cn/about/versions/12/features?hl=zh-cn#widgets)
+		
+		* [富媒体内容插入](https://developer.android.google.cn/about/versions/12/features?hl=zh-cn#unified-content-api)
+		
+		* [应用启动画面 API](https://developer.android.google.cn/about/versions/12/features?hl=zh-cn#splash-screen)
+		
+		* [圆角 API](https://developer.android.google.cn/about/versions/12/features?hl=zh-cn#rounded_corner_apis)
+		
+		* [富触感反馈体验](https://developer.android.google.cn/about/versions/12/features?hl=zh-cn#haptics)
+		
+		* [AppSearch](https://developer.android.google.cn/about/versions/12/features?hl=zh-cn#appsearch)
+		
+		* [游戏模式](https://developer.android.google.cn/about/versions/12/features?hl=zh-cn#gamemode)
+		
+		* [画中画 (PiP) 改进](https://developer.android.google.cn/about/versions/12/features?hl=zh-cn#pip-improvements)
+		
+		* [允许按来电重要性排名的新通话通知](https://developer.android.google.cn/about/versions/12/features?hl=zh-cn#new-calls)
+		
+		* [通知的丰富图片支持](https://developer.android.google.cn/about/versions/12/features?hl=zh-cn#enriched_image_support_for_notifications)
+		
+		* [沉浸模式下的手势导航改进](https://developer.android.google.cn/about/versions/12/features?hl=zh-cn#immersive-mode-improvements)
+		
+		* [近期网址共享（仅限 Pixel）](https://developer.android.google.cn/about/versions/12/features?hl=zh-cn#recents-url-sharing)
+	
+	* [安全和隐私设置](https://developer.android.google.cn/about/versions/12/features?hl=zh-cn#security-privacy)
+	
+		* [隐私信息中心](https://developer.android.google.cn/about/versions/12/features?hl=zh-cn#privacy-dashboard)
+		
+		* [蓝牙权限](https://developer.android.google.cn/about/versions/12/features?hl=zh-cn#bluetooth-permissions)
+		
+		* [权限组查找](https://developer.android.google.cn/about/versions/12/features?hl=zh-cn#permission-groups)
+		
+		* [隐藏应用叠加窗口](https://developer.android.google.cn/about/versions/12/features?hl=zh-cn#hide-application-overlay-windows)
+		
+		* [已知签名者权限保护标志](https://developer.android.google.cn/about/versions/12/features?hl=zh-cn#safer-grant-signature-perms)
+		
+		* [设备属性认证](https://developer.android.google.cn/about/versions/12/features?hl=zh-cn#device-properties-verification)
+		
+		* [安全锁定屏幕通知操作](https://developer.android.google.cn/about/versions/12/features?hl=zh-cn#notification-secure)
+		
+		* [BiometricPrompt 的可本地化字符串](https://developer.android.google.cn/about/versions/12/features?hl=zh-cn#biometric-prompt)
+		
+		* [即时通讯应用中的钓鱼式攻击检测功能（仅限 Pixel）](https://developer.android.google.cn/about/versions/12/features?hl=zh-cn#pixel-phishing-detection)
+	
+	* [媒体](https://developer.android.google.cn/about/versions/12/features?hl=zh-cn#media)
+	
+		* [兼容的媒体转码](https://developer.android.google.cn/about/versions/12/features?hl=zh-cn#transcoding)
+		
+		* [性能等级](https://developer.android.google.cn/about/versions/12/features?hl=zh-cn#performance-class)
+		
+		* [视频编码改进](https://developer.android.google.cn/about/versions/12/features?hl=zh-cn#video-encoding)
+		
+		* [音频焦点](https://developer.android.google.cn/about/versions/12/features?hl=zh-cn#audio-focus)
+		
+		* [MediaDrm 更新](https://developer.android.google.cn/about/versions/12/features?hl=zh-cn#mediadrm)
+	
+	* [相机](https://developer.android.google.cn/about/versions/12/features?hl=zh-cn#camera)
+	
+		* [Camera2 供应商扩展](https://developer.android.google.cn/about/versions/12/features?hl=zh-cn#camera2-extensions)
+		
+		* [Quad Bayer 摄像头传感器支持](https://developer.android.google.cn/about/versions/12/features?hl=zh-cn#camera-sensor-support)
+	
+	* [图形和图片](https://developer.android.google.cn/about/versions/12/features?hl=zh-cn#graphics)
+	
+		* [让应用能够直接访问 Tombstone 跟踪记录](https://developer.android.google.cn/about/versions/12/features?hl=zh-cn#provide_apps_direct_access_to_tombstone_traces)
+		
+		* [AVIF 图片支持](https://developer.android.google.cn/about/versions/12/features?hl=zh-cn#avif)
+		
+		* [更简单的模糊处理、颜色滤镜及其他效果](https://developer.android.google.cn/about/versions/12/features?hl=zh-cn#rendereffect)
+		
+		* [原生动画图片解码](https://developer.android.google.cn/about/versions/12/features?hl=zh-cn#image-decoder)
+	
+	* [连接性](https://developer.android.google.cn/about/versions/12/features?hl=zh-cn#connectivity)
+	
+		* [使配套应用保持唤醒状态](https://developer.android.google.cn/about/versions/12/features?hl=zh-cn#keep-awake)
+		
+		* [配套设备管理器配置文件](https://developer.android.google.cn/about/versions/12/features?hl=zh-cn#cdm-profiles)
+		
+		* [带宽估测改进](https://developer.android.google.cn/about/versions/12/features?hl=zh-cn#bandwidth-estimation)
+		
+		* [Wi-Fi 感知 (NAN) 增强功能](https://developer.android.google.cn/about/versions/12/features?hl=zh-cn#wifi-aware-enhancements)
+		
+		* [并发点对点 + 互联网连接](https://developer.android.google.cn/about/versions/12/features?hl=zh-cn#concurrent-connections)
+		
+		* [为 NFC 付款启用屏幕关闭](https://developer.android.google.cn/about/versions/12/features?hl=zh-cn#screen-on-nfc)
+	
+	* [存储](https://developer.android.google.cn/about/versions/12/features?hl=zh-cn#storage)
+	
+	* [核心功能](https://developer.android.google.cn/about/versions/12/features?hl=zh-cn#core)
+	
+		* [自动更新应用](https://developer.android.google.cn/about/versions/12/features?hl=zh-cn#automatic-app-updates)
+		
+		* [设备芯片组信息](https://developer.android.google.cn/about/versions/12/features?hl=zh-cn#soc-info)
+		
+		* [核心 Java API 的更新](https://developer.android.google.cn/about/versions/12/features?hl=zh-cn#java-api)
 
-* [兼容的媒体转码](https://developer.android.google.cn/about/versions/12/features/compatible-media-transcoding?hl=zh-cn)
+	* [微件改进](https://developer.android.google.cn/about/versions/12/features/widgets?hl=zh-cn)
 
-* [性能等级](https://developer.android.google.cn/about/versions/12/features/performance-class?hl=zh-cn)
+	* [企业版的新变化](https://developer.android.google.cn/about/versions/12/work?hl=zh-cn)
 
-* [音频焦点改进](https://developer.android.google.cn/about/versions/12/features/audio-focus-improvements?hl=zh-cn)
+* [Android 12L 功能和变更](https://developer.android.google.cn/about/versions/12/12L/summary?hl=zh-cn)
 
-* [画中画 (PiP) 改进](https://developer.android.google.cn/about/versions/12/features/pip-improvements?hl=zh-cn)
-
-* [Android 12 中的新蓝牙权限](https://developer.android.google.cn/about/versions/12/features/bluetooth-permissions?hl=zh-cn)
-
-* [Android 12 微件改进](https://developer.android.google.cn/about/versions/12/features/widgets?hl=zh-cn)
-
-* [Android 12 中的企业功能新变化](https://developer.android.google.cn/about/versions/12/work?hl=zh-cn)
+    * [针对大屏设备优化了操作系统](https://developer.android.google.cn/about/versions/12/12L/summary?hl=zh-cn#system-ui)
+    
+        * [面向开发者：媒体投影的变化](https://developer.android.google.cn/about/versions/12/12L/summary?hl=zh-cn#media-projection,)
+    
+    * [强大直观的多任务处理功能](https://developer.android.google.cn/about/versions/12/12L/summary?hl=zh-cn#multitasking)
+    
+        * [面向开发者：在分屏模式下测试应用](https://developer.android.google.cn/about/versions/12/12L/summary?hl=zh-cn#dev-test-splitscreen,)
+    
+    * [改善了兼容性体验](https://developer.android.google.cn/about/versions/12/12L/summary?hl=zh-cn#compatibility)
+    
+        * [面向开发者：在兼容模式下检查应用](https://developer.android.google.cn/about/versions/12/12L/summary?hl=zh-cn#dev-check-compat,)
+    
+    * [针对大屏设备的更多更新和资源](https://developer.android.google.cn/about/versions/12/12L/summary?hl=zh-cn#more-updates)
+    
+        * [大屏设备上 Google Play 的变化](https://developer.android.google.cn/about/versions/12/12L/summary?hl=zh-cn#google-play,)
+    
+        * [使用 Jetpack WindowManager 嵌入 activity](https://developer.android.google.cn/about/versions/12/12L/summary?hl=zh-cn#dev-activity-embedding,)
+    
+        * [设备屏幕方向请求](https://developer.android.google.cn/about/versions/12/12L/summary?hl=zh-cn#dev-device-orientation-request,)
+    
+    * [让您的应用做好准备](https://developer.android.google.cn/about/versions/12/12L/summary?hl=zh-cn#get-apps-ready)
+    
+        * [要测试的内容](https://developer.android.google.cn/about/versions/12/12L/summary?hl=zh-cn#what-to-test)
 
 #### 行为变更
 
@@ -231,9 +346,17 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
 * [Android 12 上焕然一新的小组件：美观、便捷和实用](https://juejin.cn/post/6968851189190377480)
 
+* [别羡慕苹果的小部件了，安卓也有！](https://juejin.cn/post/7037303315595526157)
+
 * [Android 12 蓝牙权限适配方案](https://github.com/getActivity/XXPermissions)
 
+* [Android 12 新特性 android:exported 属性](https://www.jianshu.com/p/89dc6c109834)
+
 * [The application could not be installed: `INSTALL_PARSE_FAILED_MANIFEST_MALFORMED`](https://developer.android.google.cn/about/versions/12/behavior-changes-12?hl=zh-cn#exported)
+
+* [详解 Android 12L｜更好地适配大屏幕设备](https://mp.weixin.qq.com/s/NN0CzWoKfIALPZbHjWQk5Q)
+
+* [正式版 API 确定 | Android 12L Beta 1 发布](https://mp.weixin.qq.com/s/G6UEensT8J4ZWDuSGYTwNA)
 
 ## Android 11.0
 
@@ -1340,25 +1463,35 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
 #### 作者其他开源项目
 
-* 安卓技术中台：[AndroidProject](https://github.com/getActivity/AndroidProject)
+* 安卓技术中台：[AndroidProject](https://github.com/getActivity/AndroidProject) ![](https://img.shields.io/github/stars/getActivity/AndroidProject.svg) ![](https://img.shields.io/github/forks/getActivity/AndroidProject.svg)
 
-* 网络框架：[EasyHttp](https://github.com/getActivity/EasyHttp)
+* 安卓技术中台 Kt 版：[AndroidProject-Kotlin](https://github.com/getActivity/AndroidProject-Kotlin) ![](https://img.shields.io/github/stars/getActivity/AndroidProject-Kotlin.svg) ![](https://img.shields.io/github/forks/getActivity/AndroidProject-Kotlin.svg)
 
-* 吐司框架：[ToastUtils](https://github.com/getActivity/ToastUtils)
+* 权限框架：[XXPermissions](https://github.com/getActivity/XXPermissions) ![](https://img.shields.io/github/stars/getActivity/XXPermissions.svg) ![](https://img.shields.io/github/forks/getActivity/XXPermissions.svg)
 
-* 权限框架：[XXPermissions](https://github.com/getActivity/XXPermissions)
+* 吐司框架：[ToastUtils](https://github.com/getActivity/ToastUtils) ![](https://img.shields.io/github/stars/getActivity/ToastUtils.svg) ![](https://img.shields.io/github/forks/getActivity/ToastUtils.svg)
 
-* 标题栏框架：[TitleBar](https://github.com/getActivity/TitleBar)
+* 网络框架：[EasyHttp](https://github.com/getActivity/EasyHttp) ![](https://img.shields.io/github/stars/getActivity/EasyHttp.svg) ![](https://img.shields.io/github/forks/getActivity/EasyHttp.svg)
 
-* 悬浮窗框架：[XToast](https://github.com/getActivity/XToast)
+* 标题栏框架：[TitleBar](https://github.com/getActivity/TitleBar) ![](https://img.shields.io/github/stars/getActivity/TitleBar.svg) ![](https://img.shields.io/github/forks/getActivity/TitleBar.svg)
 
-* 国际化框架：[MultiLanguages](https://github.com/getActivity/MultiLanguages)
+* 悬浮窗框架：[XToast](https://github.com/getActivity/XToast) ![](https://img.shields.io/github/stars/getActivity/XToast.svg) ![](https://img.shields.io/github/forks/getActivity/XToast.svg)
 
-* Shape 框架：[ShapeView](https://github.com/getActivity/ShapeView)
+* Shape 框架：[ShapeView](https://github.com/getActivity/ShapeView) ![](https://img.shields.io/github/stars/getActivity/ShapeView.svg) ![](https://img.shields.io/github/forks/getActivity/ShapeView.svg)
 
-* Gson 解析容错：[GsonFactory](https://github.com/getActivity/GsonFactory)
+* 语种切换框架：[MultiLanguages](https://github.com/getActivity/MultiLanguages) ![](https://img.shields.io/github/stars/getActivity/MultiLanguages.svg) ![](https://img.shields.io/github/forks/getActivity/MultiLanguages.svg)
 
-* 日志查看框架：[Logcat](https://github.com/getActivity/Logcat)
+* Gson 解析容错：[GsonFactory](https://github.com/getActivity/GsonFactory) ![](https://img.shields.io/github/stars/getActivity/GsonFactory.svg) ![](https://img.shields.io/github/forks/getActivity/GsonFactory.svg)
+
+* 日志查看框架：[Logcat](https://github.com/getActivity/Logcat) ![](https://img.shields.io/github/stars/getActivity/Logcat.svg) ![](https://img.shields.io/github/forks/getActivity/Logcat.svg)
+
+* Android 代码规范：[AndroidCodeStandard](https://github.com/getActivity/AndroidCodeStandard) ![](https://img.shields.io/github/stars/getActivity/AndroidCodeStandard.svg) ![](https://img.shields.io/github/forks/getActivity/AndroidCodeStandard.svg)
+
+* Studio 精品插件：[StudioPlugins](https://github.com/getActivity/StudioPlugins) ![](https://img.shields.io/github/stars/getActivity/StudioPlugins.svg) ![](https://img.shields.io/github/forks/getActivity/StudioPlugins.svg)
+
+* 表情包大集合：[EmojiPackage](https://github.com/getActivity/EmojiPackage) ![](https://img.shields.io/github/stars/getActivity/EmojiPackage.svg) ![](https://img.shields.io/github/forks/getActivity/EmojiPackage.svg)
+
+* 省市区 Json 数据：[ProvinceJson](https://github.com/getActivity/ProvinceJson) ![](https://img.shields.io/github/stars/getActivity/ProvinceJson.svg) ![](https://img.shields.io/github/forks/getActivity/ProvinceJson.svg)
 
 #### 微信公众号：Android轮子哥
 
