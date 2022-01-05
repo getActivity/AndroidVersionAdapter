@@ -344,6 +344,8 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
 * [Android 12 启动画面-SplashScreen](https://juejin.cn/post/7026188311198695432)
 
+* [从 Jetpack SplashScreen 深度探讨 App 启动画面的前世今生～](https://juejin.cn/post/7044713406774902820)
+
 * [Android 12 上焕然一新的小组件：美观、便捷和实用](https://juejin.cn/post/6968851189190377480)
 
 * [别羡慕苹果的小部件了，安卓也有！](https://juejin.cn/post/7037303315595526157)
