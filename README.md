@@ -322,43 +322,53 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
 #### 相关资源
 
-* [Android 12 正式发布 | 开发者们的全新舞台](https://www.jianshu.com/p/92905ae63532)
+* 适配简介
 
-* [Android 12 适配简介](https://juejin.cn/post/7014491424112508936)
+    * [Android 12 正式发布 | 开发者们的全新舞台](https://www.jianshu.com/p/92905ae63532)
 
-* [OPPO 开放平台 - Android 12 应用兼容性适配指导](https://open.oppomobile.com/wiki/doc#id=10960)
+    * [Android 12 适配简介](https://juejin.cn/post/7014491424112508936)
 
-* [Android 12 快速适配要点](https://juejin.cn/post/7037105000480243748)
+    * [OPPO 开放平台 - Android 12 应用兼容性适配指导](https://open.oppomobile.com/wiki/doc#id=10960)
 
-* [更新您的 widget 以适配 Android 12](https://www.jianshu.com/p/8dade210fcfd)
+    * [Android 12 快速适配要点](https://juejin.cn/post/7037105000480243748)
 
-* [Android 12 上全新的应用启动画面，还不适配一下？](https://juejin.cn/post/6962706834889113614)
+* SplashScreen 适配
 
-* [SplashScreen：为全新的应用启动效果赋能](https://blog.csdn.net/allisonchen/article/details/119656618)
+    * [SplashScreen：为全新的应用启动效果赋能](https://blog.csdn.net/allisonchen/article/details/119656618)
 
-* [Android 12 SplashScreen API 快速入门](https://guolin.blog.csdn.net/article/details/120275319)
+    * [Android 12 SplashScreen API 快速入门](https://guolin.blog.csdn.net/article/details/120275319)
 
-* [Jetpack SplashScreen API 在所有 Android 系统上使用总结，内含原理分析](https://juejin.cn/post/7019839767441309733)
+    * [Jetpack SplashScreen API 在所有 Android 系统上使用总结，内含原理分析](https://juejin.cn/post/7019839767441309733)
 
-* [深度探讨如何使用 Jetpack SplashScreen 重塑应用启动画面](https://mp.weixin.qq.com/s/qa7dRhVDpCv2U2h0rpNE0Q)
+    * [深度探讨如何使用 Jetpack SplashScreen 重塑应用启动画面](https://mp.weixin.qq.com/s/qa7dRhVDpCv2U2h0rpNE0Q)
 
-* [Android 12 启动画面-SplashScreen](https://juejin.cn/post/7026188311198695432)
+    * [Android 12 启动画面-SplashScreen](https://juejin.cn/post/7026188311198695432)
 
-* [从 Jetpack SplashScreen 深度探讨 App 启动画面的前世今生～](https://juejin.cn/post/7044713406774902820)
+    * [从 Jetpack SplashScreen 深度探讨 App 启动画面的前世今生～](https://juejin.cn/post/7044713406774902820)
 
-* [Android 12 上焕然一新的小组件：美观、便捷和实用](https://juejin.cn/post/6968851189190377480)
+    * [Android 12 上全新的应用启动画面，还不适配一下？](https://juejin.cn/post/6962706834889113614)
 
-* [别羡慕苹果的小部件了，安卓也有！](https://juejin.cn/post/7037303315595526157)
+* 桌面小组件适配
 
-* [Android 12 蓝牙权限适配方案](https://github.com/getActivity/XXPermissions)
+    * [更新您的 widget 以适配 Android 12](https://www.jianshu.com/p/8dade210fcfd)
 
-* [Android 12 新特性 android:exported 属性](https://www.jianshu.com/p/89dc6c109834)
+    * [Android 12 上焕然一新的小组件：美观、便捷和实用](https://juejin.cn/post/6968851189190377480)
 
-* [The application could not be installed: `INSTALL_PARSE_FAILED_MANIFEST_MALFORMED`](https://developer.android.google.cn/about/versions/12/behavior-changes-12?hl=zh-cn#exported)
+    * [别羡慕苹果的小部件了，安卓也有！](https://juejin.cn/post/7037303315595526157)
 
-* [详解 Android 12L｜更好地适配大屏幕设备](https://mp.weixin.qq.com/s/NN0CzWoKfIALPZbHjWQk5Q)
+* Android 12 L 适配
 
-* [正式版 API 确定 | Android 12L Beta 1 发布](https://mp.weixin.qq.com/s/G6UEensT8J4ZWDuSGYTwNA)
+    * [详解 Android 12L｜更好地适配大屏幕设备](https://mp.weixin.qq.com/s/NN0CzWoKfIALPZbHjWQk5Q)
+
+    * [正式版 API 确定 | Android 12L Beta 1 发布](https://mp.weixin.qq.com/s/G6UEensT8J4ZWDuSGYTwNA)
+
+* 其他适配
+
+    * [Android 12 蓝牙权限适配方案](https://github.com/getActivity/XXPermissions)
+
+    * [Android 12 新特性 android:exported 属性](https://www.jianshu.com/p/89dc6c109834)
+
+    * [The application could not be installed: `INSTALL_PARSE_FAILED_MANIFEST_MALFORMED`](https://developer.android.google.cn/about/versions/12/behavior-changes-12?hl=zh-cn#exported)
 
 ## Android 11.0
 
@@ -481,29 +491,33 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
 #### 相关资源
 
-* [Android 11 开发者手册](android_11_dev_booklet.pdf)
+* 适配简介
 
-* [拖不得了，Android11真的要来了，最全适配实践指南奉上](https://juejin.im/post/6860370635664261128)
+    * [Android 11 开发者手册](android_11_dev_booklet.pdf)
 
-* [Android 11 变更及适配攻略](https://juejin.cn/post/6948211914455384072)
+    * [拖不得了，Android11真的要来了，最全适配实践指南奉上](https://juejin.im/post/6860370635664261128)
 
-* [OPPO 开放平台 - Android 11 应用兼容性适配指导](https://open.oppomobile.com/wiki/doc#id=10724)
+    * [Android 11 变更及适配攻略](https://juejin.cn/post/6948211914455384072)
 
-* [Android 11 外部存储权限适配指南及方案](https://www.jianshu.com/p/e94cea26e213)
+    * [OPPO 开放平台 - Android 11 应用兼容性适配指导](https://open.oppomobile.com/wiki/doc#id=10724)
 
-* [微信开放平台 - Android 11 系统策略更新](https://open.weixin.qq.com/cgi-bin/announce?action=getannouncement&key=11600155960jI9EY&version=&lang=&token=)
+* 其他适配
 
-* [Android 11 绕过反射限制](https://www.jianshu.com/p/6546ce67c8e0)
+    * [Android 11 外部存储权限适配指南及方案](https://www.jianshu.com/p/e94cea26e213)
 
-* [Android 11 软件包可见性适配](https://www.jianshu.com/p/d1ccd425c4ce)
+    * [Android 11 绕过反射限制](https://www.jianshu.com/p/6546ce67c8e0)
 
-* [Android 11 特性调整：安装外部来源应用需要重启APP](https://cloud.tencent.com/developer/news/637591)
+    * [Android 11 软件包可见性适配](https://www.jianshu.com/p/d1ccd425c4ce)
 
-* [Android 11 无法在后台显示自定义样式 Toast 的适配方案](https://github.com/getActivity/ToastUtils)
+    * [Android 11 特性调整：安装外部来源应用需要重启APP](https://cloud.tencent.com/developer/news/637591)
 
-* [知乎回答：如何评价在 Android11 中，/Android/data 文件夹无法读写？](https://www.zhihu.com/question/420023759)
+    * [Android 11 无法在后台显示自定义样式 Toast 的适配方案](https://github.com/getActivity/ToastUtils)
 
-* [Android 11 无 Root 访问 data 目录实现、Android 11 访问 data 目录、Android 11 解除 data 目录限制、Android 11 data 空白解决](https://blog.csdn.net/qq_17827627/article/details/113931692)
+    * [微信开放平台 - Android 11 系统策略更新](https://open.weixin.qq.com/cgi-bin/announce?action=getannouncement&key=11600155960jI9EY&version=&lang=&token=)
+
+    * [知乎回答：如何评价在 Android11 中，/Android/data 文件夹无法读写？](https://www.zhihu.com/question/420023759)
+
+    * [Android 11 无 Root 访问 data 目录实现、Android 11 访问 data 目录、Android 11 解除 data 目录限制、Android 11 data 空白解决](https://blog.csdn.net/qq_17827627/article/details/113931692)
 
 ## Android 10.0
 
@@ -607,27 +621,35 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
 #### 相关资源
 
-* [Android 10 适配攻略](https://juejin.cn/post/6844904073024503822)
+* 适配简介
 
-* [暂时停用分区存储](https://developer.android.google.cn/training/data-storage/use-cases#opt-out-scoped-storage)
+   * [Android 10 适配攻略](https://juejin.cn/post/6844904073024503822)
 
-* [Android 存储用例和最佳做法](https://developer.android.google.cn/training/data-storage/use-cases)
+* 分区存储适配
 
-* [Android 10(Q)/11(R) 分区存储适配](https://juejin.cn/post/6862633674089693197)
+   * [暂时停用分区存储](https://developer.android.google.cn/training/data-storage/use-cases#opt-out-scoped-storage)
 
-* [Android 10 分区存储适配](https://www.jianshu.com/p/37feb5116191)
+   * [Android 存储用例和最佳做法](https://developer.android.google.cn/training/data-storage/use-cases)
 
-* [Android 10 适配要点，作用域存储](https://blog.csdn.net/guolin_blog/article/details/105419420)
+   * [Android 10(Q)/11(R) 分区存储适配](https://juejin.cn/post/6862633674089693197)
 
-* [Android MediaStore Api 使用](https://ppting.me/2020/04/19/2020_04_19_how_to_use_Android_MediaStore_Api/)
+   * [Android 10 分区存储适配](https://www.jianshu.com/p/37feb5116191)
 
-* [Android 深色模式适配原理分析](https://www.jianshu.com/p/1aaf0cee7a2f)
+   * [Android 10 适配要点，作用域存储](https://blog.csdn.net/guolin_blog/article/details/105419420)
 
-* [Android 10 适配要点，深色主题](https://guolin.blog.csdn.net/article/details/106061657)
+   * [Android MediaStore Api 使用](https://ppting.me/2020/04/19/2020_04_19_how_to_use_Android_MediaStore_Api/)
 
-* [Android 深色模式的项目应用](https://juejin.cn/post/7022270811524300808)
+* 深色主题适配
 
-* [Android 折叠屏适配攻略](https://juejin.cn/post/6844903889267867656)
+   * [Android 深色模式适配原理分析](https://www.jianshu.com/p/1aaf0cee7a2f)
+
+   * [Android 10 适配要点，深色主题](https://guolin.blog.csdn.net/article/details/106061657)
+
+   * [Android 深色模式的项目应用](https://juejin.cn/post/7022270811524300808)
+
+* 其他适配
+
+   * [Android 折叠屏适配攻略](https://juejin.cn/post/6844903889267867656)
 
 ## Android 9.0
 
@@ -731,19 +753,27 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
 #### 相关资源
 
-* [Android 9.0 适配指南](https://juejin.cn/post/6844903906942648334)
+* 适配简介
 
-* [Android 刘海屏适配全攻略](https://www.jianshu.com/p/561f7241153b)
+    * [Android 9.0 适配指南](https://juejin.cn/post/6844903906942648334)
 
-* [Android 9.0 系统新特性，对刘海屏设备进行适配](https://guolin.blog.csdn.net/article/details/103112795)
+* 刘海屏适配
 
-* [Android 9.0/P WebView 多进程使用的问题](https://www.cnblogs.com/renhui/p/13942060.html)
+    * [Android 刘海屏适配全攻略](https://www.jianshu.com/p/561f7241153b)
 
-* [反射黑名单（根据包名划分）](https://developer.android.google.cn/reference/packages.html)
+    * [Android 9.0 系统新特性，对刘海屏设备进行适配](https://guolin.blog.csdn.net/article/details/103112795)
 
-* [反射黑名单（根据类名划分）](https://developer.android.google.cn/reference/classes)
+* 反射 API 适配
 
-* [另一种绕过 Android P以上非公开API限制的办法](https://weishu.me/2019/03/16/another-free-reflection-above-android-p/)
+    * [反射黑名单（根据包名划分）](https://developer.android.google.cn/reference/packages.html)
+
+    * [反射黑名单（根据类名划分）](https://developer.android.google.cn/reference/classes)
+
+    * [另一种绕过 Android P以上非公开API限制的办法](https://weishu.me/2019/03/16/another-free-reflection-above-android-p/)
+
+* 其他适配
+
+    * [Android 9.0/P WebView 多进程使用的问题](https://www.cnblogs.com/renhui/p/13942060.html)
 
 ## Android 8.0 / 8.1
 
@@ -965,21 +995,29 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
 #### 相关资源
 
-* [Android 8.0 适配指北](https://weilu.blog.csdn.net/article/details/80965631)
+* 适配简介
 
-* [Android 通知栏微技巧，8.0 系统中通知栏的适配](https://blog.csdn.net/guolin_blog/article/details/79854070)
+    * [Android 8.0 适配指北](https://weilu.blog.csdn.net/article/details/80965631)
 
-* [创建和管理通知渠道](https://developer.android.google.cn/training/notify-user/channels)
+* 通知渠道适配
 
-* [Android 应用图标微技巧，8.0 系统中应用图标的适配](https://blog.csdn.net/guolin_blog/article/details/79417483)
+    * [Android 通知栏微技巧，8.0 系统中通知栏的适配](https://blog.csdn.net/guolin_blog/article/details/79854070)
 
-* [适配 Anddroid 8.0 多语言的解决方案](https://github.com/getActivity/MultiLanguages)
+    * [创建和管理通知渠道](https://developer.android.google.cn/training/notify-user/channels)
 
-* [Android 8.0 踩坑记录 - Only fullscreen opaque activities can request orientation](https://www.jianshu.com/p/d0d907754603)
+    * [Android 应用图标微技巧，8.0 系统中应用图标的适配](https://blog.csdn.net/guolin_blog/article/details/79417483)
 
-* [Only fullscreen opaque activities can request orientation问题及解决方案](https://www.jianshu.com/p/fbfec24d7916)
+* 透明 Activity 方向适配
 
-* [Only fullscreen activities can request orientation 终极解决方法](https://blog.csdn.net/starry_eve/article/details/82777160)
+    * [Android 8.0 踩坑记录 - Only fullscreen opaque activities can request orientation](https://www.jianshu.com/p/d0d907754603)
+
+    * [Only fullscreen opaque activities can request orientation问题及解决方案](https://www.jianshu.com/p/fbfec24d7916)
+
+    * [Only fullscreen activities can request orientation 终极解决方法](https://blog.csdn.net/starry_eve/article/details/82777160)
+
+* 其他适配
+
+    * [适配 Anddroid 8.0 多语言的解决方案](https://github.com/getActivity/MultiLanguages)
 
 ## Android 7.0 / 7.1.1
 
@@ -1125,19 +1163,25 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
 #### 相关资源
 
-* [Android 7.0 脱坑指南](https://weilu.blog.csdn.net/article/details/77404712)
+* 适配简介
 
-* [Android 7.0 适配教程，心得](https://www.jianshu.com/p/56b9fb319310)
+    * [Android 7.0 脱坑指南](https://weilu.blog.csdn.net/article/details/77404712)
 
-* [Android 一起来看看 7.0 的新特性 FileProvider](https://www.jianshu.com/p/be817f3aa145)
+    * [Android 7.0 适配教程，心得](https://www.jianshu.com/p/56b9fb319310)
 
-* [官方文档 - FileProvider 类](https://developer.android.google.cn/reference/androidx/core/content/FileProvider?hl=zh-cn)
+* FileProvider适配
 
-* [Toast 在 Android 7.1 崩溃排查及修复](https://www.jianshu.com/p/437f473017d6)
+    * [Android 一起来看看 7.0 的新特性 FileProvider](https://www.jianshu.com/p/be817f3aa145)
 
-* [PopupWindow 在 Android N(7.0) 的兼容性问题](https://www.jianshu.com/p/0df10893bf5b)
+    * [官方文档 - FileProvider 类](https://developer.android.google.cn/reference/androidx/core/content/FileProvider?hl=zh-cn)
 
-* [Android 7.0 WebView 部分机型打不开](https://blog.csdn.net/u012347067/article/details/70829013)
+* 其他适配
+
+    * [Toast 在 Android 7.1 崩溃排查及修复](https://www.jianshu.com/p/437f473017d6)
+
+    * [PopupWindow 在 Android N(7.0) 的兼容性问题](https://www.jianshu.com/p/0df10893bf5b)
+
+    * [Android 7.0 WebView 部分机型打不开](https://blog.csdn.net/u012347067/article/details/70829013)
 
 ## Android 6.0
 
