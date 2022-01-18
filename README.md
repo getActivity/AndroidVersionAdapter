@@ -332,6 +332,8 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
     * [Android 12 快速适配要点](https://juejin.cn/post/7037105000480243748)
 
+    * [来了！Android 12 适配你准备好了吗？](https://juejin.cn/post/7031411081457336357)
+
 * SplashScreen 适配
 
     * [SplashScreen：为全新的应用启动效果赋能](https://blog.csdn.net/allisonchen/article/details/119656618)
@@ -361,6 +363,8 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
     * [详解 Android 12L｜更好地适配大屏幕设备](https://mp.weixin.qq.com/s/NN0CzWoKfIALPZbHjWQk5Q)
 
     * [正式版 API 确定 | Android 12L Beta 1 发布](https://mp.weixin.qq.com/s/G6UEensT8J4ZWDuSGYTwNA)
+
+    * [Android 与 Chrome OS 中针对大屏幕设备的更新](https://mp.weixin.qq.com/s/F5Jk-nVjeHOUe5qiSIEE3A)
 
 * 其他适配
 
@@ -518,6 +522,8 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
     * [知乎回答：如何评价在 Android11 中，/Android/data 文件夹无法读写？](https://www.zhihu.com/question/420023759)
 
     * [Android 11 无 Root 访问 data 目录实现、Android 11 访问 data 目录、Android 11 解除 data 目录限制、Android 11 data 空白解决](https://blog.csdn.net/qq_17827627/article/details/113931692)
+
+    * [文本转语音 TTS 开发 Android11 适配方案](https://www.jianshu.com/p/d1767a397c10)
 
 ## Android 10.0
 
@@ -1011,9 +1017,11 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
     * [Android 8.0 踩坑记录 - Only fullscreen opaque activities can request orientation](https://www.jianshu.com/p/d0d907754603)
 
-    * [Only fullscreen opaque activities can request orientation问题及解决方案](https://www.jianshu.com/p/fbfec24d7916)
+    * [Only fullscreen opaque activities can request orientation 问题及解决方案](https://www.jianshu.com/p/fbfec24d7916)
 
     * [Only fullscreen activities can request orientation 终极解决方法](https://blog.csdn.net/starry_eve/article/details/82777160)
+
+    * ["Only fullscreen opaque activities can request orientation "问题再分析](https://juejin.cn/post/6844903808485556232)
 
 * 其他适配
 
@@ -1506,6 +1514,10 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 * [AlarmManager](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#BehaviorAlarms)
 
 * [ContentResolver](https://developer.android.google.cn/about/versions/android-4.4?hl=zh-cn#BehaviorSync)
+
+#### 相关资源
+
+* [Android通知还能这么玩？](https://juejin.cn/post/7046282271237603341)
 
 #### 作者其他开源项目
 
