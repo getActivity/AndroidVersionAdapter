@@ -771,9 +771,7 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
 * 反射 API 适配
 
-    * [反射黑名单（根据包名划分）](https://developer.android.google.cn/reference/packages.html)
-
-    * [反射黑名单（根据类名划分）](https://developer.android.google.cn/reference/classes)
+    * [区分 SDK 接口和非 SDK 接口](https://developer.android.google.cn/guide/app-compatibility/restrictions-non-sdk-interfaces?hl=zh-cn)
 
     * [另一种绕过 Android P以上非公开API限制的办法](https://weishu.me/2019/03/16/another-free-reflection-above-android-p/)
 
@@ -1518,6 +1516,10 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 #### 相关资源
 
 * [Android通知还能这么玩？](https://juejin.cn/post/7046282271237603341)
+
+* [Android NotificationListenerService 的使用](https://blog.csdn.net/HuaKaiBuXiangLi/article/details/79064363)
+
+* [Android 通知使用权（NotificationListenerService）的使用](https://blog.csdn.net/lyz_zyx/article/details/65440927)
 
 #### 作者其他开源项目
 
