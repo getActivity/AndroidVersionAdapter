@@ -773,7 +773,11 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
     * [区分 SDK 接口和非 SDK 接口](https://developer.android.google.cn/guide/app-compatibility/restrictions-non-sdk-interfaces?hl=zh-cn)
 
-    * [另一种绕过 Android P以上非公开API限制的办法](https://weishu.me/2019/03/16/another-free-reflection-above-android-p/)
+    * [一种绕过 Android P 对非 SDK 接口限制的简单方法](https://weishu.me/2018/06/07/free-reflection-above-android-p)
+
+    * [另一种绕过 Android P 以上非公开 API 限制的办法](https://weishu.me/2019/03/16/another-free-reflection-above-android-p)
+
+    * [隐藏 API 反射框架 FreeReflection](https://github.com/tiann/FreeReflection)
 
 * 其他适配
 
@@ -1557,7 +1561,7 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
 ![](https://raw.githubusercontent.com/getActivity/Donate/master/picture/official_ccount.png)
 
-#### Android 技术分享 QQ 群：78797078
+#### Android 技术 Q 群：10047167
 
 #### 如果您觉得我的开源库帮你节省了大量的开发时间，请扫描下方的二维码随意打赏，要是能打赏个 10.24 :monkey_face:就太:thumbsup:了。您的支持将鼓励我继续创作:octocat:
 
