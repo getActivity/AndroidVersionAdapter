@@ -372,6 +372,8 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
     * [Android 12 新特性 android:exported 属性](https://www.jianshu.com/p/89dc6c109834)
 
+    * [Android 12 自动适配 exported 深入解析避坑](https://juejin.cn/post/7074018771161219103)
+
     * [The application could not be installed: `INSTALL_PARSE_FAILED_MANIFEST_MALFORMED`](https://developer.android.google.cn/about/versions/12/behavior-changes-12?hl=zh-cn#exported)
 
 ## Android 11.0
@@ -1550,6 +1552,8 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 * 日志查看框架：[Logcat](https://github.com/getActivity/Logcat) ![](https://img.shields.io/github/stars/getActivity/Logcat.svg) ![](https://img.shields.io/github/forks/getActivity/Logcat.svg)
 
 * Android 代码规范：[AndroidCodeStandard](https://github.com/getActivity/AndroidCodeStandard) ![](https://img.shields.io/github/stars/getActivity/AndroidCodeStandard.svg) ![](https://img.shields.io/github/forks/getActivity/AndroidCodeStandard.svg)
+
+* Android 开源排行榜：[AndroidGithubBoss](https://github.com/getActivity/AndroidGithubBoss) ![](https://img.shields.io/github/stars/getActivity/AndroidGithubBoss.svg) ![](https://img.shields.io/github/forks/getActivity/AndroidGithubBoss.svg)
 
 * Studio 精品插件：[StudioPlugins](https://github.com/getActivity/StudioPlugins) ![](https://img.shields.io/github/stars/getActivity/StudioPlugins.svg) ![](https://img.shields.io/github/forks/getActivity/StudioPlugins.svg)
 
