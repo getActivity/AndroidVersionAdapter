@@ -20,14 +20,15 @@
 
 ## 适配流程
 
-* 这里以适配 `Android 12` 为例子，第一步将主模块中的 `build.gradle` 文件中修改 `targetSdkVersion` 和 `compileSdkVersion` 这两个的值
+* 这里以适配 `Android 13` 为例子，第一步将主模块中的 `build.gradle` 文件中修改 `targetSdkVersion` 和 `compileSdkVersion` 这两个的值
 
 ```groovy
 android {
 
-    compileSdkVersion 31
+    compileSdkVersion 33
     defaultConfig {
-        targetSdkVersion 31
+        ......
+        targetSdkVersion 33
     }
 }
 ```
@@ -35,7 +36,7 @@ android {
 * 接下来在代码中做一些版本的判断，并且做好新版本的适配和旧版本的兼容
 
 ```java
-if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
     ......
 } else {
     ......
@@ -50,23 +51,86 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
 * 最后附上一张 Android 版本信息对应表
 
-| Android 版本 | API 等级 |    版本代号   |        发布时间       |
-| :--------:  | :-----: | :----------: | :------------------: |
-| Android 12L |    32   |     S_V2     |  预计  2022 年 3 月   |
-| Android 12  |    31   |       S      |  2021 年 10 月 4 日   |
-| Android 11  |    30   |       R      |  2020 年 9 月 9 日    |
-| Android 10  |    29   |       Q      |  2019 年 9 月 3 日    |
-| Android 9.0 |    28   |       P      |  2018 年 8 月 7 日    |
-| Android 8.1 |    27   |     O_MR1    |  2017 年 12 月 5 日   |
-| Android 8.0 |    26   |       O      |  2017 年 8 月 22 日   |
-| Android 7.1 |    25   |     N_MR1    |  2016 年 12 月 5 日   |
-| Android 7.0 |    24   |       N      |  2016 年 8 月 22 日   |
-| Android 6.0 |    23   |       M      |  2015 年 9 月 29 日   |
-| Android 5.1 |    22   | LOLLIPOP_MR1 |  2015 年 3 月 10 日   |
-| Android 5.0 |    21   |   LOLLIPOP   |  2014 年 10 月 15 日  |
-| Android 4.4 |    19   |    KITKAT    |  2013 年 10 月 31 日  |
+| Android 版本 | API 等级 |    版本代号   | 市场占有率 |        发布时间       |
+| :--------:  | :-----: | :----------: | :-------: | :------------------: |
+| Android 13  |    33   |   TIRAMISU   |  暂无数据  |  2022 年 8 月 16 日   |
+| Android 12L |    32   |     S_V2     |  暂无数据  |  2022 年 3 月 9 日    |
+| Android 12  |    31   |       S      |    20.6%  |  2021 年 10 月 4 日   |
+| Android 11  |    30   |       R      |    29.6%  |  2020 年 9 月 9 日    |
+| Android 10  |    29   |       Q      |    21.8%  |  2019 年 9 月 3 日    |
+| Android 9.0 |    28   |       P      |    10.7%  |  2018 年 8 月 7 日    |
+| Android 8.1 |    27   |     O_MR1    |    5.5%   |  2017 年 12 月 5 日   |
+| Android 8.0 |    26   |       O      |    2.6%   |  2017 年 8 月 22 日   |
+| Android 7.1 |    25   |     N_MR1    |    1.4%   |  2016 年 12 月 5 日   |
+| Android 7.0 |    24   |       N      |    2.6%   |  2016 年 8 月 22 日   |
+| Android 6.0 |    23   |       M      |    2.3%   |  2015 年 9 月 29 日   |
+| Android 5.1 |    22   | LOLLIPOP_MR1 |    1.4%   |  2015 年 3 月 10 日   |
+| Android 5.0 |    21   |   LOLLIPOP   |    0.7%   |  2014 年 10 月 15 日  |
+| Android 4.4 |    19   |    KITKAT    |    0.6%   |  2013 年 10 月 31 日  |
+
+* 市场占用率数据更新至 2022 年 8 月 21 日，数据统计主要参考以下链接：
+
+* [Android API Levels](https://apilevels.com/)
+
+* [分发信息中心（谷歌官方）](https://developer.android.google.cn/about/dashboards?hl=zh-cn)
+
+* [Top Android OS versions（需要翻墙）](https://www.appbrain.com/stats/top-android-sdk-versions)
+
+* [Mobile & Tablet Android Version Market Share Worldwide](https://gs.statcounter.com/android-version-market-share/mobile-tablet/worldwide)
+
+* [Mobile Android operating system market share by version worldwide from January 2018 to January 2022](https://www.statista.com/statistics/921152/mobile-android-version-share-worldwide/)
+
+## Google Play 应用商店政策
+
+* [Google Play 应用在目标 API 级别方面需满足的要求](https://support.google.com/googleplay/android-developer/answer/11926878?hl=zh-Hans)
+
+* 每个新的 Android 版本都会引入一些变化，以便改进安全性和性能，并提升 Android 的整体用户体验。每款应用的清单文件中都有一个 `targetSdkVersion` 参数（也称为目标 API 级别），用以告知系统您的应用在不同的 Android 版本上分别该如何运行。
+
+* 将应用的目标 API 级别配置为新近的 API 级别可确保用户享受到安全性、隐私保护和性能方面的改进，同时仍然允许应用在较低版本的 Android（低至 `minSdkVersion`）上运行。
+
+* 为了向 Android 和 Google Play 用户提供安全可靠的使用体验，Google Play 要求所有应用在目标 API 级别方面都必须符合下列要求。
+
+#### 名词定义
+
+|  新应用  | 尚未在 Play 商店中发布的应用（例如，全新的应用） |
+| :-----: | :---------------------------------------: |
+| 应用更新 |       已在 Play 商店中发布的应用的新版本      |
+| 现有应用 |           没有获得更新的已发布应用           |
+
+#### 何时必须将 Google Play 应用的目标 API 级别设为该级别？
+
+|    Android 操作系统版本   |       新应用      |       应用更新     |       现有应用         |    
+| :---------------------: | :--------------: | :--------------: | :----------------: |
+| Android 12（API 级别 31）| 2022 年 8 月 1 日 | 2022 年 11 月 1 日 | 2023 年 11 月 1 日 |
+| Android 11（API 级别 30）| 2021 年 8 月 2 日 | 2021 年 11 月 1 日 | 2022 年 11 月 1 日 |
+
+**提示**：如需获得技术指导来了解如何更改应用的目标 API 级别以满足上述要求，请参阅[迁移指南](https://developer.android.google.cn/distribute/best-practices/develop/target-sdk.html)。
+
+#### 何时必须将 Wear OS 应用的目标 API 级别设为该级别？
+
+|    Android 操作系统版本   |       新应用      |       应用更新     |       现有应用      |    
+| :---------------------: | :--------------: | :--------------: | :----------------: |
+| Android 11（API 级别 30） | 2022 年 8 月 1 日 | 2022 年 11 月 1 日 |       无要求      |
+| Android 10（API 级别 29） |       无要求      |       无要求       |       无要求      |
+| Android 9（API 级别 28）  | 2019 年 8 月 1 日 | 2019 年 11 月 1 日 |       无要求      |
+
+* 为帮助开发者轻松完成过渡，相比新应用，我们多给了应用更新几个月时间来满足该要求。
+
+#### 应用可能受到的影响
+
+* 您的应用若不符合目标 API 级别要求，可能会受到以下方面的影响：
+
+| **应用** |                            **影响**                           |
+| -------- | ------------------------------------------------------------ |
+| 新应用   | 您将无法在 Play 管理中心发布不符合目标 API 级别要求的 app bundle。 |
+| 应用更新 | 您将无法在 Play 管理中心提交不符合目标 API 级别要求的 app bundle 或 APK。 |
+| 现有应用 | 如果新用户的设备搭载的 Android 操作系统版本高于您的应用的目标 API 级别，那么这类用户将无法在 Google Play 上获取您的应用。也就是说，这类新用户将无法从 Google Play 中发现或安装您的应用。之前从 Google Play 中安装过这款应用的用户仍可以发现、重新安装和使用它。这类现有用户即使换用新的 Android 设备，也仍然可以使用您的应用。 |
+
+* 为帮助开发者轻松完成过渡，相比新应用，我们多给了应用更新几个月时间来满足该要求。
 
 ## 文档目录
+
+* [Android 13.0](#android-130)
 
 * [Android 12.0 / 12L](#android-120--12l)
 
@@ -85,6 +149,172 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 * [Android 5.0 / 5.1](#android-50--51)
 
 * [Android 4.4](#android-44)
+
+## Android 13.0
+
+#### 新特性
+
+* [开发者工作效率](https://developer.android.google.cn/about/versions/13/features?hl=zh-cn#developer-productivity)
+
+    * [新的复制和粘贴界面](https://developer.android.google.cn/about/versions/13/features?hl=zh-cn#copy-paste)
+
+    * [预测性返回手势](https://developer.android.google.cn/about/versions/13/features?hl=zh-cn#predictive-back-nav)
+
+    * [带主题的应用图标](https://developer.android.google.cn/about/versions/13/features?hl=zh-cn#themed-app-icons)
+
+    * [实现带主题的应用图标](https://developer.android.google.cn/about/versions/13/features?hl=zh-cn#themed-app-icon-implement)
+
+    * [Quick Settings Placement API](https://developer.android.google.cn/about/versions/13/features?hl=zh-cn#quick-settings)
+
+    * [为多语言用户提供更好的支持](https://developer.android.google.cn/about/versions/13/features?hl=zh-cn#language-support)
+
+    * [更快断字](https://developer.android.google.cn/about/versions/13/features?hl=zh-cn#faster-hyphenation)
+
+    * [彩色矢量字体](https://developer.android.google.cn/about/versions/13/features?hl=zh-cn#color-vector-fonts)
+
+    * [蓝牙 LE 音频](https://developer.android.google.cn/about/versions/13/features?hl=zh-cn#btle-audio)
+
+    * [MIDI 2.0](https://developer.android.google.cn/about/versions/13/features?hl=zh-cn#midi-2-0)
+
+* [隐私权和安全](https://developer.android.google.cn/about/versions/13/features?hl=zh-cn#privacy-security)
+
+    * [更安全地导出上下文注册的接收器](https://developer.android.google.cn/about/versions/13/features?hl=zh-cn#runtime-receivers)
+
+    * [照片选择器](https://developer.android.google.cn/about/versions/13/features?hl=zh-cn#photo-picker)
+
+    * [针对附近 Wi-Fi 设备的新运行时权限](https://developer.android.google.cn/about/versions/13/features?hl=zh-cn#nearby-wifi-devices-permission)
+
+    * [使用精确闹钟的新权限](https://developer.android.google.cn/about/versions/13/features?hl=zh-cn#use-exact-alarm-permission)
+
+    * [开发者可降级权限](https://developer.android.google.cn/about/versions/13/features?hl=zh-cn#developer-downgradable-permissions)
+
+    * [APK 签名方案 v3.1](https://developer.android.google.cn/about/versions/13/features?hl=zh-cn#apk-signature-scheme)
+
+    * [改进了密钥库和 KeyMint 中的错误报告功能](https://developer.android.google.cn/about/versions/13/features?hl=zh-cn#keystore-keymint)
+
+* [平板电脑和大屏设备支持](https://developer.android.google.cn/about/versions/13/features?hl=zh-cn#large-screens)
+
+* [图形](https://developer.android.google.cn/about/versions/13/features?hl=zh-cn#graphics)
+
+    * [可编程的着色器](https://developer.android.google.cn/about/versions/13/features?hl=zh-cn#shaders)
+
+* [媒体](https://developer.android.google.cn/about/versions/13/features?hl=zh-cn#media)
+
+    * [预期音频路由](https://developer.android.google.cn/about/versions/13/features?hl=zh-cn#audio-routing)
+
+* [无障碍功能](https://developer.android.google.cn/about/versions/13/features?hl=zh-cn#accessibility)
+
+    * [语音描述](https://developer.android.google.cn/about/versions/13/features?hl=zh-cn#audio-description)
+
+* [核心功能](https://developer.android.google.cn/about/versions/13/features?hl=zh-cn#core)
+
+    * [OpenJDK 11 更新](https://developer.android.google.cn/about/versions/13/features?hl=zh-cn#core-libraries)
+
+#### 行为更变
+
+* [针对所有应用的行为变更](https://developer.android.google.cn/about/versions/13/behavior-changes-all?hl=zh-cn)
+
+    * [性能和电池](https://developer.android.google.cn/about/versions/13/behavior-changes-all?hl=zh-cn#performance-battery)
+
+        * [前台服务 (FGS) 任务管理器](https://developer.android.google.cn/about/versions/13/behavior-changes-all?hl=zh-cn#fgs-manager)
+
+        * [使用 JobScheduler 改进预提取作业处理](https://developer.android.google.cn/about/versions/13/behavior-changes-all?hl=zh-cn#prefetch-job-handling)
+
+        * [电池资源利用率](https://developer.android.google.cn/about/versions/13/behavior-changes-all?hl=zh-cn#battery-resource-utilization)
+
+        * [高优先级 Firebase Cloud Message (FCM) 配额](https://developer.android.google.cn/about/versions/13/behavior-changes-all?hl=zh-cn#fcm-quotas)
+
+    * [隐私权](https://developer.android.google.cn/about/versions/13/behavior-changes-all?hl=zh-cn#privacy)
+
+        * [通知的运行时权限](https://developer.android.google.cn/about/versions/13/behavior-changes-all?hl=zh-cn#notification-permission)
+
+        * [从剪贴板中隐藏敏感内容](https://developer.android.google.cn/about/versions/13/behavior-changes-all?hl=zh-cn#copy-sensitive-content)
+
+    * [安全性](https://developer.android.google.cn/about/versions/13/behavior-changes-all?hl=zh-cn#security)
+
+        * [停止使用共享用户 ID](https://developer.android.google.cn/about/versions/13/behavior-changes-all?hl=zh-cn#shared-user-id)
+
+    * [用户体验](https://developer.android.google.cn/about/versions/13/behavior-changes-all?hl=zh-cn#ux)
+
+        * [应用内语言选择器](https://developer.android.google.cn/about/versions/13/behavior-changes-all?hl=zh-cn#language-pickers)
+
+    * [核心功能](https://developer.android.google.cn/about/versions/13/behavior-changes-all?hl=zh-cn#core)
+
+        * [移除了旧版语音服务实现副本](https://developer.android.google.cn/about/versions/13/behavior-changes-all?hl=zh-cn#speech-service)
+
+* [针对 targetSdkVersion 33+ 应用的行为变更](https://developer.android.google.cn/about/versions/13/behavior-changes-13?hl=zh-cn)
+
+    * [隐私权](https://developer.android.google.cn/about/versions/13/behavior-changes-13?hl=zh-cn#privacy)
+
+        * [通知权限会影响前台服务的显示](https://developer.android.google.cn/about/versions/13/behavior-changes-13?hl=zh-cn#notification-permission-fgs-appearance)
+
+        * [针对附近 Wi-Fi 设备的新运行时权限](https://developer.android.google.cn/about/versions/13/behavior-changes-13?hl=zh-cn#nearby-wifi-devices-permission)
+
+        * [细化的媒体权限](https://developer.android.google.cn/about/versions/13/behavior-changes-13?hl=zh-cn#granular-media-permissions)
+
+        * [在后台使用身体传感器需要新的权限](https://developer.android.google.cn/about/versions/13/behavior-changes-13?hl=zh-cn#body-sensors-background-permission)
+
+    * [安全](https://developer.android.google.cn/about/versions/13/behavior-changes-13?hl=zh-cn#security)
+
+        * [intent 过滤器会屏蔽不匹配的 intent](https://developer.android.google.cn/about/versions/13/behavior-changes-13?hl=zh-cn#intent-filters)
+
+    * [性能和电池](https://developer.android.google.cn/about/versions/13/behavior-changes-13?hl=zh-cn#performance-battery)
+
+        * [电池资源利用率](https://developer.android.google.cn/about/versions/13/behavior-changes-13?hl=zh-cn#battery-resource-utilization)
+
+    * [用户体验](https://developer.android.google.cn/about/versions/13/behavior-changes-13?hl=zh-cn#ux)
+
+        * [派生自 PlaybackState 的媒体控件](https://developer.android.google.cn/about/versions/13/behavior-changes-13?hl=zh-cn#playback-controls)
+
+#### 官方进度
+
+* [Android 13 首个开发者预览版到来](https://mp.weixin.qq.com/s/J_WPy9cFDcRCHslXz10rwA)
+
+* [Android 13 Beta 版发布，诸多亮点不容错过](https://mp.weixin.qq.com/s/Y5CjnayCN1siimrDxwMbVg)
+
+* [欢迎体验 | Android 13 开发者预览版 2](https://mp.weixin.qq.com/s/UVhWMl3mPSLB8nXNOZXuqQ)
+
+* [平台稳定性里程碑 | Android 13 Beta 3 发布](https://mp.weixin.qq.com/s/2XnsMM7jS2IaXkcYWixV1w)
+
+* [正式版即将到来 | Android 13 Beta 4 现已发布](https://mp.weixin.qq.com/s/_pGD_rySM2tYne4lJICmsA)
+
+* [最新版发布 | Android 13 现已正式发布至 AOSP！](https://mp.weixin.qq.com/s/IYsoAjBBVnI36TluuennsQ)
+
+#### 相关资源
+
+* 适配简介
+
+    * [Android 12 还没用上，Android 13 已经来了！](https://juejin.cn/post/7088605710728036359)
+
+    * [Android 13 适配指南](https://juejin.cn/post/7099762078977622053)
+
+    * [安卓13来了，快！扶起我来！](https://juejin.cn/post/7117449403765358605)
+
+    * [Android 13 适配尝鲜](https://www.jianshu.com/p/e087c0d3b4a9)
+
+    * [Android 13(T) 适配](https://www.jianshu.com/p/f0d390c2751e)
+
+    * [Android 13 正式版发布](https://juejin.cn/post/7132720318736515085)
+
+* 厂商适配指南
+
+    * [OPPO 开放平台 - Android 13 应用兼容性适配指导](https://open.oppomobile.com/new/developmentDoc/info?id=11311)
+
+    * [VIVO 开放平台 - Android 13 应用适配指南](https://dev.vivo.com.cn/documentCenter/doc/586)
+
+    * [小米开放平台 - Android 13 应用适配指南](https://dev.mi.com/console/doc/detail?pId=2632)
+
+* 其他适配
+
+    * [Android 13 权限适配方案](https://github.com/getActivity/XXPermissions)
+
+    * [Android 13 针对 Intent filters 安全的再加强](https://juejin.cn/post/7099450024525824037)
+
+    * [Android 13 返回导航大变更：返回键彻底废弃 + 可预见型返回手势](https://juejin.cn/post/7105645114760331300)
+
+    * [Android 13 新的换行策略和针对日文的优化](https://juejin.cn/post/7099054844404563982)
+
+    * [前台服务管理器：如何手动在 Android 13 上「杀死」一个应用](https://neo.sspai.com/post/72283)
 
 ## Android 12.0 / 12L
 
@@ -320,19 +550,51 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
     * [更新后的非 SDK 限制](https://developer.android.google.cn/about/versions/12/behavior-changes-12?hl=zh-cn#vendor-libraries)
 
+#### 官方进度
+
+* [一起看 I/O | Android 12 Beta 版发布，诸多亮点不容错过](https://mp.weixin.qq.com/s/_KlPUqNoJTfO3C8igPG49w)
+
+* [更进一步 | Android 12 Beta 2 发布](https://mp.weixin.qq.com/s/yygBn-cOrX4d4Wqs70CeDg)
+
+* [终版 API 正式到来 | Android 12 Beta 3 发布](https://mp.weixin.qq.com/s/-SqSiGm9srvVyBa3dVbpsg)
+
+* [平台稳定性里程碑 | Android 12 Beta 4 现已发布](https://mp.weixin.qq.com/s/phUf11X59EEH_oDqzmfNzg)
+
+* [正式版即将到来 | Android 12 Beta 5 现已发布](https://mp.weixin.qq.com/s/eEPwTzIfzPKRXD31o72IrQ)
+
+* [Android 12 正式发布 | 开发者们的全新舞台](https://mp.weixin.qq.com/s/OiFSWEnc-0N2z7JYWTJluw)
+
+* [新版本系统适配: Android 12 中的兼容性变更](https://mp.weixin.qq.com/s/OiFSWEnc-0N2z7JYWTJluw)
+
 #### 相关资源
 
 * 适配简介
 
-    * [Android 12 正式发布 | 开发者们的全新舞台](https://www.jianshu.com/p/92905ae63532)
-
     * [Android 12 适配简介](https://juejin.cn/post/7014491424112508936)
-
-    * [OPPO 开放平台 - Android 12 应用兼容性适配指导](https://open.oppomobile.com/wiki/doc#id=10960)
 
     * [Android 12 快速适配要点](https://juejin.cn/post/7037105000480243748)
 
     * [来了！Android 12 适配你准备好了吗？](https://juejin.cn/post/7031411081457336357)
+
+    * [还没适配 Android 12 的要抓紧了](https://juejin.cn/post/7088731887945908260)
+
+    * [TargetsdkVersion 升级 31（Android12）适配](https://www.jianshu.com/p/ec1b3295b271)
+
+    * [Android 12 保姆级适配指南](https://juejin.cn/post/7093787313095999502)
+
+    * [Android Target 31 升级全攻略 —— 记阿里首个超级 App 的坎坷升级之路](https://juejin.cn/post/7114225231845457956)
+
+    * [Android 12 适配-行为变更：所有应用](https://www.jianshu.com/p/76263c20df47)
+
+    * [Android 12 适配-行为变更：以 Android 12 为目标平台的应用](https://www.jianshu.com/p/af3d9baa9156)
+
+* 厂商适配指南
+
+    * [OPPO 开放平台 - Android 12 应用兼容性适配指导](https://open.oppomobile.com/wiki/doc#id=10960)
+
+    * [VIVO 开放平台 - Android 12 应用适配指南](https://dev.vivo.com.cn/documentCenter/doc/509)
+
+    * [小米开放平台 - Android 12 应用适配指南](https://dev.mi.com/console/doc/detail?pId=2439)
 
 * SplashScreen 适配
 
@@ -342,7 +604,7 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
     * [Jetpack SplashScreen API 在所有 Android 系统上使用总结，内含原理分析](https://juejin.cn/post/7019839767441309733)
 
-    * [深度探讨如何使用 Jetpack SplashScreen 重塑应用启动画面](https://mp.weixin.qq.com/s/qa7dRhVDpCv2U2h0rpNE0Q)
+    * [深度探讨如何使用 Jetpack SplashScreen 重塑应用启动画面](https://juejin.cn/post/7044713406774902820)
 
     * [Android 12 启动画面-SplashScreen](https://juejin.cn/post/7026188311198695432)
 
@@ -358,6 +620,16 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
     * [别羡慕苹果的小部件了，安卓也有！](https://juejin.cn/post/7037303315595526157)
 
+* exported 属性适配
+
+    * [Android 12 新特性 android:exported 属性](https://www.jianshu.com/p/89dc6c109834)
+
+    * [Android 12 自动适配 exported 深入解析避坑](https://juejin.cn/post/7074018771161219103)
+
+    * [写了一个适配 Android12-exported 的小插件](https://juejin.cn/post/7113738206318690340)
+
+    * [The application could not be installed: `INSTALL_PARSE_FAILED_MANIFEST_MALFORMED`](https://developer.android.google.cn/about/versions/12/behavior-changes-12?hl=zh-cn#exported)
+
 * Android 12 L 适配
 
     * [详解 Android 12L｜更好地适配大屏幕设备](https://mp.weixin.qq.com/s/NN0CzWoKfIALPZbHjWQk5Q)
@@ -368,13 +640,11 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
 * 其他适配
 
+    * [Android 12 蓝牙适配攻略](https://llw-study.blog.csdn.net/article/details/124420936)
+
     * [Android 12 蓝牙权限适配方案](https://github.com/getActivity/XXPermissions)
 
-    * [Android 12 新特性 android:exported 属性](https://www.jianshu.com/p/89dc6c109834)
-
-    * [Android 12 自动适配 exported 深入解析避坑](https://juejin.cn/post/7074018771161219103)
-
-    * [The application could not be installed: `INSTALL_PARSE_FAILED_MANIFEST_MALFORMED`](https://developer.android.google.cn/about/versions/12/behavior-changes-12?hl=zh-cn#exported)
+    * [Android 12 实用更新：置灰的控件也可以点击啦](https://juejin.cn/post/7100916142776008740)
 
 ## Android 11.0
 
@@ -505,7 +775,21 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
     * [Android 11 变更及适配攻略](https://juejin.cn/post/6948211914455384072)
 
+* 厂商适配指南
+
     * [OPPO 开放平台 - Android 11 应用兼容性适配指导](https://open.oppomobile.com/wiki/doc#id=10724)
+
+    * [VIVO 开放平台 - Android 11 应用适配指南](hhttps://dev.vivo.com.cn/documentCenter/doc/428)
+
+    * [小米开放平台 - Android 11上第三方App读写文件API标准建议](https://dev.mi.com/console/doc/detail?pId=2323)
+
+* Android/data 目录适配
+
+    * [Android 11 无 Root 访问 data 目录实现、Android 11 访问 data 目录、Android 11 解除 data 目录限制、Android 11 data 空白解决](https://blog.csdn.net/qq_17827627/article/details/113931692)
+
+    * [知乎回答：如何评价在 Android11 中，/Android/data 文件夹无法读写？](https://www.zhihu.com/question/420023759)
+
+    * [Android 11 适配- 实现清理其他应用缓存目录](https://blog.csdn.net/u013700040/article/details/115066778)
 
 * 其他适配
 
@@ -520,10 +804,6 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
     * [Android 11 无法在后台显示自定义样式 Toast 的适配方案](https://github.com/getActivity/ToastUtils)
 
     * [微信开放平台 - Android 11 系统策略更新](https://open.weixin.qq.com/cgi-bin/announce?action=getannouncement&key=11600155960jI9EY&version=&lang=&token=)
-
-    * [知乎回答：如何评价在 Android11 中，/Android/data 文件夹无法读写？](https://www.zhihu.com/question/420023759)
-
-    * [Android 11 无 Root 访问 data 目录实现、Android 11 访问 data 目录、Android 11 解除 data 目录限制、Android 11 data 空白解决](https://blog.csdn.net/qq_17827627/article/details/113931692)
 
     * [文本转语音 TTS 开发 Android11 适配方案](https://www.jianshu.com/p/d1767a397c10)
 
@@ -633,6 +913,12 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
    * [Android 10 适配攻略](https://juejin.cn/post/6844904073024503822)
 
+* 厂商适配指南
+
+    * [OPPO 开放平台 - Android Q 版本应用兼容性适配指导](https://open.oppomobile.com/new/developmentDoc/info?id=10432)
+
+    * [VIVO 开放平台 - Android Q 应用适配指南](https://dev.vivo.com.cn/documentCenter/doc/235)
+
 * 分区存储适配
 
    * [暂时停用分区存储](https://developer.android.google.cn/training/data-storage/use-cases#opt-out-scoped-storage)
@@ -740,7 +1026,11 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
     * [隐私权变更](https://developer.android.google.cn/about/versions/pie/android-9.0-changes-28?hl=zh-cn#privacy-changes-p)
     
     * [框架安全性变更](https://developer.android.google.cn/about/versions/pie/android-9.0-changes-28?hl=zh-cn#framework-security-changes)
+
+        * [默认启用网络传输层安全协议 (TLS)](https://developer.android.google.cn/about/versions/pie/android-9.0-changes-28?hl=zh-cn#tls-enabled)
     
+        * [按进程分设基于网络的数据目录](https://developer.android.google.cn/about/versions/pie/android-9.0-changes-28?hl=zh-cn#web-data-dirs)
+
     * [网络连接变更](https://developer.android.google.cn/about/versions/pie/android-9.0-changes-28?hl=zh-cn#connectivity-changes)
     
         * [网络连接数据计数和多路径](https://developer.android.google.cn/about/versions/pie/android-9.0-changes-28?hl=zh-cn#data-counting-multipath)
@@ -765,6 +1055,14 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
     * [Android 9.0 适配指南](https://juejin.cn/post/6844903906942648334)
 
+    * [Android 9.0适配及部分新特性介绍](https://cloud.tencent.com/developer/article/1370376)
+
+* 厂商适配指南
+
+    * [VIVO 开放平台 - Android P 应用适配指南](https://dev.vivo.com.cn/documentCenter/doc/145)
+
+    * [小米开放平台 - MIUI Android P 适配指南](https://dev.mi.com/console/doc/detail?pId=1351)
+
 * 刘海屏适配
 
     * [Android 刘海屏适配全攻略](https://www.jianshu.com/p/561f7241153b)
@@ -781,9 +1079,11 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
     * [隐藏 API 反射框架 FreeReflection](https://github.com/tiann/FreeReflection)
 
-* 其他适配
+* WebView 多进程适配
 
     * [Android 9.0/P WebView 多进程使用的问题](https://www.cnblogs.com/renhui/p/13942060.html)
+
+    * [有效解决 WebView 多进程崩溃](https://juejin.cn/post/6942298361454133261)
 
 ## Android 8.0 / 8.1
 
@@ -1008,6 +1308,10 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 * 适配简介
 
     * [Android 8.0 适配指北](https://weilu.blog.csdn.net/article/details/80965631)
+
+* 厂商适配指南
+
+    * [VIVO 开放平台 - Android 8.0 适配指南](https://dev.vivo.com.cn/documentCenter/doc/105)
 
 * 通知渠道适配
 
