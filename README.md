@@ -1,6 +1,6 @@
 # Android 版本适配全套指南
 
-* 项目地址：[Github](https://github.com/getActivity/AndroidVersionAdapter)、[码云](https://gitee.com/getActivity/AndroidVersionAdapter)
+* 项目地址：[Github](https://github.com/getActivity/AndroidVersionAdapter)
 
 * 当我在做 Android 版本适配工作的时候很痛苦，那个时候我在想有没有一个文档，将所有的关于 Android 版本适配资料全部收集起来，这样就不需要在网上东找西找了，这样就能把时间和精力投入适配工作中，每当一个新的 Android 版本发布的时候，这个想法越加强烈，终于在 Android 11 刚发布的时候筹划了这件事情，最终赶在 Android 12 刚发布的时候完成了，整个过程耗时非常漫长，因为我正在不断收集优质的资料，同时我也在不断思考，什么样的适配文档才是大家所需要的，我将适配文档简单划分成了以下几部分：
 
@@ -82,7 +82,7 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
 
 ## Google Play 应用商店政策
 
-* [Google Play 应用在目标 API 级别方面需满足的要求](https://support.google.com/googleplay/android-developer/answer/11926878?hl=zh-Hans)
+* [Google Play 应用在目标 API 级别方面需满足的要求（需要翻墙）](https://support.google.com/googleplay/android-developer/answer/11926878?hl=zh-Hans)
 
 * 每个新的 Android 版本都会引入一些变化，以便改进安全性和性能，并提升 Android 的整体用户体验。每款应用的清单文件中都有一个 `targetSdkVersion` 参数（也称为目标 API 级别），用以告知系统您的应用在不同的 Android 版本上分别该如何运行。
 
@@ -295,6 +295,8 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
     * [Android 13(T) 适配](https://www.jianshu.com/p/f0d390c2751e)
 
     * [Android 13 正式版发布](https://juejin.cn/post/7132720318736515085)
+
+    * [移动开发前沿 | Android13，看这篇就够了！](https://mp.weixin.qq.com/s/ORYI1ALLfBw_OtjykJRoAA)
 
 * 厂商适配指南
 
@@ -588,6 +590,8 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
 
     * [Android 12 适配-行为变更：以 Android 12 为目标平台的应用](https://www.jianshu.com/p/af3d9baa9156)
 
+    * [您有一份安卓 12 适配攻略，请注意查收！](https://mp.weixin.qq.com/s/vyKVaIGQHrisuuA8tT317w)
+
 * 厂商适配指南
 
     * [OPPO 开放平台 - Android 12 应用兼容性适配指导](https://open.oppomobile.com/wiki/doc#id=10960)
@@ -865,7 +869,7 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
     
     * [WLAN 感知功能](https://developer.android.google.cn/about/versions/10/behavior-changes-all?hl=zh-cn#wifi-aware)
     
-    * [Go 设备上的 SYSTEM_ALERT_WINDOW](https://developer.android.google.cn/about/versions/10/behavior-changes-all?hl=zh-cn#sysalert-go)
+    * [Go 设备上的 `SYSTEM_ALERT_WINDOW`](https://developer.android.google.cn/about/versions/10/behavior-changes-all?hl=zh-cn#sysalert-go)
     
     * [关于以旧版 Android 系统为目标平台的应用的警告](https://developer.android.google.cn/about/versions/10/behavior-changes-all?hl=zh-cn#low-target-sdk-warnings)
     
