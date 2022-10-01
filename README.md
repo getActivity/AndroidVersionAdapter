@@ -298,6 +298,8 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
 
     * [移动开发前沿 | Android13，看这篇就够了！](https://mp.weixin.qq.com/s/ORYI1ALLfBw_OtjykJRoAA)
 
+    * [个推解读 Android13，发布《Android13适配指南》](https://juejin.cn/post/7139772964639080485)
+
 * 厂商适配指南
 
     * [OPPO 开放平台 - Android 13 应用兼容性适配指导](https://open.oppomobile.com/new/developmentDoc/info?id=11311)
@@ -650,6 +652,12 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
 
     * [Android 12 实用更新：置灰的控件也可以点击啦](https://juejin.cn/post/7100916142776008740)
 
+    * [Android 12 TransactionTooLargeException 问题](https://juejin.cn/post/7125729625442877448)
+
+    * [高德地图 - Android 12 定位权限说明](https://lbs.amap.com/api/android-location-sdk/guide/utilities/permision_12)
+
+    * [百度地图 - Android 12.0 开发须知](https://lbs.baidu.com/index.php?title=android-locsdk/guide/addition-func/android12-notice)
+
 ## Android 11.0
 
 #### 概览
@@ -783,7 +791,7 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
 
     * [OPPO 开放平台 - Android 11 应用兼容性适配指导](https://open.oppomobile.com/wiki/doc#id=10724)
 
-    * [VIVO 开放平台 - Android 11 应用适配指南](hhttps://dev.vivo.com.cn/documentCenter/doc/428)
+    * [VIVO 开放平台 - Android 11 应用适配指南](https://dev.vivo.com.cn/documentCenter/doc/428)
 
     * [小米开放平台 - Android 11上第三方App读写文件API标准建议](https://dev.mi.com/console/doc/detail?pId=2323)
 
@@ -1334,6 +1342,16 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
     * [Only fullscreen activities can request orientation 终极解决方法](https://blog.csdn.net/starry_eve/article/details/82777160)
 
     * ["Only fullscreen opaque activities can request orientation "问题再分析](https://juejin.cn/post/6844903808485556232)
+
+* 启动后台 Service 适配
+
+    * [Android 8.0 启动后台service 出错 IllegalStateException: Not allowed to start service Intent](https://blog.csdn.net/u010784887/article/details/79675147)
+
+    * [Android 8.0 + Service开启方式兼容处理](https://blog.csdn.net/o279642707/article/details/82352431)
+
+    * [Context.startForegroundService() did not then call Service.startForeground？](https://blog.csdn.net/sinat_20059415/article/details/80584487)
+
+    * [Android 8.0: java.lang.IllegalStateException: Not allowed to start service Intent](https://stackoverflow.com/questions/46445265/android-8-0-java-lang-illegalstateexception-not-allowed-to-start-service-inten)
 
 * 其他适配
 
