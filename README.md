@@ -604,19 +604,19 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
 
 * SplashScreen 适配
 
-    * [SplashScreen：为全新的应用启动效果赋能](https://blog.csdn.net/allisonchen/article/details/119656618)
+    * [从 Jetpack SplashScreen 深度探讨 App 启动画面的前世今生～](https://juejin.cn/post/7044713406774902820)
+
+    * [Jetpack 新成员 SplashScreen：打造全新的App启动画面](https://juejin.cn/post/6997217571208445965)
 
     * [Android 12 SplashScreen API 快速入门](https://guolin.blog.csdn.net/article/details/120275319)
 
     * [Jetpack SplashScreen API 在所有 Android 系统上使用总结，内含原理分析](https://juejin.cn/post/7019839767441309733)
 
-    * [深度探讨如何使用 Jetpack SplashScreen 重塑应用启动画面](https://juejin.cn/post/7044713406774902820)
-
     * [Android 12 启动画面-SplashScreen](https://juejin.cn/post/7026188311198695432)
 
-    * [从 Jetpack SplashScreen 深度探讨 App 启动画面的前世今生～](https://juejin.cn/post/7044713406774902820)
-
     * [Android 12 上全新的应用启动画面，还不适配一下？](https://juejin.cn/post/6962706834889113614)
+
+    * [用 SplashScreen 做一个会动的开屏！](https://juejin.cn/post/7150692699350237191)
 
 * 桌面小组件适配
 
@@ -787,6 +787,8 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
 
     * [Android 11 变更及适配攻略](https://juejin.cn/post/6948211914455384072)
 
+    * [实战 Android 升级目标版本到 30 过程中遇到的问题及解决办法](https://juejin.cn/post/7031128042843930655)
+
 * 厂商适配指南
 
     * [OPPO 开放平台 - Android 11 应用兼容性适配指导](https://open.oppomobile.com/wiki/doc#id=10724)
@@ -952,6 +954,8 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
    * [Android 10 适配要点，深色主题](https://guolin.blog.csdn.net/article/details/106061657)
 
    * [Android 深色模式的项目应用](https://juejin.cn/post/7022270811524300808)
+
+   * [Android 10 暗黑模式适配，你需要知道的一切](https://juejin.cn/post/6844904173788463112)
 
 * 其他适配
 
@@ -1878,6 +1882,8 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
 * 日志查看框架：[Logcat](https://github.com/getActivity/Logcat) ![](https://img.shields.io/github/stars/getActivity/Logcat.svg) ![](https://img.shields.io/github/forks/getActivity/Logcat.svg)
 
 * Android 代码规范：[AndroidCodeStandard](https://github.com/getActivity/AndroidCodeStandard) ![](https://img.shields.io/github/stars/getActivity/AndroidCodeStandard.svg) ![](https://img.shields.io/github/forks/getActivity/AndroidCodeStandard.svg)
+
+* Android 资源大汇总：[AndroidIndex](https://github.com/getActivity/AndroidIndex) ![](https://img.shields.io/github/stars/getActivity/AndroidIndex.svg) ![](https://img.shields.io/github/forks/getActivity/AndroidIndex.svg)
 
 * Android 开源排行榜：[AndroidGithubBoss](https://github.com/getActivity/AndroidGithubBoss) ![](https://img.shields.io/github/stars/getActivity/AndroidGithubBoss.svg) ![](https://img.shields.io/github/forks/getActivity/AndroidGithubBoss.svg)
 
