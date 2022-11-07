@@ -101,8 +101,9 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
 
 |    Android 操作系统版本   |       新应用      |       应用更新     |       现有应用         |    
 | :---------------------: | :--------------: | :--------------: | :----------------: |
+| Android 13（API 级别 33）| 2023 年 8 月 1 日 | 2023 年 11 月 1 日 | 2024 年 11 月 1 日 |
 | Android 12（API 级别 31）| 2022 年 8 月 1 日 | 2022 年 11 月 1 日 | 2023 年 11 月 1 日 |
-| Android 11（API 级别 30）| 2021 年 8 月 2 日 | 2021 年 11 月 1 日 | 2022 年 11 月 1 日 |
+| Android 11（API 级别 30）| 2021 年 8 月 1 日 | 2021 年 11 月 1 日 | 2022 年 11 月 1 日 |
 
 **提示**：如需获得技术指导来了解如何更改应用的目标 API 级别以满足上述要求，请参阅[迁移指南](https://developer.android.google.cn/distribute/best-practices/develop/target-sdk.html)。
 
@@ -319,6 +320,8 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
     * [Android 13 新的换行策略和针对日文的优化](https://juejin.cn/post/7099054844404563982)
 
     * [前台服务管理器：如何手动在 Android 13 上「杀死」一个应用](https://neo.sspai.com/post/72283)
+
+    * [Android 13 媒体权限适配指南](https://juejin.cn/post/7159999910748618766)
 
 ## Android 12.0 / 12L
 
