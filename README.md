@@ -155,27 +155,27 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
 
 #### 新特性
 
-* [开发者工作效率](https://developer.android.google.cn/about/versions/13/features?hl=zh-cn#developer-productivity)
-
-    * [新的复制和粘贴界面](https://developer.android.google.cn/about/versions/13/features?hl=zh-cn#copy-paste)
-
-    * [预测性返回手势](https://developer.android.google.cn/about/versions/13/features?hl=zh-cn#predictive-back-nav)
+* [开发者工作效率和工具](https://developer.android.google.cn/about/versions/13/features?hl=zh-cn#developer-productivity)
 
     * [带主题的应用图标](https://developer.android.google.cn/about/versions/13/features?hl=zh-cn#themed-app-icons)
 
-    * [实现带主题的应用图标](https://developer.android.google.cn/about/versions/13/features?hl=zh-cn#themed-app-icon-implement)
+    * [各应用语言偏好设定](https://developer.android.google.cn/about/versions/13/features?hl=zh-cn#app-languages)
+
+    * [改进了文本和语言支持](https://developer.android.google.cn/about/versions/13/features?hl=zh-cn#text-language)
+
+    * [彩色矢量字体](https://developer.android.google.cn/about/versions/13/features?hl=zh-cn#color-vector-fonts)
 
     * [Quick Settings Placement API](https://developer.android.google.cn/about/versions/13/features?hl=zh-cn#quick-settings)
 
-    * [为多语言用户提供更好的支持](https://developer.android.google.cn/about/versions/13/features?hl=zh-cn#language-support)
+    * [剪贴板预览](https://developer.android.google.cn/about/versions/13/features?hl=zh-cn#copy-paste)
 
-    * [更快断字](https://developer.android.google.cn/about/versions/13/features?hl=zh-cn#faster-hyphenation)
-
-    * [彩色矢量字体](https://developer.android.google.cn/about/versions/13/features?hl=zh-cn#color-vector-fonts)
+    * [预测性返回手势](https://developer.android.google.cn/about/versions/13/features?hl=zh-cn#predictive-back-nav)
 
     * [蓝牙 LE 音频](https://developer.android.google.cn/about/versions/13/features?hl=zh-cn#btle-audio)
 
     * [MIDI 2.0](https://developer.android.google.cn/about/versions/13/features?hl=zh-cn#midi-2-0)
+
+    * [提高了启动画面效率](https://developer.android.google.cn/about/versions/13/features?hl=zh-cn#splash-screens)
 
 * [隐私权和安全](https://developer.android.google.cn/about/versions/13/features?hl=zh-cn#privacy-security)
 
@@ -198,6 +198,8 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
 * [图形](https://developer.android.google.cn/about/versions/13/features?hl=zh-cn#graphics)
 
     * [可编程的着色器](https://developer.android.google.cn/about/versions/13/features?hl=zh-cn#shaders)
+
+    * [改进了 Choreographer](https://developer.android.google.cn/about/versions/13/features?hl=zh-cn#choreographer)
 
 * [媒体](https://developer.android.google.cn/about/versions/13/features?hl=zh-cn#media)
 
@@ -233,11 +235,13 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
 
     * [安全性](https://developer.android.google.cn/about/versions/13/behavior-changes-all?hl=zh-cn#security)
 
+        * [intent 过滤器会屏蔽不匹配的 intent](https://developer.android.google.cn/about/versions/13/behavior-changes-all?hl=zh-cn#intents)
+
         * [停止使用共享用户 ID](https://developer.android.google.cn/about/versions/13/behavior-changes-all?hl=zh-cn#shared-user-id)
 
     * [用户体验](https://developer.android.google.cn/about/versions/13/behavior-changes-all?hl=zh-cn#ux)
 
-        * [应用内语言选择器](https://developer.android.google.cn/about/versions/13/behavior-changes-all?hl=zh-cn#language-pickers)
+        * [可以关闭前台服务通知](https://developer.android.google.cn/about/versions/13/behavior-changes-all?hl=zh-cn#dismissible-fgs-notifs)
 
     * [核心功能](https://developer.android.google.cn/about/versions/13/behavior-changes-all?hl=zh-cn#core)
 
@@ -255,10 +259,6 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
 
         * [在后台使用身体传感器需要新的权限](https://developer.android.google.cn/about/versions/13/behavior-changes-13?hl=zh-cn#body-sensors-background-permission)
 
-    * [安全](https://developer.android.google.cn/about/versions/13/behavior-changes-13?hl=zh-cn#security)
-
-        * [intent 过滤器会屏蔽不匹配的 intent](https://developer.android.google.cn/about/versions/13/behavior-changes-13?hl=zh-cn#intent-filters)
-
     * [性能和电池](https://developer.android.google.cn/about/versions/13/behavior-changes-13?hl=zh-cn#performance-battery)
 
         * [电池资源利用率](https://developer.android.google.cn/about/versions/13/behavior-changes-13?hl=zh-cn#battery-resource-utilization)
@@ -266,6 +266,14 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
     * [用户体验](https://developer.android.google.cn/about/versions/13/behavior-changes-13?hl=zh-cn#ux)
 
         * [派生自 PlaybackState 的媒体控件](https://developer.android.google.cn/about/versions/13/behavior-changes-13?hl=zh-cn#playback-controls)
+
+        * [应用颜色主题会自动应用于 WebView 内容](https://developer.android.google.cn/about/versions/13/behavior-changes-13?hl=zh-cn#webview-color-theme)
+
+    * [Google Play 服务](https://developer.android.google.cn/about/versions/13/behavior-changes-13?hl=zh-cn#gms)
+
+        * [广告 ID 需要权限](https://developer.android.google.cn/about/versions/13/behavior-changes-13?hl=zh-cn#ad-id)
+
+    * [更新后的非 SDK 限制](https://developer.android.google.cn/about/versions/13/behavior-changes-13?hl=zh-cn#non-sdk-restrictions)
 
 #### 官方进度
 
