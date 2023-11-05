@@ -10,7 +10,7 @@
 
         * 行为变更
 
-   * 相关资源
+    * 相关资源
 
         * 适配文章链接
 
@@ -20,15 +20,15 @@
 
 ## 适配流程
 
-* 这里以适配 `Android 13` 为例子，第一步将主模块中的 `build.gradle` 文件中修改 `targetSdkVersion` 和 `compileSdkVersion` 这两个的值
+* 这里以适配 `Android 14` 为例子，第一步将主模块中的 `build.gradle` 文件中修改 `targetSdkVersion` 和 `compileSdkVersion` 这两个的值
 
 ```groovy
 android {
 
-    compileSdkVersion 33
+    compileSdkVersion 34
     defaultConfig {
         ......
-        targetSdkVersion 33
+        targetSdkVersion 34
     }
 }
 ```
@@ -36,7 +36,15 @@ android {
 * 接下来在代码中做一些版本的判断，并且做好新版本的适配和旧版本的兼容
 
 ```java
-if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
+    ......
+} else {
+    ......
+}
+```
+
+```java
+if (context.getApplicationInfo().targetSdkVersion >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
     ......
 } else {
     ......
@@ -51,24 +59,25 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
 
 * 最后附上一张 Android 版本信息对应表
 
-| Android 版本 | API 等级 |    版本代号   | 市场占有率 |        发布时间       |
-| :--------:  | :-----: | :----------: | :-------: | :------------------: |
-| Android 13  |    33   |   TIRAMISU   |  暂无数据  |  2022 年 8 月 16 日   |
-| Android 12L |    32   |     S_V2     |  暂无数据  |  2022 年 3 月 9 日    |
-| Android 12  |    31   |       S      |    20.6%  |  2021 年 10 月 4 日   |
-| Android 11  |    30   |       R      |    29.6%  |  2020 年 9 月 9 日    |
-| Android 10  |    29   |       Q      |    21.8%  |  2019 年 9 月 3 日    |
-| Android 9.0 |    28   |       P      |    10.7%  |  2018 年 8 月 7 日    |
-| Android 8.1 |    27   |     O_MR1    |    5.5%   |  2017 年 12 月 5 日   |
-| Android 8.0 |    26   |       O      |    2.6%   |  2017 年 8 月 22 日   |
-| Android 7.1 |    25   |     N_MR1    |    1.4%   |  2016 年 12 月 5 日   |
-| Android 7.0 |    24   |       N      |    2.6%   |  2016 年 8 月 22 日   |
-| Android 6.0 |    23   |       M      |    2.3%   |  2015 年 9 月 29 日   |
-| Android 5.1 |    22   | LOLLIPOP_MR1 |    1.4%   |  2015 年 3 月 10 日   |
-| Android 5.0 |    21   |   LOLLIPOP   |    0.7%   |  2014 年 10 月 15 日  |
-| Android 4.4 |    19   |    KITKAT    |    0.6%   |  2013 年 10 月 31 日  |
+| Android 版本 | API 等级 |      版本代号       | 市场占有率  |        发布时间       |
+| :--------:  | :-----: |:------------------:|:---------:| :------------------: |
+| Android 14  |    34   | `UPSIDE_DOWN_CAKE` |  暂无数据  |  2023 年 10 月 10 日   |
+| Android 13  |    33   |     `TIRAMISU`     |  30.33%  |  2022 年 8 月 16 日   |
+| Android 12L |    32   |       `S_V2`       |  暂无数据 |  2022 年 3 月 9 日    |
+| Android 12  |    31   |        `S`         |  20.58% |  2021 年 10 月 4 日   |
+| Android 11  |    30   |        `R`         |  19.98% |  2020 年 9 月 9 日    |
+| Android 10  |    29   |        `Q`         |  9.27%  |  2019 年 9 月 3 日    |
+| Android 9.0 |    28   |        `P`         |  8.61%  |  2018 年 8 月 7 日    |
+| Android 8.1 |    27   |      `O_MR1`       |  2.78%  |  2017 年 12 月 5 日   |
+| Android 8.0 |    26   |        `O`         |  3.21%  |  2017 年 8 月 22 日   |
+| Android 7.1 |    25   |      `N_MR1`       |  0.61%  |  2016 年 12 月 5 日   |
+| Android 7.0 |    24   |        `N`         |  1.88%  |  2016 年 8 月 22 日   |
+| Android 6.0 |    23   |        `M`         |  1.64%  |  2015 年 9 月 29 日   |
+| Android 5.1 |    22   |   `LOLLIPOP_MR1`   |  0.98%  |  2015 年 3 月 10 日   |
+| Android 5.0 |    21   |     `LOLLIPOP`     |  0.53%  |  2014 年 10 月 15 日  |
+| Android 4.4 |    19   |      `KITKAT`      |   0.3%  |  2013 年 10 月 31 日  |
 
-* 市场占用率数据更新至 2022 年 8 月 21 日，数据统计主要参考以下链接：
+* 市场占用率数据更新至 2023 年 11 月 5 日，数据统计主要参考以下链接：
 
 * [Android API Levels](https://apilevels.com/)
 
@@ -131,6 +140,8 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
 
 ## 文档目录
 
+* [Android 14.0](#android-140)
+
 * [Android 13.0](#android-130)
 
 * [Android 12.0 / 12L](#android-120--12l)
@@ -150,6 +161,164 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
 * [Android 5.0 / 5.1](#android-50--51)
 
 * [Android 4.4](#android-44)
+
+## Android 14.0
+
+#### 新特性
+
+* [国际化](https://developer.android.google.cn/about/versions/14/features?hl=zh-cn#i18n)
+
+    * [各应用语言偏好设定](https://developer.android.google.cn/about/versions/14/features?hl=zh-cn#app-languages)
+
+    * [语法变化 API](https://developer.android.google.cn/about/versions/14/features?hl=zh-cn#app-languages)
+
+    * [地区偏好设置](https://developer.android.google.cn/about/versions/14/features?hl=zh-cn#regional-preferences)
+
+* [无障碍](https://developer.android.google.cn/about/versions/14/features?hl=zh-cn#accessibility)
+
+    * [非线性字体放大至 200%](https://developer.android.google.cn/about/versions/14/features?hl=zh-cn#non-linear-font-scaling)
+
+* [用户体验](https://developer.android.google.cn/about/versions/14/features?hl=zh-cn#ux)
+
+    * [Sharesheet 自定义操作和经过改进的排名系统](https://developer.android.google.cn/about/versions/14/features?hl=zh-cn#sharesheet-improvements)
+
+    * [支持内置和自定义预测性返回动画](https://developer.android.google.cn/about/versions/14/features?hl=zh-cn#predictive-back-animations)
+
+    * [针对应用商店的改进](https://developer.android.google.cn/about/versions/14/features?hl=zh-cn#app-stores)
+
+    * [检测用户何时截取设备屏幕截图](https://developer.android.google.cn/about/versions/14/features?hl=zh-cn#screenshot-detection)
+
+* [图形](https://developer.android.google.cn/about/versions/14/features?hl=zh-cn#graphics)
+
+    * [路径现在可查询和插值](https://developer.android.google.cn/about/versions/14/features?hl=zh-cn#paths)
+
+* [核心功能](https://developer.android.google.cn/about/versions/14/features?hl=zh-cn#core)
+
+    * [OpenJDK 17 更新](https://developer.android.google.cn/about/versions/14/features?hl=zh-cn#core-libraries)
+
+#### 行为更变
+
+* [针对所有应用的行为变更](https://developer.android.google.cn/about/versions/14/behavior-changes-all?hl=zh-cn)
+
+    * [核心功能](https://developer.android.google.cn/about/versions/14/behavior-changes-all?hl=zh-cn#core)
+
+        * [默认拒绝设定精确的闹钟](https://developer.android.google.cn/about/versions/14/behavior-changes-all?hl=zh-cn#schedule-exact-alarms)
+
+        * [当应用进入缓存时，上下文注册的广播将加入队列](https://developer.android.google.cn/about/versions/14/behavior-changes-all?hl=zh-cn#pending-broadcasts-queued)
+
+        * [应用只能终止自己的后台进程](https://developer.android.google.cn/about/versions/14/behavior-changes-all?hl=zh-cn#kill-own-background-processes)
+
+    * [安全](https://developer.android.google.cn/about/versions/14/behavior-changes-all?hl=zh-cn#security)
+
+        * [最低可安装的目标 API 级别](https://developer.android.google.cn/about/versions/14/behavior-changes-all?hl=zh-cn#minimum-target-api-level)
+
+        * [媒体所有者软件包名称可能会隐去](https://developer.android.google.cn/about/versions/14/behavior-changes-all?hl=zh-cn#media-owner-package-names)
+
+    * [用户体验](https://developer.android.google.cn/about/versions/14/behavior-changes-all?hl=zh-cn#ux)
+
+        * [授予对照片和视频的部分访问权限](https://developer.android.google.cn/about/versions/14/behavior-changes-all?hl=zh-cn#partial-photo-video-access)
+
+        * [安全的全屏 intent 通知](https://developer.android.google.cn/about/versions/14/behavior-changes-all?hl=zh-cn#secure-fsi)
+
+        * [关于不可关闭通知用户体验方式的变更](https://developer.android.google.cn/about/versions/14/behavior-changes-all?hl=zh-cn#non-dismissable-notifications)
+
+        * [数据安全信息更显眼](https://developer.android.google.cn/about/versions/14/behavior-changes-all?hl=zh-cn#data-safety)
+
+    * [无障碍](https://developer.android.google.cn/about/versions/14/behavior-changes-all?hl=zh-cn#accessibility)
+
+        * [非线性字体放大至 200%](https://developer.android.google.cn/about/versions/14/behavior-changes-all?hl=zh-cn#non-linear-font-scaling)
+
+* [针对 targetSdkVersion 34+ 应用的行为变更](https://developer.android.google.cn/about/versions/14/behavior-changes-14?hl=zh-cn)
+
+    * [核心功能](https://developer.android.google.cn/about/versions/14/behavior-changes-14?hl=zh-cn#core)
+
+        * [前台服务类型是必填项](https://developer.android.google.cn/about/versions/14/behavior-changes-14?hl=zh-cn#fgs-types)
+
+        * [OpenJDK 17 更新](https://developer.android.google.cn/about/versions/14/behavior-changes-14?hl=zh-cn#core-libraries)
+
+    * [安全](https://developer.android.google.cn/about/versions/14/behavior-changes-14?hl=zh-cn#security)
+
+        * [对隐式 intent 和待处理 intent 的限制](https://developer.android.google.cn/about/versions/14/behavior-changes-14?hl=zh-cn#safer-intents)
+
+        * [在运行时注册的广播接收器必须指定导出行为](https://developer.android.google.cn/about/versions/14/behavior-changes-14?hl=zh-cn#runtime-receivers-exported)
+
+        * [更安全的动态代码加载](https://developer.android.google.cn/about/versions/14/behavior-changes-14?hl=zh-cn#safer-dynamic-code-loading)
+
+        * [压缩路径遍历](https://developer.android.google.cn/about/versions/14/behavior-changes-14?hl=zh-cn#zip-path-traversal)
+
+        * [针对从后台启动 activity 的其他限制](https://developer.android.google.cn/about/versions/14/behavior-changes-14?hl=zh-cn#background-activity-restrictions)
+
+    * [更新后的非 SDK 限制](https://developer.android.google.cn/about/versions/14/behavior-changes-14?hl=zh-cn#non-sdk-restrictions)
+
+#### 官方进度
+
+* [Android 14 首个开发者预览版到来](https://mp.weixin.qq.com/s/xKjGv8EKQivcxAQiUMWIPA)
+
+* [即刻体验 | Android 14 开发者预览版 2](https://mp.weixin.qq.com/s/JSzfpLQ_Wnm6t0JbX24Wjw)
+
+* [Android 14 Beta 版发布，稳步提升与亮点并存](https://mp.weixin.qq.com/s/JolTdPhZqBwNl7_6INeiew)
+
+* [丰富多彩 | Android 14 Beta 2 发布](https://mp.weixin.qq.com/s/JQyS_F8QBFdHbkMaRs91Uw)
+
+* [平台稳定性里程碑 | Android 14 Beta 3 发布](https://mp.weixin.qq.com/s/l0IQXCg87lpQH3cT-QYrkA)
+
+* [发布更新的好时机 | Android 14 Beta 4 发布](https://mp.weixin.qq.com/s/Rr9OqdLrFWBydikPE5sK6A)
+
+* [正式版即将到来 | Android 14 Beta 5 发布](https://mp.weixin.qq.com/s/lmr5SBU80DeiOvL-lc68TA)
+
+* [最新版发布 | Android 14 现已正式发布至 AOSP！](https://mp.weixin.qq.com/s/jIuGbttMVY4VxG6bTOddmQ)
+
+#### 相关资源
+
+* 适配简介
+
+    * [Android 14 快速适配要点](https://juejin.cn/post/7231835495557890106)
+
+    * [狂飙！Android 14 第一个预览版已发布～](https://juejin.cn/post/7198067983775973432)
+
+    * [Android 14 又来了？别扶！抬起我来吧！](https://juejin.cn/post/7235906062309965880)
+
+    * [深度解读 Android 14 重要的 8 个新特性～](http://juejin.cn/post/7249916242063802429)
+
+    * [Android14 适配之——targetSdkVersion 升级到 34 需要注意些什么？](https://juejin.cn/post/7288964295697399843)
+
+    * [Android 14 正式发布，已经在 AOSP 中上线，快来看看有什么吧](https://juejin.cn/post/728815171337396230)
+
+    * [Android 14 的 8 个重要新特性深度解析](https://juejin.cn/post/7283361391671050240)
+
+    * [Android14 适配之——现有 App 安装到 Android14 手机上需要注意些什么？](https://juejin.cn/post/7280747833384517687)
+
+    * [卷起来，开始适配 Android 14](https://juejin.cn/post/7233208763921956920)
+
+    * [Android 14(U) Gradle 8.x JDK 17 适配攻略](https://juejin.cn/post/7240690534074023973)
+
+* 厂商适配指南
+
+    * [OPPO 开放平台 - Android 14 应用兼容性适配指导](https://open.oppomobile.com/new/developmentDoc/info?id=12262)
+
+    * [VIVO 开放平台 - Android 14 开发者适配文档](https://dev.vivo.com.cn/documentCenter/doc/699)
+
+    * [小米开放平台 - Android 14 应用适配指南](https://dev.mi.com/distribute/doc/details?pId=1718)
+
+* 其他适配
+
+    * [Android 14 权限适配方案](https://github.com/getActivity/XXPermissions)
+
+    * [Android 14 新增权限](https://juejin.cn/post/7238762963908689957)
+
+    * [Android 14 新 API：直接监听截屏操作，不用再观察媒体文件了～](https://juejin.cn/post/7219567168316473404)
+
+    * [Android 14 新功能：区域偏好 Regional Preferences](https://juejin.cn/post/7248412998577782840)
+
+    * [Android 14 新特性：语法性别 Grammatical Gender](https://juejin.cn/post/7245668131011182651)
+
+    * [Android 14 之返回界面升级：预览目标界面 + 全新返回箭头](https://juejin.cn/post/7241125859729260600)
+
+    * [Android 14 新功能之 TextView 搜索结果高亮和焦点移动](https://juejin.cn/post/7236680350558076983)
+
+    * [Android 14 新功能之 HighLights：快速实现文本高亮～](https://juejin.cn/post/7214532871658291255)
+
+    * [劝学：Android 14 Framework 引入了哪些“新”技术栈](https://juejin.cn/post/7231728952057249847)
 
 ## Android 13.0
 
@@ -330,6 +499,8 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
     * [前台服务管理器：如何手动在 Android 13 上「杀死」一个应用](https://neo.sspai.com/post/72283)
 
     * [Android 13 媒体权限适配指南](https://juejin.cn/post/7159999910748618766)
+
+    * [微信 SDK - Android 13-可能存在的问题适配](https://developers.weixin.qq.com/doc/oplatform/Mobile_App/Access_Guide/Android.html#jump3)
 
 ## Android 12.0 / 12L
 
@@ -669,6 +840,8 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
 
     * [百度地图 - Android 12.0 开发须知](https://lbs.baidu.com/index.php?title=android-locsdk/guide/addition-func/android12-notice)
 
+    * [支持Android 12，全版本保存图片到相册方案](https://juejin.cn/post/7042218651482587172)
+
 ## Android 11.0
 
 #### 概览
@@ -826,7 +999,7 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
 
     * [Android 11 特性调整：安装外部来源应用需要重启APP](https://cloud.tencent.com/developer/news/637591)
 
-    * [Android 11 无法在后台显示自定义样式 Toast 的适配方案](https://github.com/getActivity/ToastUtils)
+    * [Android 11 无法在后台显示自定义样式 Toast 的适配方案](https://github.com/getActivity/Toaster)
 
     * [微信开放平台 - Android 11 系统策略更新](https://open.weixin.qq.com/cgi-bin/announce?action=getannouncement&key=11600155960jI9EY&version=&lang=&token=)
 
@@ -958,6 +1131,12 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
 
    * [Android MediaStore Api 使用](https://ppting.me/2020/04/19/2020_04_19_how_to_use_Android_MediaStore_Api/)
 
+   * [QQ SDK - 分区存储功能适配](https://wiki.connect.qq.com/%e5%88%86%e4%ba%ab%e5%8a%9f%e8%83%bd%e5%ad%98%e5%82%a8%e6%9d%83%e9%99%90%e9%80%82%e9%85%8d)
+
+   * [微信 SDK - 分区存储功能适配](https://developers.weixin.qq.com/doc/oplatform/Mobile_App/Access_Guide/Android.html#jump2)
+
+   * [支持Android 12，全版本保存图片到相册方案](https://juejin.cn/post/7042218651482587172)
+
 * 深色主题适配
 
    * [Android 深色模式适配原理分析](https://www.jianshu.com/p/1aaf0cee7a2f)
@@ -971,6 +1150,8 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
 * 其他适配
 
    * [Android 折叠屏适配攻略](https://juejin.cn/post/6844903889267867656)
+
+   * [Android 监听系统截屏操作，适配Android Q（29）](https://juejin.cn/post/7189126960319037495) 
 
 ## Android 9.0
 
@@ -1876,21 +2057,25 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
 
 * 权限框架：[XXPermissions](https://github.com/getActivity/XXPermissions) ![](https://img.shields.io/github/stars/getActivity/XXPermissions.svg) ![](https://img.shields.io/github/forks/getActivity/XXPermissions.svg)
 
-* 吐司框架：[ToastUtils](https://github.com/getActivity/ToastUtils) ![](https://img.shields.io/github/stars/getActivity/ToastUtils.svg) ![](https://img.shields.io/github/forks/getActivity/ToastUtils.svg)
+* 吐司框架：[Toaster](https://github.com/getActivity/Toaster) ![](https://img.shields.io/github/stars/getActivity/Toaster.svg) ![](https://img.shields.io/github/forks/getActivity/Toaster.svg)
 
 * 网络框架：[EasyHttp](https://github.com/getActivity/EasyHttp) ![](https://img.shields.io/github/stars/getActivity/EasyHttp.svg) ![](https://img.shields.io/github/forks/getActivity/EasyHttp.svg)
 
 * 标题栏框架：[TitleBar](https://github.com/getActivity/TitleBar) ![](https://img.shields.io/github/stars/getActivity/TitleBar.svg) ![](https://img.shields.io/github/forks/getActivity/TitleBar.svg)
 
-* 悬浮窗框架：[XToast](https://github.com/getActivity/XToast) ![](https://img.shields.io/github/stars/getActivity/XToast.svg) ![](https://img.shields.io/github/forks/getActivity/XToast.svg)
+* 悬浮窗框架：[EasyWindow](https://github.com/getActivity/EasyWindow) ![](https://img.shields.io/github/stars/getActivity/EasyWindow.svg) ![](https://img.shields.io/github/forks/getActivity/EasyWindow.svg)
 
-* Shape 框架：[ShapeView](https://github.com/getActivity/ShapeView) ![](https://img.shields.io/github/stars/getActivity/ShapeView.svg) ![](https://img.shields.io/github/forks/getActivity/ShapeView.svg)
+* ShapeView 框架：[ShapeView](https://github.com/getActivity/ShapeView) ![](https://img.shields.io/github/stars/getActivity/ShapeView.svg) ![](https://img.shields.io/github/forks/getActivity/ShapeView.svg)
+
+* ShapeDrawable 框架：[ShapeDrawable](https://github.com/getActivity/ShapeDrawable) ![](https://img.shields.io/github/stars/getActivity/ShapeDrawable.svg) ![](https://img.shields.io/github/forks/getActivity/ShapeDrawable.svg)
 
 * 语种切换框架：[MultiLanguages](https://github.com/getActivity/MultiLanguages) ![](https://img.shields.io/github/stars/getActivity/MultiLanguages.svg) ![](https://img.shields.io/github/forks/getActivity/MultiLanguages.svg)
 
 * Gson 解析容错：[GsonFactory](https://github.com/getActivity/GsonFactory) ![](https://img.shields.io/github/stars/getActivity/GsonFactory.svg) ![](https://img.shields.io/github/forks/getActivity/GsonFactory.svg)
 
 * 日志查看框架：[Logcat](https://github.com/getActivity/Logcat) ![](https://img.shields.io/github/stars/getActivity/Logcat.svg) ![](https://img.shields.io/github/forks/getActivity/Logcat.svg)
+
+* 嵌套滚动布局框架：[NestedScrollLayout](https://github.com/getActivity/NestedScrollLayout) ![](https://img.shields.io/github/stars/getActivity/NestedScrollLayout.svg) ![](https://img.shields.io/github/forks/getActivity/NestedScrollLayout.svg)
 
 * Android 代码规范：[AndroidCodeStandard](https://github.com/getActivity/AndroidCodeStandard) ![](https://img.shields.io/github/stars/getActivity/AndroidCodeStandard.svg) ![](https://img.shields.io/github/forks/getActivity/AndroidCodeStandard.svg)
 
@@ -1902,7 +2087,11 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
 
 * 表情包大集合：[EmojiPackage](https://github.com/getActivity/EmojiPackage) ![](https://img.shields.io/github/stars/getActivity/EmojiPackage.svg) ![](https://img.shields.io/github/forks/getActivity/EmojiPackage.svg)
 
+* AI 资源大汇总：[AiIndex](https://github.com/getActivity/AiIndex) ![](https://img.shields.io/github/stars/getActivity/AiIndex.svg) ![](https://img.shields.io/github/forks/getActivity/AiIndex.svg)
+
 * 省市区 Json 数据：[ProvinceJson](https://github.com/getActivity/ProvinceJson) ![](https://img.shields.io/github/stars/getActivity/ProvinceJson.svg) ![](https://img.shields.io/github/forks/getActivity/ProvinceJson.svg)
+
+* Markdown 语法文档：[MarkdownDoc](https://github.com/getActivity/MarkdownDoc) ![](https://img.shields.io/github/stars/getActivity/MarkdownDoc.svg) ![](https://img.shields.io/github/forks/getActivity/MarkdownDoc.svg)
 
 #### 微信公众号：Android轮子哥
 
