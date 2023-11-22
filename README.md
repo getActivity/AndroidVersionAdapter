@@ -292,6 +292,8 @@ if (context.getApplicationInfo().targetSdkVersion >= Build.VERSION_CODES.UPSIDE_
 
     * [Android 14(U) Gradle 8.x JDK 17 适配攻略](https://juejin.cn/post/7240690534074023973)
 
+    * [Android 14 彻底终结大厂流氓应用](https://juejin.cn/post/7298699367791411236)
+
 * 厂商适配指南
 
     * [OPPO 开放平台 - Android 14 应用兼容性适配指导](https://open.oppomobile.com/new/developmentDoc/info?id=12262)
@@ -319,6 +321,8 @@ if (context.getApplicationInfo().targetSdkVersion >= Build.VERSION_CODES.UPSIDE_
     * [Android 14 新功能之 HighLights：快速实现文本高亮～](https://juejin.cn/post/7214532871658291255)
 
     * [劝学：Android 14 Framework 引入了哪些“新”技术栈](https://juejin.cn/post/7231728952057249847)
+
+    * [Android 14 前台服务适配指南](https://mp.weixin.qq.com/s/55a3uqbgfvOzPhmOyJvM6g)
 
 ## Android 13.0
 
@@ -1277,6 +1281,8 @@ if (context.getApplicationInfo().targetSdkVersion >= Build.VERSION_CODES.UPSIDE_
 
     * [Android 9.0 系统新特性，对刘海屏设备进行适配](https://guolin.blog.csdn.net/article/details/103112795)
 
+    * [Android 刘海屏适配框架（停止维护）](https://github.com/zhangzhun132/NotchTools)
+
 * 反射 API 适配
 
     * [区分 SDK 接口和非 SDK 接口](https://developer.android.google.cn/guide/app-compatibility/restrictions-non-sdk-interfaces?hl=zh-cn)
@@ -1802,6 +1808,8 @@ if (context.getApplicationInfo().targetSdkVersion >= Build.VERSION_CODES.UPSIDE_
 * [官方文档 - 请求应用权限](https://developer.android.google.cn/training/permissions/requesting.html)
 
 * [所有的 Android 权限清单](https://developer.android.google.cn/reference/android/Manifest.permission?hl=zh_cn)
+
+* [Android M 的 NDK 行为变更对 APK 包体积的影响](https://www.sunzn.com/2020/06/05/Android-M-%E7%9A%84-NDK-%E8%A1%8C%E4%B8%BA%E5%8F%98%E6%9B%B4%E5%AF%B9-APK-%E5%8C%85%E4%BD%93%E7%A7%AF%E7%9A%84%E5%BD%B1%E5%93%8D/)
 
 ## Android 5.0 / 5.1
 
