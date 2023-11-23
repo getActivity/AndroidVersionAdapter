@@ -294,6 +294,10 @@ if (context.getApplicationInfo().targetSdkVersion >= Build.VERSION_CODES.UPSIDE_
 
     * [Android 14 彻底终结大厂流氓应用](https://juejin.cn/post/7298699367791411236)
 
+    * [Android 14 正式版适配笔记（一）— 针对所有应用的变更](https://juejin.cn/post/7299834584375869474)
+
+    * [Android 14 正式版适配笔记（二）— 针对Android14或更高版本应用的变更](https://juejin.cn/post/7302348032544866316)
+
 * 厂商适配指南
 
     * [OPPO 开放平台 - Android 14 应用兼容性适配指导](https://open.oppomobile.com/new/developmentDoc/info?id=12262)
