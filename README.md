@@ -272,6 +272,8 @@ if (context.getApplicationInfo().targetSdkVersion >= Build.VERSION_CODES.UPSIDE_
 
 * 适配简介
 
+    * [Android 14 适配的那些事情](https://juejin.cn/post/7308434314777772042)
+
     * [Android 14 快速适配要点](https://juejin.cn/post/7231835495557890106)
 
     * [狂飙！Android 14 第一个预览版已发布～](https://juejin.cn/post/7198067983775973432)
