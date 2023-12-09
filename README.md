@@ -300,6 +300,8 @@ if (context.getApplicationInfo().targetSdkVersion >= Build.VERSION_CODES.UPSIDE_
 
     * [Android 14 正式版适配笔记（二）— 针对Android14或更高版本应用的变更](https://juejin.cn/post/7302348032544866316)
 
+    * [Android14 应用兼容性问题报告](https://mp.weixin.qq.com/s/byB_Okpdq_9nbmdDoB3R3w)
+
 * 厂商适配指南
 
     * [OPPO 开放平台 - Android 14 应用兼容性适配指导](https://open.oppomobile.com/new/developmentDoc/info?id=12262)
