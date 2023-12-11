@@ -332,6 +332,8 @@ if (context.getApplicationInfo().targetSdkVersion >= Build.VERSION_CODES.UPSIDE_
 
     * [Android 14 前台服务适配指南](https://mp.weixin.qq.com/s/55a3uqbgfvOzPhmOyJvM6g)
 
+    * [陪伴了 14 年的 API 下线了](https://juejin.cn/post/7303878037590442022)
+
 ## Android 13.0
 
 #### 新特性
