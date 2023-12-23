@@ -814,6 +814,8 @@ if (context.getApplicationInfo().targetSdkVersion >= Build.VERSION_CODES.UPSIDE_
 
     * [用 SplashScreen 做一个会动的开屏！](https://juejin.cn/post/7150692699350237191)
 
+    * [Android SplashScreen API：打造引人注目的启动画面](https://mp.weixin.qq.com/s/pb9N22AGF6mWtpjWS3q_IQ)
+
 * 桌面小组件适配
 
     * [更新您的 widget 以适配 Android 12](https://www.jianshu.com/p/8dade210fcfd)
