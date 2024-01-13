@@ -1567,6 +1567,16 @@ if (context.getApplicationInfo().targetSdkVersion >= Build.VERSION_CODES.UPSIDE_
 
     * [Android 8.0: java.lang.IllegalStateException: Not allowed to start service Intent](https://stackoverflow.com/questions/46445265/android-8-0-java-lang-illegalstateexception-not-allowed-to-start-service-inten)
 
+* 画中画适配
+
+    * [Android画中画（PIP）全解析，踩坑记录](https://juejin.cn/post/7301544527478685731)
+
+    * [Android 原生 Picture in Picture 画中画功能避坑指南](https://juejin.cn/post/7240444181326807101)
+
+    * [Android -- 系统画中画实践指南](https://juejin.cn/post/7276696116905394228)
+
+    * [如何在 Android 中实现画中画功能](https://mp.weixin.qq.com/s/oC4qJudTd99dfyk2wwt2ZQ)
+
 * 其他适配
 
     * [适配 Anddroid 8.0 多语言的解决方案](https://github.com/getActivity/MultiLanguages)
