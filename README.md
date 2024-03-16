@@ -1149,7 +1149,7 @@ if (context.getApplicationInfo().targetSdkVersion >= Build.VERSION_CODES.UPSIDE_
 
    * [QQ SDK - 分区存储功能适配](https://wiki.connect.qq.com/%e5%88%86%e4%ba%ab%e5%8a%9f%e8%83%bd%e5%ad%98%e5%82%a8%e6%9d%83%e9%99%90%e9%80%82%e9%85%8d)
 
-   * [微信 SDK - 分区存储功能适配](https://developers.weixin.qq.com/doc/oplatform/Mobile_App/Access_Guide/Android.html#jump2)
+   * [微信 SDK - 更新 OpenSDK 适配](https://developers.weixin.qq.com/doc/oplatform/Mobile_App/Access_Guide/Android.html#jump2)
 
    * [支持Android 12，全版本保存图片到相册方案](https://juejin.cn/post/7042218651482587172)
 
