@@ -20,15 +20,15 @@
 
 ## 适配流程
 
-* 这里以适配 `Android 14` 为例子，第一步将主模块中的 `build.gradle` 文件中修改 `targetSdkVersion` 和 `compileSdkVersion` 这两个的值
+* 这里以适配 `Android 15` 为例子，第一步将主模块中的 `build.gradle` 文件中修改 `targetSdkVersion` 和 `compileSdkVersion` 这两个的值
 
 ```groovy
 android {
 
-    compileSdkVersion 34
+    compileSdkVersion 35
     defaultConfig {
         ......
-        targetSdkVersion 34
+        targetSdkVersion 35
     }
 }
 ```
@@ -36,7 +36,7 @@ android {
 * 接下来在代码中做一些版本的判断，并且做好新版本的适配和旧版本的兼容
 
 ```java
-if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
+if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.VANILLA_ICE_CREAM) {
     ......
 } else {
     ......
@@ -44,7 +44,7 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
 ```
 
 ```java
-if (context.getApplicationInfo().targetSdkVersion >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
+if (context.getApplicationInfo().targetSdkVersion >= Build.VERSION_CODES.VANILLA_ICE_CREAM) {
     ......
 } else {
     ......
@@ -61,21 +61,22 @@ if (context.getApplicationInfo().targetSdkVersion >= Build.VERSION_CODES.UPSIDE_
 
 | Android 版本 | API 等级 |      版本代号       | 市场占有率  |        发布时间       |
 | :--------:  | :-----: |:------------------:|:---------:| :------------------: |
-| Android 14  |    34   | `UPSIDE_DOWN_CAKE` |  暂无数据  |  2023 年 10 月 10 日   |
-| Android 13  |    33   |     `TIRAMISU`     |  30.33%  |  2022 年 8 月 16 日   |
-| Android 12L |    32   |       `S_V2`       |  暂无数据 |  2022 年 3 月 9 日    |
-| Android 12  |    31   |        `S`         |  20.58% |  2021 年 10 月 4 日   |
-| Android 11  |    30   |        `R`         |  19.98% |  2020 年 9 月 9 日    |
-| Android 10  |    29   |        `Q`         |  9.27%  |  2019 年 9 月 3 日    |
-| Android 9.0 |    28   |        `P`         |  8.61%  |  2018 年 8 月 7 日    |
-| Android 8.1 |    27   |      `O_MR1`       |  2.78%  |  2017 年 12 月 5 日   |
-| Android 8.0 |    26   |        `O`         |  3.21%  |  2017 年 8 月 22 日   |
-| Android 7.1 |    25   |      `N_MR1`       |  0.61%  |  2016 年 12 月 5 日   |
-| Android 7.0 |    24   |        `N`         |  1.88%  |  2016 年 8 月 22 日   |
-| Android 6.0 |    23   |        `M`         |  1.64%  |  2015 年 9 月 29 日   |
-| Android 5.1 |    22   |   `LOLLIPOP_MR1`   |  0.98%  |  2015 年 3 月 10 日   |
-| Android 5.0 |    21   |     `LOLLIPOP`     |  0.53%  |  2014 年 10 月 15 日  |
-| Android 4.4 |    19   |      `KITKAT`      |   0.3%  |  2013 年 10 月 31 日  |
+| Android 15  |    35   | `VANILLA_ICE_CREAM`|  10.06%  |  2024 年 10 月 15 日   |
+| Android 14  |    34   | `UPSIDE_DOWN_CAKE` |  33.44%  |  2023 年 10 月 10 日   |
+| Android 13  |    33   |     `TIRAMISU`     |  16.9%  |  2022 年 8 月 16 日   |
+| Android 12L |    32   |       `S_V2`       | 暂无数据 |  2022 年 3 月 9 日    |
+| Android 12  |    31   |        `S`         |  12.2% |  2021 年 10 月 4 日   |
+| Android 11  |    30   |        `R`         |  10.4% |  2020 年 9 月 9 日    |
+| Android 10  |    29   |        `Q`         |  5.5%  |  2019 年 9 月 3 日    |
+| Android 9.0 |    28   |        `P`         |  3.2%  |  2018 年 8 月 7 日    |
+| Android 8.1 |    27   |      `O_MR1`       |  0.9%  |  2017 年 12 月 5 日   |
+| Android 8.0 |    26   |        `O`         |  2.2%  |  2017 年 8 月 22 日   |
+| Android 7.1 |    25   |      `N_MR1`       |  0.2%  |  2016 年 12 月 5 日   |
+| Android 7.0 |    24   |        `N`         |  1.2%  |  2016 年 8 月 22 日   |
+| Android 6.0 |    23   |        `M`         |  1.4%  |  2015 年 9 月 29 日   |
+| Android 5.1 |    22   |   `LOLLIPOP_MR1`   |  0.4%  |  2015 年 3 月 10 日   |
+| Android 5.0 |    21   |     `LOLLIPOP`     |  1.8%  |  2014 年 10 月 15 日  |
+| Android 4.4 |    19   |      `KITKAT`      | < 0.01% |  2013 年 10 月 31 日  |
 
 * 市场占用率数据更新至 2023 年 11 月 5 日，数据统计主要参考以下链接：
 
@@ -91,54 +92,15 @@ if (context.getApplicationInfo().targetSdkVersion >= Build.VERSION_CODES.UPSIDE_
 
 ## Google Play 应用商店政策
 
+* [Google Play 的目标 API 级别政策（需要翻墙）](https://support.google.com/googleplay/android-developer/answer/11917020?hl=zh-Hans)
+
 * [Google Play 应用在目标 API 级别方面需满足的要求（需要翻墙）](https://support.google.com/googleplay/android-developer/answer/11926878?hl=zh-Hans)
 
-* 每个新的 Android 版本都会引入一些变化，以便改进安全性和性能，并提升 Android 的整体用户体验。每款应用的清单文件中都有一个 `targetSdkVersion` 参数（也称为目标 API 级别），用以告知系统您的应用在不同的 Android 版本上分别该如何运行。
-
-* 将应用的目标 API 级别配置为新近的 API 级别可确保用户享受到安全性、隐私保护和性能方面的改进，同时仍然允许应用在较低版本的 Android（低至 `minSdkVersion`）上运行。
-
-* 为了向 Android 和 Google Play 用户提供安全可靠的使用体验，Google Play 要求所有应用在目标 API 级别方面都必须符合下列要求。
-
-#### 名词定义
-
-|  新应用  | 尚未在 Play 商店中发布的应用（例如，全新的应用） |
-| :-----: | :---------------------------------------: |
-| 应用更新 |       已在 Play 商店中发布的应用的新版本      |
-| 现有应用 |           没有获得更新的已发布应用           |
-
-#### 何时必须将 Google Play 应用的目标 API 级别设为该级别？
-
-|    Android 操作系统版本   |       新应用      |       应用更新     |       现有应用         |    
-| :---------------------: | :--------------: | :--------------: | :----------------: |
-| Android 13（API 级别 33）| 2023 年 8 月 1 日 | 2023 年 11 月 1 日 | 2024 年 11 月 1 日 |
-| Android 12（API 级别 31）| 2022 年 8 月 1 日 | 2022 年 11 月 1 日 | 2023 年 11 月 1 日 |
-| Android 11（API 级别 30）| 2021 年 8 月 1 日 | 2021 年 11 月 1 日 | 2022 年 11 月 1 日 |
-
-**提示**：如需获得技术指导来了解如何更改应用的目标 API 级别以满足上述要求，请参阅[迁移指南](https://developer.android.google.cn/distribute/best-practices/develop/target-sdk.html)。
-
-#### 何时必须将 Wear OS 应用的目标 API 级别设为该级别？
-
-|    Android 操作系统版本   |       新应用      |       应用更新     |       现有应用      |    
-| :---------------------: | :--------------: | :--------------: | :----------------: |
-| Android 11（API 级别 30） | 2022 年 8 月 1 日 | 2022 年 11 月 1 日 |       无要求      |
-| Android 10（API 级别 29） |       无要求      |       无要求       |       无要求      |
-| Android 9（API 级别 28）  | 2019 年 8 月 1 日 | 2019 年 11 月 1 日 |       无要求      |
-
-* 为帮助开发者轻松完成过渡，相比新应用，我们多给了应用更新几个月时间来满足该要求。
-
-#### 应用可能受到的影响
-
-* 您的应用若不符合目标 API 级别要求，可能会受到以下方面的影响：
-
-| **应用** |                            **影响**                           |
-| -------- | ------------------------------------------------------------ |
-| 新应用   | 您将无法在 Play 管理中心发布不符合目标 API 级别要求的 app bundle。 |
-| 应用更新 | 您将无法在 Play 管理中心提交不符合目标 API 级别要求的 app bundle 或 APK。 |
-| 现有应用 | 如果新用户的设备搭载的 Android 操作系统版本高于您的应用的目标 API 级别，那么这类用户将无法在 Google Play 上获取您的应用。也就是说，这类新用户将无法从 Google Play 中发现或安装您的应用。之前从 Google Play 中安装过这款应用的用户仍可以发现、重新安装和使用它。这类现有用户即使换用新的 Android 设备，也仍然可以使用您的应用。 |
-
-* 为帮助开发者轻松完成过渡，相比新应用，我们多给了应用更新几个月时间来满足该要求。
+* [符合 Google Play 的目标 API 级别要求](https://developer.android.google.cn/google/play/requirements/target-sdk?hl=zh-cn)
 
 ## 文档目录
+
+* [Android 15.0](#android-150)
 
 * [Android 14.0](#android-140)
 
@@ -161,6 +123,276 @@ if (context.getApplicationInfo().targetSdkVersion >= Build.VERSION_CODES.UPSIDE_
 * [Android 5.0 / 5.1](#android-50--51)
 
 * [Android 4.4](#android-44)
+
+## Android 15.0
+
+#### 新特性
+
+* [摄像头和媒体](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#camera-media)
+
+    * [弱光增强](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#low-light-boost)
+
+    * [应用内相机控件](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#camera-controls)
+
+    * [HDR 余量控制](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#hdr-headroom)
+
+    * [响度控制](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#loudness-control)
+
+    * [虚拟 MIDI 2.0 设备](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#virtual-midi-devices)
+
+    * [更高效的 AV1 软件解码](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#av1-encoding)
+
+* [开发者工作效率和工具](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#developer-productivity)
+
+    * [OpenJDK 17 更新](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#core-libraries)
+
+    * [PDF 改进](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#pdf)
+
+    * [自动切换语言的优化](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#language-switching)
+
+    * [改进了 OpenType Variable Font API](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#opentype-variable-font-api)
+
+    * [精细的换行控制](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#line-breaks)
+
+    * [应用归档](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#app-archiving)
+
+    * [使用开发者选项在设备上启用 16 KB 模式](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#developer-option)
+
+* [图形](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#graphics)
+
+    * [改进 Android 的 GPU 访问](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#modern-gpu-apis)
+
+    * [改进了画布](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#canvas)
+
+* [性能和电池](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#performance-battery)
+
+    * [ApplicationStartInfo API](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#app-start-info)
+
+    * [详细的应用大小信息](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#app-size-info)
+
+    * [由应用管理的性能分析](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#app-managed-profiling)
+
+    * [SQLite 数据库方面的改进](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#sqlite)
+
+    * [Android 动态性能框架更新](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#dynamic-performance)
+
+* [隐私设置](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#privacy)
+
+    * [屏幕录制检测](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#screen-recording-detection)
+
+    * [扩展了 IntentFilter 功能](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#expanded-intentfilter)
+
+    * [私密空间](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#private-space)
+
+    * [查询用户对“选择照片访问权限”的最新选择](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#selected-photos-access)
+
+    * [Privacy Sandbox on Android](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#privacy-sandbox)
+
+    * [健康数据共享](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#health-connect)
+
+    * [应用屏幕共享](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#app-screen-sharing)
+
+* [用户体验和系统界面](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#ux)
+
+    * [使用 Generated Previews API 实现更丰富的 widget 预览](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#gen-previews)
+
+    * [画中画](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#picture-in-picture)
+
+    * [改进了“勿扰”规则](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#dnd-rules)
+
+    * [为通知渠道设置 VibrationEffect](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#vibrations)
+
+    * [媒体投屏状态栏条状标签和自动停止](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#media-projection-chip-auto-stop)
+
+* [大屏设备和外形规格](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#large-screens)
+
+    * [改进了大屏幕多任务处理](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#large-screen-multitasking)
+
+    * [封面屏幕支持](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#cover-screen)
+
+* [连接](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#connectivity)
+
+    * [卫星支持](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#satellite)
+
+    * [更顺畅的 NFC 体验](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#nfc)
+
+    * [钱包角色](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#wallet-role)
+
+* [安全](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#security)
+
+    * [将 Credential Manager 与自动填充功能集成](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#credman-autofill)
+
+    * [将一键注册和登录与生物识别提示集成](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#credman-biometric)
+
+    * [端到端加密的密钥管理](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#key-mgmt-e2ee)
+
+    * [对内容 URI 的权限检查](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#content-uri)
+
+* [国际化](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#i18n)
+
+    * [中日韩可变字体](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#cjk-variable-font)
+
+    * [字符间两端对齐](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#inter-character-justification)
+
+    * [自动换行配置](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#automatic-line-break)
+
+    * [额外的日语 hentaigana 字体](https://developer.android.google.cn/about/versions/15/features?hl=zh-cn#hentaigana-font)
+
+* [	企业版的新变化](https://developer.android.google.cn/work/versions/android-15?hl=zh-cn)
+
+    * [增强型员工和设备保护](https://developer.android.google.cn/work/versions/android-15?hl=zh-cn#enhanced-employee)
+
+        * [Android 盗窃防护](https://developer.android.google.cn/work/versions/android-15?hl=zh-cn#android-theft-protection)
+
+        * [用于个人资料的私密空间](https://developer.android.google.cn/work/versions/android-15?hl=zh-cn#private-space)
+
+        * [NIAP 合规性维护](https://developer.android.google.cn/work/versions/android-15?hl=zh-cn#niap-compliance)
+
+    * [加强对公司自有设备的管理](https://developer.android.google.cn/work/versions/android-15?hl=zh-cn#stronger-management)
+
+        * [简化受管理设备上的 eSIM 卡管理](https://developer.android.google.cn/work/versions/android-15?hl=zh-cn#simplify-esim)
+
+        * [Android 工作资料中“圈定即搜”功能的控件](https://developer.android.google.cn/work/versions/android-15?hl=zh-cn#circle-to-search-controls)
+
+        * [针对公司自有设备的其他自定义](https://developer.android.google.cn/work/versions/android-15?hl=zh-cn#additional-customization)
+
+#### 行为更变
+
+* [针对所有应用的行为变更](https://developer.android.google.cn/about/versions/15/behavior-changes-all?hl=zh-cn)
+
+    * [核心功能](https://developer.android.google.cn/about/versions/15/behavior-changes-all?hl=zh-cn#core)
+
+        * [对软件包停止状态的更改](https://developer.android.google.cn/about/versions/15/behavior-changes-all?hl=zh-cn#enhanced-stop-states)
+
+        * [支持 16 KB 页面大小](https://developer.android.google.cn/about/versions/15/behavior-changes-all?hl=zh-cn#16-kb)
+
+        * [某些应用支持私密空间所需的更改](https://developer.android.google.cn/about/versions/15/behavior-changes-all?hl=zh-cn#private-space-changes)
+
+        * [移除了基于 PNG 的表情符号字体](https://developer.android.google.cn/about/versions/15/behavior-changes-all?hl=zh-cn#png-emoji-font)
+
+        * [将最低目标 SDK 版本从 23 提高到 24](https://developer.android.google.cn/about/versions/15/behavior-changes-all?hl=zh-cn#minimum-target-api-level)
+
+    * [安全和隐私设置](https://developer.android.google.cn/about/versions/15/behavior-changes-all?hl=zh-cn#security)
+
+        * [动态密码隐去](https://developer.android.google.cn/about/versions/15/behavior-changes-all?hl=zh-cn#otp_redaction)
+
+        * [屏幕共享保护](https://developer.android.google.cn/about/versions/15/behavior-changes-all?hl=zh-cn#screenshare_protection)
+
+    * [摄像头和媒体](https://developer.android.google.cn/about/versions/15/behavior-changes-all?hl=zh-cn#camera-media)
+
+        * [当达到资源限制时，直接和分流音频播放会使之前打开的直接或分流音轨失效](https://developer.android.google.cn/about/versions/15/behavior-changes-all?hl=zh-cn#direct-audio)
+
+    * [用户体验和系统界面](https://developer.android.google.cn/about/versions/15/behavior-changes-all?hl=zh-cn#ux)
+
+        * [为选择启用的应用启用预测性返回动画](https://developer.android.google.cn/about/versions/15/behavior-changes-all?hl=zh-cn#predictive-back)
+
+        * [当用户强制停止应用时，微件被停用](https://developer.android.google.cn/about/versions/15/behavior-changes-all?hl=zh-cn#widgets-force-stop)
+
+        * [媒体投影状态栏条状标签会提醒用户屏幕共享、投屏和录制](https://developer.android.google.cn/about/versions/15/behavior-changes-all?hl=zh-cn#media-projection-status-bar-chip)
+
+        * [后台网络访问权限限制](https://developer.android.google.cn/about/versions/15/behavior-changes-all?hl=zh-cn#background-network-access)
+
+    * [更新废弃 API](https://developer.android.google.cn/about/versions/15/behavior-changes-all?hl=zh-cn#deprecations)
+
+* [针对 targetSdkVersion 35+ 应用的行为变更](https://developer.android.google.cn/about/versions/15/behavior-changes-15?hl=zh-cn)
+
+    * [核心功能](https://developer.android.google.cn/about/versions/15/behavior-changes-15?hl=zh-cn#core)
+
+        * [前台服务的变更](https://developer.android.google.cn/about/versions/15/behavior-changes-15?hl=zh-cn#fgs-hardening)
+
+        * [更改了应用何时可以修改“勿扰”模式的全局状态](https://developer.android.google.cn/about/versions/15/behavior-changes-15?hl=zh-cn#dnd-changes)
+
+        * [OpenJDK API 变更](https://developer.android.google.cn/about/versions/15/behavior-changes-15?hl=zh-cn#openjdk-api-changes)
+
+    * [安全](https://developer.android.google.cn/about/versions/15/behavior-changes-15?hl=zh-cn#security)
+
+        * [受限 TLS 版本](https://developer.android.google.cn/about/versions/15/behavior-changes-15?hl=zh-cn#restricted-tls-versions)
+
+        * [限制后台 activity 启动](https://developer.android.google.cn/about/versions/15/behavior-changes-15?hl=zh-cn#secured-bal)
+
+        * [提高 intent 安全性](https://developer.android.google.cn/about/versions/15/behavior-changes-15?hl=zh-cn#safer-intents)
+
+    * [用户体验和系统界面](https://developer.android.google.cn/about/versions/15/behavior-changes-15?hl=zh-cn#ux)
+
+        * [窗口边衬区更改](https://developer.android.google.cn/about/versions/15/behavior-changes-15?hl=zh-cn#window-insets)
+
+        * [elegantTextHeight 属性的默认值为 true](https://developer.android.google.cn/about/versions/15/behavior-changes-15?hl=zh-cn#elegant-text-height)
+
+        * [复杂字母形状的 TextView 宽度会发生变化](https://developer.android.google.cn/about/versions/15/behavior-changes-15?hl=zh-cn#textview-width)
+
+        * [EditText 的语言区域感知默认行高](https://developer.android.google.cn/about/versions/15/behavior-changes-15?hl=zh-cn#locale-aware-line-height)
+
+    * [摄像头和媒体](https://developer.android.google.cn/about/versions/15/behavior-changes-15?hl=zh-cn#camera-media)
+
+        * [有关请求音频焦点的限制](https://developer.android.google.cn/about/versions/15/behavior-changes-15?hl=zh-cn#audio-focus)
+
+    * [更新后的非 SDK 限制](https://developer.android.google.cn/about/versions/15/behavior-changes-15?hl=zh-cn#non-sdk-restrictions)
+
+#### 相关资源
+
+*  适配简介
+
+    * [Android 15 正式发布到 AOSP ，来了解下新特性和适配需求](https://juejin.cn/post/7410645914585317403)
+
+    * [Android 15？我想躺着](https://juejin.cn/post/7376622203301462055)
+
+    * [Android 15 适配方案及常见问题](https://juejin.cn/post/7419846377557573670)
+
+    * [Android 15 的新功能与适配](https://www.cnblogs.com/bluestorm/p/18198389)
+
+* 厂商适配指南
+
+    * [OPPO 开放平台 - Android 15 应用兼容性适配指导](https://open.oppomobile.com/new/developmentDoc/info?id=13047)
+
+    * [VIVO 开放平台 - Android 15 开发者适配文档](https://dev.vivo.com.cn/documentCenter/doc/797)
+
+    * [小米开放平台 - Android 15 应用适配指南](https://dev.mi.com/xiaomihyperos/documentation/detail?pId=1826)
+
+    * [荣耀开放平台 - Android 15 应用兼容性适配指导](https://developer.honor.com/cn/docs/adaptation_guide/guides/google_V)
+
+* EdgeToEdge 适配
+
+    * [恶心的  EdgeToEdge 适配](https://juejin.cn/post/7497170890083762213)
+
+    * [Android 15 新特性，强制 edge-to-edge 全面屏体验](https://blog.csdn.net/guolin_blog/article/details/141500877)
+
+    * [写给初学者的 Jetpack Compose 教程，edge-to-edge 全面屏体验](https://guolin.blog.csdn.net/article/details/143079753)
+
+* so 库 16k Page Size 适配
+
+    * [Android 15 适配之16K Page Size ：为什么它会是最坑的一个适配点](https://juejin.cn/post/7389049604632215579)
+
+    * [Android 15 之如何快速适配 16K Page Size](https://juejin.cn/post/7393533304506007603)
+
+    * [Android 15 上适配 16K Page Size 的填坑思路，以 IJKPlayer 为例子](https://juejin.cn/post/7396306532671094793)
+
+    * [如何查看项目是否支持最新 Android 16K Page Size 一文汇总](https://juejin.cn/post/7503110591214813223)
+
+    * [Google 开始正式强制 Android 适配 16K Page Size，你准备好了吗？](https://juejin.cn/post/7502246437372182569)
+
+    * [Android 15 大变更：支持 16K 内存分页，所有 native app 必须重编译](https://juejin.cn/post/7382980041398894627)
+
+    * [Android 15- 16kb页对齐适配大扫盲](https://juejin.cn/post/7395396352182583306)
+
+* 其他适配
+
+    * [升级 compileSdk Android 35 导致编译错误](https://stackoverflow.com/questions/78678063/android-15-update-compilesdk-android-35-cause-an-error-res-table-type-type-e)
+
+    * [关于 Android15 GKI2407R40 导致梆梆加固软件崩溃](https://juejin.cn/post/7436662001802002484)
+
+    * [Android 15 将禁止 NotificationListenerService 读取 OTP](https://juejin.cn/post/7428157656257478682)
+
+    * [Android 15 新特性，预测性返回手势](https://blog.csdn.net/guolin_blog/article/details/145124382)
+
+    * [浅谈 Android 15 新 API：确保 TextView 完整展示、不被切断](https://juejin.cn/post/7370170468780933135)
+
+    * [Android 15 新 API：内存追踪利器 ProfilingManager](https://juejin.cn/post/7361934843210350592)
+
+    * [启动信息全掌握，Android 15 重磅 API：ApplicationStartInfo](https://juejin.cn/post/7352075765930098738)
+
+    * [Android 15 线程挂起超时崩溃与修复](https://juejin.cn/post/7390341683601014824)
+
+    * [Android 15 应用适配指南：Android 15 废弃 API](https://www.49ku.com/google-developer/332/)
 
 ## Android 14.0
 
@@ -276,11 +508,15 @@ if (context.getApplicationInfo().targetSdkVersion >= Build.VERSION_CODES.UPSIDE_
 
     * [Android 14 快速适配要点](https://juejin.cn/post/7231835495557890106)
 
+    * [Android 14 正式发布，已经在 AOSP 中上线，快来看看有什么吧](https://juejin.cn/post/7288151713373962301)
+
     * [狂飙！Android 14 第一个预览版已发布～](https://juejin.cn/post/7198067983775973432)
 
     * [Android 14 又来了？别扶！抬起我来吧！](https://juejin.cn/post/7235906062309965880)
 
     * [深度解读 Android 14 重要的 8 个新特性～](http://juejin.cn/post/7249916242063802429)
+
+    * [Android 出海实战：Android14 适配](https://juejin.cn/post/7373306258404278281)
 
     * [Android14 适配之——targetSdkVersion 升级到 34 需要注意些什么？](https://juejin.cn/post/7288964295697399843)
 
@@ -302,6 +538,12 @@ if (context.getApplicationInfo().targetSdkVersion >= Build.VERSION_CODES.UPSIDE_
 
     * [Android14 应用兼容性问题报告](https://mp.weixin.qq.com/s/byB_Okpdq_9nbmdDoB3R3w)
 
+    * [Android 14 新特性及变更](https://www.cnblogs.com/qiyuexiaxun/p/18102382)
+
+    * [Android 14 正式版适配笔记（一）— 针对所有应用的变更](https://juejin.cn/post/7299834584375869474)
+
+    * [Android 14 正式版适配笔记（二）— 针对Android14或更高版本应用的变更](https://juejin.cn/post/7302348032544866316)
+
 * 厂商适配指南
 
     * [OPPO 开放平台 - Android 14 应用兼容性适配指导](https://open.oppomobile.com/new/developmentDoc/info?id=12262)
@@ -310,13 +552,41 @@ if (context.getApplicationInfo().targetSdkVersion >= Build.VERSION_CODES.UPSIDE_
 
     * [小米开放平台 - Android 14 应用适配指南](https://dev.mi.com/distribute/doc/details?pId=1718)
 
-* 其他适配
+    * [荣耀开放平台 - Android 14 应用兼容性适配指导](https://developer.honor.com/cn/docs/adaptation_guide/guides/google_u_compatibility_adaptation_guide)
+
+* 权限适配
 
     * [Android 14 权限适配方案](https://github.com/getActivity/XXPermissions)
 
     * [Android 14 新增权限](https://juejin.cn/post/7238762963908689957)
 
+    * [Android 14 新特性，选择性照片和视频访问授权](https://blog.csdn.net/guolin_blog/article/details/137410229)
+
+    * [Android 14 : 精确时钟进一步被限制(SCHEDULE_EXACT_ALARM)](https://juejin.cn/post/7299384357827100706)
+
+    * [Android 14 Behavior Changes：精確鬧鐘行為變更](https://carterchen247.medium.com/android-14-behavior-changes-%E7%B2%BE%E7%A2%BA%E9%AC%A7%E9%90%98%E8%A1%8C%E7%82%BA%E8%AE%8A%E6%9B%B4-87b432f979e0)
+
+* 截屏适配
+
+    * [Android 截屏监控(已适配Android 14)](https://juejin.cn/post/7350589891166519332)
+
     * [Android 14 新 API：直接监听截屏操作，不用再观察媒体文件了～](https://juejin.cn/post/7219567168316473404)
+
+* 卡顿问题处理
+
+    * [问题 | Debuggable app在Android 14上运行卡顿](https://juejin.cn/post/7353106089296789556)
+
+    * [你的debug包在Android 14变卡了吗 ？｜ 得物技术](https://juejin.cn/post/7360597965637025801)
+
+    * [【Android原生问题分析】夸克、抖音划动无响应问题【Android14】](https://juejin.cn/post/7437904276918321152)
+
+    * [Android14 使用新特性 record 关键字，请慎行！](https://juejin.cn/post/7385374199915626534)
+
+    * [【问题分析】InputDispatcher无焦点窗口ANR问题【Android 14】](https://juejin.cn/post/7350510977053245476)
+
+* 其他适配
+
+    * [安卓 14 适配编译问题和坑总结](https://blog.csdn.net/CruxFinn/article/details/131638123)
 
     * [Android 14 新功能：区域偏好 Regional Preferences](https://juejin.cn/post/7248412998577782840)
 
@@ -328,11 +598,17 @@ if (context.getApplicationInfo().targetSdkVersion >= Build.VERSION_CODES.UPSIDE_
 
     * [Android 14 新功能之 HighLights：快速实现文本高亮～](https://juejin.cn/post/7214532871658291255)
 
-    * [劝学：Android 14 Framework 引入了哪些“新”技术栈](https://juejin.cn/post/7231728952057249847)
+    * [Android 14 之 动态注册 Broadcast 必须声明 exported 属性](https://juejin.cn/post/7313048140277596197)
 
-    * [Android 14 前台服务适配指南](https://mp.weixin.qq.com/s/55a3uqbgfvOzPhmOyJvM6g)
+    * [Android 14 前台服务适配指南](https://blog.csdn.net/u011897062/article/details/134291685)
 
     * [陪伴了 14 年的 API 下线了](https://juejin.cn/post/7303878037590442022)
+
+    * [我以为发现了Android 14系统中的一个bug，然而...](https://blog.csdn.net/guolin_blog/article/details/135418327)
+
+    * [Android 14 之常驻通知栏不再常驻](https://juejin.cn/post/7330851925057159208)
+
+    * [Android 14 之 国际化](https://juejin.cn/post/7315314479205646351)
 
 ## Android 13.0
 
@@ -499,6 +775,8 @@ if (context.getApplicationInfo().targetSdkVersion >= Build.VERSION_CODES.UPSIDE_
     * [VIVO 开放平台 - Android 13 应用适配指南](https://dev.vivo.com.cn/documentCenter/doc/586)
 
     * [小米开放平台 - Android 13 应用适配指南](https://dev.mi.com/console/doc/detail?pId=2632)
+
+    * [荣耀开放平台 - Android 13 应用兼容性适配指导](https://developer.honor.com/cn/docs/adaptation_guide/guides/google_t_compatibility_adaptation_guide)
 
 * 其他适配
 
@@ -834,6 +1112,16 @@ if (context.getApplicationInfo().targetSdkVersion >= Build.VERSION_CODES.UPSIDE_
 
     * [The application could not be installed: `INSTALL_PARSE_FAILED_MANIFEST_MALFORMED`](https://developer.android.google.cn/about/versions/12/behavior-changes-12?hl=zh-cn#exported)
 
+* 闹钟权限适配
+
+    * [Android 12 闹钟权限适配方案](https://github.com/getActivity/XXPermissions)
+
+    * [Android 12 版本闹钟服务崩溃问题](https://stars-one.site/2023/12/06/android12-alarm-error)
+
+    * [记录一次 Android 12 的精准闹钟崩溃的处理](https://juejin.cn/post/7236021778547048503)
+
+    * [SCHEDULE_EXACT_ALARM 权限 在 android12.0 崩溃的问题](https://www.cnblogs.com/loaf/p/scheduleexactalarm-quan-xian-zaiandroid120beng-kui.html)
+
 * Android 12 L 适配
 
     * [详解 Android 12L｜更好地适配大屏幕设备](https://mp.weixin.qq.com/s/NN0CzWoKfIALPZbHjWQk5Q)
@@ -1163,6 +1451,14 @@ if (context.getApplicationInfo().targetSdkVersion >= Build.VERSION_CODES.UPSIDE_
 
    * [Android 10 暗黑模式适配，你需要知道的一切](https://juejin.cn/post/6844904173788463112)
 
+* 在后台启动应用
+
+   * [Android 后台启动 Activity 适配](https://herokince.com/posts/activity-background-start/)
+
+   * [Android 后台启动的实践之路](https://ljd1996.github.io/2020/12/18/Android%E5%90%8E%E5%8F%B0%E5%90%AF%E5%8A%A8%E7%9A%84%E5%AE%9E%E8%B7%B5%E4%B9%8B%E8%B7%AF/)
+
+   * [Android 10 适配-针对从后台启动 Activity 的限制](https://blog.csdn.net/Heijinbaitu/article/details/105394245)
+
 * 其他适配
 
    * [Android 折叠屏适配攻略](https://juejin.cn/post/6844903889267867656)
@@ -1288,6 +1584,8 @@ if (context.getApplicationInfo().targetSdkVersion >= Build.VERSION_CODES.UPSIDE_
     * [小米开放平台 - MIUI Android P 适配指南](https://dev.mi.com/console/doc/detail?pId=1351)
 
 * 刘海屏适配
+
+    * [官方文档 - 支持刘海屏](https://developer.android.com/develop/ui/views/layout/display-cutout?hl=zh-cn)
 
     * [Android 刘海屏适配全攻略](https://www.jianshu.com/p/561f7241153b)
 
@@ -1568,6 +1866,10 @@ if (context.getApplicationInfo().targetSdkVersion >= Build.VERSION_CODES.UPSIDE_
     * [Android 8.0: java.lang.IllegalStateException: Not allowed to start service Intent](https://stackoverflow.com/questions/46445265/android-8-0-java-lang-illegalstateexception-not-allowed-to-start-service-inten)
 
 * 画中画适配
+
+    * [画中画权限适配解决方案](https://github.com/getActivity/XXPermissions)
+
+    * [Android 画中画 PiP 避坑指北](https://juejin.cn/post/7496346291356172307)
 
     * [Android画中画（PIP）全解析，踩坑记录](https://juejin.cn/post/7301544527478685731)
 
