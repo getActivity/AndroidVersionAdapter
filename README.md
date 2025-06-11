@@ -1839,6 +1839,8 @@ if (context.getApplicationInfo().targetSdkVersion >= Build.VERSION_CODES.VANILLA
 
 * 通知渠道适配
 
+    * [Android 消息通知栏用法详解(二) 适配 8.0](https://blog.csdn.net/u011418943/article/details/105161112)
+
     * [Android 通知栏微技巧，8.0 系统中通知栏的适配](https://blog.csdn.net/guolin_blog/article/details/79854070)
 
     * [创建和管理通知渠道](https://developer.android.google.cn/training/notify-user/channels)
