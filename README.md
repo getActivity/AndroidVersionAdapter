@@ -559,7 +559,11 @@ if (context.getApplicationInfo().targetSdkVersion >= Build.VERSION_CODES.BAKLAVA
 
     * [写给初学者的 Jetpack Compose 教程，edge-to-edge 全面屏体验](https://guolin.blog.csdn.net/article/details/143079753)
 
+    * [Android15 适配之 edge-to-edge 和 16kb 到底咋适配](https://juejin.cn/post/7586943543019290666)
+
 * so 库 16k Page Size 适配
+
+    * [AnalyzeSoGradlePlugin：一款分析 so 库来源和架构的 Gradle 插件](https://github.com/RavenLiao/AnalyzeSoGradlePlugin)
 
     * [Android 15 适配之16K Page Size ：为什么它会是最坑的一个适配点](https://juejin.cn/post/7389049604632215579)
 
@@ -576,6 +580,8 @@ if (context.getApplicationInfo().targetSdkVersion >= Build.VERSION_CODES.BAKLAVA
     * [Android 15 - 16 kb 页对齐适配大扫盲](https://juejin.cn/post/7395396352182583306)
 
     * [Android 15 适配 16 kb](https://juejin.cn/post/7545289104378232873)
+
+    * [Android15 适配之 edge-to-edge 和 16kb 到底咋适配](https://juejin.cn/post/7586943543019290666)
 
 * compileSdk 35 编译环境适配
 
