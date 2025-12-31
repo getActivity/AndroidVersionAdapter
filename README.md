@@ -307,6 +307,8 @@ if (context.getApplicationInfo().targetSdkVersion >= Build.VERSION_CODES.BAKLAVA
 
     * [Android 16 适配指南](https://juejin.cn/post/7529722916289249290)
 
+    * [Android 16 (Target 36) 应用适配指南](https://juejin.cn/post/7589246131585056803)
+
 * 厂商适配指南
 
     * [OPPO 开放平台 - Android 16 应用兼容性适配指导](https://open.oppomobile.com/documentation/page/info?id=13346)
