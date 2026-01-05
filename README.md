@@ -1299,6 +1299,8 @@ if (context.getApplicationInfo().targetSdkVersion >= Build.VERSION_CODES.BAKLAVA
 
 * SplashScreen 适配
 
+    * [Android 12 SplashScreen 一种另类的适配方案](https://juejin.cn/post/7591348605867343907)
+
     * [Android 适配最新 SplashScreen 方案](https://juejin.cn/post/7498253865257074727)
 
     * [从 Jetpack SplashScreen 深度探讨 App 启动画面的前世今生～](https://juejin.cn/post/7044713406774902820)
