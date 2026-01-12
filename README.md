@@ -325,6 +325,12 @@ if (context.getApplicationInfo().targetSdkVersion >= Build.VERSION_CODES.BAKLAVA
 
     * [关于 Android16 MOPS 函数指令非法问题](https://juejin.cn/post/7532324493581418506)
 
+    * [Android 16 卫星连接 API 来了，带你写出「永不失联」的应用](https://juejin.cn/post/7514242912374718464)
+
+    * [Android 16 的 Appfunctions API ，应用级 MCP 支持为 AI 场景打通最后一层壁垒](https://juejin.cn/post/7500025453127663652)
+
+    * [Android PC 要来了？Android 16 Beta3 出现 Enable desktop experience features 选项](https://juejin.cn/post/7482013975077896227)
+
 ## Android 15.0
 
 #### 新特性
