@@ -543,6 +543,8 @@ if (context.getApplicationInfo().targetSdkVersion >= Build.VERSION_CODES.BAKLAVA
 
     * [Android 15 应用适配指南](https://juejin.cn/post/7524231197959847951)
 
+    * [Android 15 快速适配指南](https://juejin.cn/post/7372396200861761586)
+
 * 厂商适配指南
 
     * [OPPO 开放平台 - Android 15 应用兼容性适配指导](https://open.oppomobile.com/new/developmentDoc/info?id=13047)
