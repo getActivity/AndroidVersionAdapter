@@ -1331,6 +1331,8 @@ if (context.getApplicationInfo().targetSdkVersion >= Build.VERSION_CODES.BAKLAVA
 
     * [Android SplashScreen API：打造引人注目的启动画面](https://mp.weixin.qq.com/s/pb9N22AGF6mWtpjWS3q_IQ)
 
+    * [给 App 添加启动画面 SplashScreen](https://juejin.cn/post/7571693273728434212)
+
 * 桌面小组件适配
 
     * [更新您的 widget 以适配 Android 12](https://www.jianshu.com/p/8dade210fcfd)
