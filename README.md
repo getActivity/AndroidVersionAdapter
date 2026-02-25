@@ -1301,6 +1301,8 @@ if (context.getApplicationInfo().targetSdkVersion >= Build.VERSION_CODES.BAKLAVA
 
     * [您有一份安卓 12 适配攻略，请注意查收！](https://mp.weixin.qq.com/s/vyKVaIGQHrisuuA8tT317w)
 
+    * [升级 Android 目标版本到 31(S) 居然这么多坑](https://juejin.cn/post/7176273227558158393)
+
 * 厂商适配指南
 
     * [OPPO 开放平台 - Android 12 应用兼容性适配指导](https://open.oppomobile.com/wiki/doc#id=10960)
