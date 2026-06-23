@@ -61,26 +61,26 @@ if (context.getApplicationInfo().targetSdkVersion >= Build.VERSION_CODES.CINNAMO
 
 | Android 版本 | API 等级 |      版本代号       | 市场占有率  |        发布时间       |
 | :--------:  | :-----: |:------------------:|:---------:| :------------------: |
-| Android 17  |    37   |   `CINNAMON_BUN`   |  暂无数据  |   2026 年 6 月 16 日  |
-| Android 16  |    36   |      `BAKLAVA`     |  暂无数据  |  2025 年 6 月 10 日   |
-| Android 15  |    35   | `VANILLA_ICE_CREAM`|  10.06%  |  2024 年 10 月 15 日   |
-| Android 14  |    34   | `UPSIDE_DOWN_CAKE` |  33.44%  |  2023 年 10 月 10 日   |
-| Android 13  |    33   |     `TIRAMISU`     |  16.9%  |  2022 年 8 月 16 日   |
-| Android 12L |    32   |       `S_V2`       | 暂无数据 |  2022 年 3 月 9 日    |
-| Android 12  |    31   |        `S`         |  12.2% |  2021 年 10 月 4 日   |
-| Android 11  |    30   |        `R`         |  10.4% |  2020 年 9 月 9 日    |
-| Android 10  |    29   |        `Q`         |  5.5%  |  2019 年 9 月 3 日    |
-| Android 9.0 |    28   |        `P`         |  3.2%  |  2018 年 8 月 7 日    |
-| Android 8.1 |    27   |      `O_MR1`       |  0.9%  |  2017 年 12 月 5 日   |
-| Android 8.0 |    26   |        `O`         |  2.2%  |  2017 年 8 月 22 日   |
-| Android 7.1 |    25   |      `N_MR1`       |  0.2%  |  2016 年 12 月 5 日   |
-| Android 7.0 |    24   |        `N`         |  1.2%  |  2016 年 8 月 22 日   |
-| Android 6.0 |    23   |        `M`         |  1.4%  |  2015 年 9 月 29 日   |
-| Android 5.1 |    22   |   `LOLLIPOP_MR1`   |  0.4%  |  2015 年 3 月 10 日   |
-| Android 5.0 |    21   |     `LOLLIPOP`     |  1.8%  |  2014 年 10 月 15 日  |
-| Android 4.4 |    19   |      `KITKAT`      | < 0.01% |  2013 年 10 月 31 日  |
+| Android 17  |    37   |   `CINNAMON_BUN`   |      -    |   2026 年 6 月 16 日  |
+| Android 16  |    36   |      `BAKLAVA`     |    22.3%  |  2025 年 6 月 10 日   |
+| Android 15  |    35   | `VANILLA_ICE_CREAM`|    18.7%  |  2024 年 10 月 15 日  |
+| Android 14  |    34   | `UPSIDE_DOWN_CAKE` |    13.5%  |  2023 年 10 月 10 日  |
+| Android 13  |    33   |     `TIRAMISU`     |    14.4%  |  2022 年 8 月 16 日   |
+| Android 12L |    32   |       `S_V2`       |      -    |  2022 年 3 月 9 日   |
+| Android 12  |    31   |        `S`         |    9.9%   |  2021 年 10 月 4 日   |
+| Android 11  |    30   |        `R`         |    8.1%   |  2020 年 9 月 9 日    |
+| Android 10  |    29   |        `Q`         |    4.2%   |  2019 年 9 月 3 日    |
+| Android 9.0 |    28   |        `P`         |    2.4%   |  2018 年 8 月 7 日    |
+| Android 8.1 |    27   |      `O_MR1`       |    1.3%   |  2017 年 12 月 5 日   |
+| Android 8.0 |    26   |        `O`         |    1.3%   |  2017 年 8 月 22 日   |
+| Android 7.1 |    25   |      `N_MR1`       |    0.3%   |  2016 年 12 月 5 日   |
+| Android 7.0 |    24   |        `N`         |    0.2%   |  2016 年 8 月 22 日   |
+| Android 6.0 |    23   |        `M`         |    1.4%   |  2015 年 9 月 29 日   |
+| Android 5.1 |    22   |   `LOLLIPOP_MR1`   |    0.2%   |  2015 年 3 月 10 日   |
+| Android 5.0 |    21   |     `LOLLIPOP`     |    1.6%   |  2014 年 10 月 15 日  |
+| Android 4.4 |    19   |      `KITKAT`      |  < 0.01%  |  2013 年 10 月 31 日  |
 
-* 市场占用率数据更新至 2025 年 6 月 9 日，数据统计主要参考以下链接：
+* 市场占用率数据更新至 2026 年 6 月 23 日，数据统计主要参考以下链接：
 
 * [Android API Levels](https://apilevels.com/)
 
