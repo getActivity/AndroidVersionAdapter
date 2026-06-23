@@ -20,15 +20,15 @@
 
 ## 适配流程
 
-* 这里以适配 `Android 16` 为例子，第一步将主模块中的 `build.gradle` 文件中修改 `targetSdkVersion` 和 `compileSdkVersion` 这两个的值
+* 这里以适配 `Android 17` 为例子，第一步将主模块中的 `build.gradle` 文件中修改 `targetSdkVersion` 和 `compileSdkVersion` 这两个的值
 
 ```groovy
 android {
 
-    compileSdkVersion 36
+    compileSdkVersion 37
     defaultConfig {
         ......
-        targetSdkVersion 36
+        targetSdkVersion 37
     }
 }
 ```
@@ -36,7 +36,7 @@ android {
 * 接下来在代码中做一些版本的判断，并且做好新版本的适配和旧版本的兼容
 
 ```java
-if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.BAKLAVA) {
+if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.CINNAMON_BUN) {
     ......
 } else {
     ......
@@ -44,7 +44,7 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.BAKLAVA) {
 ```
 
 ```java
-if (context.getApplicationInfo().targetSdkVersion >= Build.VERSION_CODES.BAKLAVA) {
+if (context.getApplicationInfo().targetSdkVersion >= Build.VERSION_CODES.CINNAMON_BUN) {
     ......
 } else {
     ......
@@ -61,6 +61,7 @@ if (context.getApplicationInfo().targetSdkVersion >= Build.VERSION_CODES.BAKLAVA
 
 | Android 版本 | API 等级 |      版本代号       | 市场占有率  |        发布时间       |
 | :--------:  | :-----: |:------------------:|:---------:| :------------------: |
+| Android 17  |    37   |   `CINNAMON_BUN`   |  暂无数据  |   2026 年 6 月 16 日  |
 | Android 16  |    36   |      `BAKLAVA`     |  暂无数据  |  2025 年 6 月 10 日   |
 | Android 15  |    35   | `VANILLA_ICE_CREAM`|  10.06%  |  2024 年 10 月 15 日   |
 | Android 14  |    34   | `UPSIDE_DOWN_CAKE` |  33.44%  |  2023 年 10 月 10 日   |
@@ -101,6 +102,8 @@ if (context.getApplicationInfo().targetSdkVersion >= Build.VERSION_CODES.BAKLAVA
 
 ## 文档目录
 
+* [Android 17.0](#android-170)
+
 * [Android 16.0](#android-160)
 
 * [Android 15.0](#android-150)
@@ -126,6 +129,208 @@ if (context.getApplicationInfo().targetSdkVersion >= Build.VERSION_CODES.BAKLAVA
 * [Android 5.0 / 5.1](#android-50--51)
 
 * [Android 4.4](#android-44)
+
+## Android 17.0
+
+#### 新特性
+
+* [核心功能](https://developer.android.google.cn/about/versions/17/features?hl=zh-cn#core)
+
+    * [新的 ProfilingManager 触发器](https://developer.android.google.cn/about/versions/17/features?hl=zh-cn#profilingmanager-new-triggers)
+
+    * [JobDebugInfo API](https://developer.android.google.cn/about/versions/17/features?hl=zh-cn#job-debug-info)
+
+    * [通过为允许空闲时运行的闹钟提供监听器支持，减少唤醒锁定](https://developer.android.google.cn/about/versions/17/features?hl=zh-cn#allow-while-idle-alarms)
+
+* [隐私权](https://developer.android.google.cn/about/versions/17/features?hl=zh-cn#privacy)
+
+    * [加密客户端 Hello (ECH) 平台支持](https://developer.android.google.cn/about/versions/17/features?hl=zh-cn#ech-platform-support)
+
+    * [Android 联系人选择器](https://developer.android.google.cn/about/versions/17/features?hl=zh-cn#contact-picker)
+
+* [安全](https://developer.android.google.cn/about/versions/17/features?hl=zh-cn#security)
+
+    * [Android 高级保护模式 (AAPM)](https://developer.android.google.cn/about/versions/17/features?hl=zh-cn#advanced-protection-mode)
+
+    * [PQC APK 签名](https://developer.android.google.cn/about/versions/17/features?hl=zh-cn#pqc-apk-signing)
+
+* [连接](https://developer.android.google.cn/about/versions/17/features?hl=zh-cn#connectivity)
+
+    * [受限卫星网络](https://developer.android.google.cn/about/versions/17/features?hl=zh-cn#satellite)
+
+* [用户体验和系统界面](https://developer.android.google.cn/about/versions/17/features?hl=zh-cn#ux-sysui)
+
+    * [专用 Google 助理音量音频流](https://developer.android.google.cn/about/versions/17/features?hl=zh-cn#assistant-volume)
+
+    * [Handoff](https://developer.android.google.cn/about/versions/17/features?hl=zh-cn#handoff)
+
+    * [实时更新 - 语义颜色 API](https://developer.android.google.cn/about/versions/17/features?hl=zh-cn#live-update)
+
+    * [适用于 Android 17 的 UWB 下行链路 TDoA API](https://developer.android.google.cn/about/versions/17/features?hl=zh-cn#dl-tdoa-api-android-17)
+
+    * [带外 (OOB) 配置](https://developer.android.google.cn/about/versions/17/features?hl=zh-cn#out-of-band_oob_configurations)
+
+#### 行为更变
+
+* [针对所有应用的行为变更](https://developer.android.google.cn/about/versions/17/behavior-changes-all?hl=zh-cn)
+
+    * [核心功能](https://developer.android.google.cn/about/versions/17/behavior-changes-all?hl=zh-cn#core)
+
+        * [应用内存限制](https://developer.android.google.cn/about/versions/17/behavior-changes-all?hl=zh-cn#app-memory-limits)
+
+    * [隐私权](https://developer.android.google.cn/about/versions/17/behavior-changes-all?hl=zh-cn#privacy)
+
+        * [动态短信密码保护](https://developer.android.google.cn/about/versions/17/behavior-changes-all?hl=zh-cn#sms-otp-all-apps)
+
+    * [安全](https://developer.android.google.cn/about/versions/17/behavior-changes-all?hl=zh-cn#security)
+
+        * [usesClearTraffic 弃用计划](https://developer.android.google.cn/about/versions/17/behavior-changes-all?hl=zh-cn#uses-clear-traffic-deprecation)
+
+        * [限制隐式 URI 授权](https://developer.android.google.cn/about/versions/17/behavior-changes-all?hl=zh-cn#restrict-implicit-uri-grants)
+
+        * [每个应用的密钥库限制](https://developer.android.google.cn/about/versions/17/behavior-changes-all?hl=zh-cn#per-app-keystore-limits)
+
+        * [阻止跨资料环回流量](https://developer.android.google.cn/about/versions/17/behavior-changes-all?hl=zh-cn#block-cross-profile-loopback)
+
+    * [用户体验和系统界面](https://developer.android.google.cn/about/versions/17/behavior-changes-all?hl=zh-cn#ux-sysui)
+
+        * [在旋转后恢复默认 IME 可见性](https://developer.android.google.cn/about/versions/17/behavior-changes-all?hl=zh-cn#ime-rotate)
+
+    * [人工输入](https://developer.android.google.cn/about/versions/17/behavior-changes-all?hl=zh-cn#human-input)
+
+        * [在指针捕获期间，触控板默认传递相对事件](https://developer.android.google.cn/about/versions/17/behavior-changes-all?hl=zh-cn#touchpad-pointer-capture)
+
+    * [媒体](https://developer.android.google.cn/about/versions/17/behavior-changes-all?hl=zh-cn#media)
+
+        * [后台音频安全加固](https://developer.android.google.cn/about/versions/17/behavior-changes-all?hl=zh-cn#bg-audio)
+
+    * [连接](https://developer.android.google.cn/about/versions/17/behavior-changes-all?hl=zh-cn#connectivity)
+
+        * [针对蓝牙绑定丢失的自主重新配对](https://developer.android.google.cn/about/versions/17/behavior-changes-all?hl=zh-cn#autonomous-repairing)
+
+* [针对 targetSdkVersion 37+ 应用的行为变更](https://developer.android.google.cn/about/versions/17/behavior-changes-17?hl=zh-cn)
+
+    * [核心功能](https://developer.android.google.cn/about/versions/17/behavior-changes-17?hl=zh-cn#core)
+
+        * [MessageQueue 的新无锁实现](https://developer.android.google.cn/about/versions/17/behavior-changes-17?hl=zh-cn#lock-free-messagequeue)
+
+        * [静态 final 字段现在不可修改](https://developer.android.google.cn/about/versions/17/behavior-changes-17?hl=zh-cn#static-final-fields)
+
+    * [无障碍](https://developer.android.google.cn/about/versions/17/behavior-changes-17?hl=zh-cn#accessibility)
+
+        * [复杂 IME 实体键盘输入的无障碍支持](https://developer.android.google.cn/about/versions/17/behavior-changes-17?hl=zh-cn#a11y-ime-pk)
+
+    * [隐私权](https://developer.android.google.cn/about/versions/17/behavior-changes-17?hl=zh-cn#privacy)
+
+        * [已启用 ECH（加密客户端 Hello）](https://developer.android.google.cn/about/versions/17/behavior-changes-17?hl=zh-cn#ech-by-default)
+
+        * [以 Android 17 为目标平台的应用需要本地网络权限](https://developer.android.google.cn/about/versions/17/behavior-changes-17?hl=zh-cn#local-network-protection-permission)
+
+        * [在实体设备上隐藏密码](https://developer.android.google.cn/about/versions/17/behavior-changes-17?hl=zh-cn#hide-pwd-kbd)
+
+        * [针对标准短信的 OTP 保护](https://developer.android.google.cn/about/versions/17/behavior-changes-17?hl=zh-cn#sms-otp-protection)
+
+    * [安全](https://developer.android.google.cn/about/versions/17/behavior-changes-17?hl=zh-cn#security)
+
+        * [活动安全性](https://developer.android.google.cn/about/versions/17/behavior-changes-17?hl=zh-cn#activity-security)
+
+        * [默认启用 CT](https://developer.android.google.cn/about/versions/17/behavior-changes-17?hl=zh-cn#ct-default)
+
+        * [更安全的原生 DCL - C](https://developer.android.google.cn/about/versions/17/behavior-changes-17?hl=zh-cn#safer-dcl)
+
+        * [限制 CP2 数据视图中的 PII 字段](https://developer.android.google.cn/about/versions/17/behavior-changes-17?hl=zh-cn#restrict-pii-fields-cp2-data-view)
+
+        * [在 CP2 中强制执行严格的 SQL 检查](https://developer.android.google.cn/about/versions/17/behavior-changes-17?hl=zh-cn#enforce-strict-sql-checks)
+
+    * [媒体](https://developer.android.google.cn/about/versions/17/behavior-changes-17?hl=zh-cn#media)
+
+        * [后台音频安全加固](https://developer.android.google.cn/about/versions/17/behavior-changes-17?hl=zh-cn#bg-audio)
+
+    * [设备规格](https://developer.android.google.cn/about/versions/17/behavior-changes-17?hl=zh-cn#device-form-factors)
+
+        * [平台 API 变更，用于忽略大屏设备 (sw>=600dp) 上的屏幕方向、尺寸调整能力和宽高比限制](https://developer.android.google.cn/about/versions/17/behavior-changes-17?hl=zh-cn#large-screen-ignore-constraints)
+
+    * [连接](https://developer.android.google.cn/about/versions/17/behavior-changes-17?hl=zh-cn#connectivity)
+
+        * [针对 RFCOMM 的一致 BluetoothSocket read() 行为](https://developer.android.google.cn/about/versions/17/behavior-changes-17?hl=zh-cn#bluetooth-rfcomm-socket-change)
+
+#### 相关资源
+
+* 适配简介
+
+    * [Android 17 来了！新特性介绍与适配建议](https://juejin.cn/post/7612545160434188297)
+
+    * [Android 17 新适配要求，各大权限进一步收紧，适配难度提升](https://juejin.cn/post/7621551215504228395)
+
+    * [Android 17 正式版发布，全新 AI 和各种破坏性更新](https://juejin.cn/post/7651930056574517289)
+
+    * [Android 17 最后一个 Beta 发布，7 件事必须现在做](https://juejin.cn/post/7637880424371765298)
+
+    * [Android 17 重磅发布：详解四大颠覆性变革与保姆级适配指南](https://juejin.cn/post/7617041881097666560)
+
+    * [Android 17 Beta4发布：四大行为变更，不改上线就崩](https://juejin.cn/post/7630031190897082414)
+
+    * [Android 17 开发者指南：新 API、重大变更以及现在应该迁移的内容](https://juejin.cn/post/7626696713096560675)
+
+    * [Android 17 正在改写规则——以下是每位开发者都需要了解的内容](https://juejin.cn/post/7626960753634017326)
+
+    * [Android 17：API 级别 37 的开发者指南——现在你需要构建什么](https://juejin.cn/post/7626998085928452142)
+
+    * [Android 17 正式发布：AI 终于成了系统能力](https://juejin.cn/post/7652740907021991999)
+
+* 厂商适配指南
+
+    * [OPPO 开放平台 - Android 17 应用兼容性适配指导](https://open.oppomobile.com/documentation/page/info?id=13789)
+
+    * [VIVO 开放平台 - Android 17 开发者适配文档](https://dev.vivo.com.cn/documentCenter/doc/1010)
+
+    * [小米开放平台 - Android 17 应用适配指南](https://dev.mi.com/xiaomihyperos/documentation/detail?pId=2297)
+
+    * [荣耀开放平台 - Android 17 应用兼容性适配指导](https://developer.honor.com/cn/docs/adaptation_guide/guides/android_17_compatibility_adaptation_guide)
+
+* 内存管控
+
+    * [Android 17 内存管理将严格管控，App 要注意适配](https://juejin.cn/post/7647356541462806580)
+
+    * [解读 Android 17 全新内存限制，有没有“豁免”后门？](https://mp.weixin.qq.com/s/A-XOczUWa5yxFK4bG7RlYA)
+
+    * [Android 17 新规：内存超限直接杀App，没有崩溃日志怎么排查？](https://juejin.cn/post/7647186702176157722)
+
+    * [Google I/O 2026：Android 17 MemoryLimiter 来了，你的 Bitmap 优化做好了吗？](https://blog.csdn.net/vitaviva/article/details/161976237)
+
+* MessageQueue
+
+    * [Android 17 重磅重构！服役 20 年的 MessageQueue 迎来无锁改造，卡顿大幅优化！](https://juejin.cn/post/7643280009974071305)
+
+    * [天下苦阻塞久矣之 DeliQueue：Android 17 无锁 MessageQueue 的架构重构](https://juejin.cn/post/7630298684077113395)
+
+    * [Android 17 为什么会重写 MessageQueue](https://juejin.cn/post/7617879883323408434)
+
+* 其他适配
+
+    * [Android 17 权限适配方案](https://github.com/getActivity/XXPermissions)
+
+    * [紧急预警！Android 17 定位权限大改，你的 App 要适配了](https://juejin.cn/post/7624168579077357614)
+
+    * [慌了！Android 17 取消图标文字，你的 App 可能要找不到了](https://juejin.cn/post/7627535697524228147)
+
+    * [Android 17 要下狠手了：无障碍服务 API 将被严格限制](https://juejin.cn/post/7617692680530575386)
+
+    * [在 Android 17 上修改 static final 字段的方法](https://juejin.cn/post/7624100510837882906)
+
+    * [重启不用输 PIN！Android 17 终于把 SIM 卡安全做明白了](https://juejin.cn/post/7625923696348020762)
+
+    * [直破 Android 17 大屏困局：Navigation 3 架构深度解析](https://juejin.cn/post/7620097451492212774)
+
+    * [Android 17 大屏适配变化解读](https://juejin.cn/post/7626930269404692523)
+
+    * [Android 17 新特性：MessageQueue 无锁实现](https://juejin.cn/post/7650882103059824649)
+
+    * [Android 17 新特性：ProfilingManager 新触发器](https://juejin.cn/post/7650825348397072384)
+
+    * [Android 17 新特性：后台音频交互限制加强](https://juejin.cn/post/7650754200507285538)
+
+    * [Android 17 后台服务彻底变了！Foreground Service 还能这么用吗？](https://mp.weixin.qq.com/s/ZduftpqYN8TS88EQSPf7Rg)
 
 ## Android 16.0
 
@@ -253,7 +458,7 @@ if (context.getApplicationInfo().targetSdkVersion >= Build.VERSION_CODES.BAKLAVA
 
         * [改进了债券丢失处理](https://developer.android.google.cn/about/versions/16/behavior-changes-all?hl=zh-cn#improved-bond-loss-handling)
 
-    * [针对 targetSdkVersion 36+ 应用的行为变更](https://developer.android.google.cn/about/versions/16/behavior-changes-16?hl=zh-cn)
+* [针对 targetSdkVersion 36+ 应用的行为变更](https://developer.android.google.cn/about/versions/16/behavior-changes-16?hl=zh-cn)
 
     * [用户体验和系统界面](https://developer.android.google.cn/about/versions/16/behavior-changes-16?hl=zh-cn#ux-sysui)
 
@@ -295,7 +500,7 @@ if (context.getApplicationInfo().targetSdkVersion >= Build.VERSION_CODES.BAKLAVA
 
 #### 相关资源
 
-*  适配简介
+* 适配简介
 
     * [Android 16 新特性和行为变更一览](https://blog.csdn.net/guolin_blog/article/details/148748307)
 
@@ -325,6 +530,8 @@ if (context.getApplicationInfo().targetSdkVersion >= Build.VERSION_CODES.BAKLAVA
 
 * 其他适配
 
+    * [Android 16 权限适配方案](https://github.com/getActivity/XXPermissions)
+
     * [速学 Android 16 新功能：带有进度的通知类型](https://juejin.cn/post/7490850417976262668)
 
     * [关于 Android16 MOPS 函数指令非法问题](https://juejin.cn/post/7532324493581418506)
@@ -334,6 +541,8 @@ if (context.getApplicationInfo().targetSdkVersion >= Build.VERSION_CODES.BAKLAVA
     * [Android 16 的 Appfunctions API ，应用级 MCP 支持为 AI 场景打通最后一层壁垒](https://juejin.cn/post/7500025453127663652)
 
     * [Android PC 要来了？Android 16 Beta3 出现 Enable desktop experience features 选项](https://juejin.cn/post/7482013975077896227)
+
+    * [Android 16 升级，预测性返回适配起来到底难不难](https://juejin.cn/post/7649942829104463906)
 
 ## Android 15.0
 
@@ -541,7 +750,7 @@ if (context.getApplicationInfo().targetSdkVersion >= Build.VERSION_CODES.BAKLAVA
 
 #### 相关资源
 
-*  适配简介
+* 适配简介
 
     * [Android 15 正式发布到 AOSP ，来了解下新特性和适配需求](https://juejin.cn/post/7410645914585317403)
 
