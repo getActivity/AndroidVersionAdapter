@@ -258,6 +258,8 @@ if (context.getApplicationInfo().targetSdkVersion >= Build.VERSION_CODES.CINNAMO
 
 * 适配简介
 
+    * [Android 17 现已发布：即刻解锁最新功能与体验](https://mp.weixin.qq.com/s/NoH6sYjBzNsaq8oaT3d3BQ)
+
     * [Android 17 来了！新特性介绍与适配建议](https://juejin.cn/post/7612545160434188297)
 
     * [Android 17 新适配要求，各大权限进一步收紧，适配难度提升](https://juejin.cn/post/7621551215504228395)
@@ -275,6 +277,8 @@ if (context.getApplicationInfo().targetSdkVersion >= Build.VERSION_CODES.CINNAMO
     * [Android 17 正在改写规则——以下是每位开发者都需要了解的内容](https://juejin.cn/post/7626960753634017326)
 
     * [Android 17：API 级别 37 的开发者指南——现在你需要构建什么](https://juejin.cn/post/7626998085928452142)
+
+    * [Android 17 正式发布！target 37 一大批旧代码直接不能用了](https://juejin.cn/post/7653533398469820425)
 
     * [Android 17 正式发布：AI 终于成了系统能力](https://juejin.cn/post/7652740907021991999)
 
